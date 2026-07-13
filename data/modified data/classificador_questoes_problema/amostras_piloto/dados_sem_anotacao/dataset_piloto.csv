@@ -1,0 +1,240 @@
+id,enunciado
+2002-57,"Sistemas de processamento de transações, tais como sistemas de reservas aéreas, devem prover um mecanismo que garanta que cada transação não é afetada por outras transações que possam estar ocorrendo ao mesmo tempo. Transações de duas fases obedecem a um protocolo que garante essa atomicidade. Em transações de duas fases:"
+2003-01,"Seja $f : \mathbb{R} \to \mathbb{R}$ definida por
+$$
+f(x) = \begin{cases}
+x^3 - 2x^2 - 2 &, \text{se $x > -1$} \\
+x - 3 & , \text{se $x \leq -1$}
+\end{cases}
+$$
+Se $L = \lim_{n\to+\infty}f(a_n)$, com $a_n = -1 + \frac{1}{n}$, é correto afirmar que"
+2003-17,"Assinale o argumento válido, onde $S_1$ e $S_2$ indicam premissas e $C$ a conclusão."
+2005-07,"Considere as afirmações a seguir:
+
+(I) Se $f : \mathbb{R} \rightarrow \mathbb{R}$ é uma função tal que $f(x) = f(-x)$ para todo $x \in \mathbb{R}$ e $f$ é derivável no ponto $a = 0$, então $f'(0) = 0$. \
+(II) Se $\lim_{n \rightarrow 0} b_n = + \infty$ e $\lim_{n \rightarrow 0} a_n = 0$, então $\lim_{n \rightarrow 0} a_n b_n$ não existe. \
+(III) $\lim_{n \to 3} \lceil n \rceil = 3$. \
+(IV) Se $c \in [a,b]$ é um máximo local de uma função $f: [a, b] \rightarrow \mathbb{R}$ então $f’(c) = 0$. \
+(V) Se $\lim_{n \to \infty}a_n$ existe e $\lim_{n \to \infty}b_n$ não existe, então $\lim_{n \to \infty}(a_n + b_n)$ não existe. 
+
+Quais são as afirmações verdadeiras?"
+2005-36,"Quatro tarefas, A, B, C e D, estão prontas para serem executadas num único processador. Seus tempos de execução esperados são 9, 6, 3 e 5 segundos respectivamente. Em qual ordem eles devem ser executados para diminuir o tempo médio de resposta?"
+2005-44,"Sejam T1 e T2 duas transações sendo processadas por um SGBD. Os termos lockR lockW correspondem a pedidos de tranca de leitura e gravação, respectivamente, e Unlock liberação de tranca. A, B e C são dados do banco de dados. O trecho a seguir é um pedaço do escalonamento de T1 e T2 definido pelo escalonador do SGBD (o trecho não está completo):
+```
+start(T1); lockR(T1, A); read (T1, A); start(T2);
+lockR(T2, B); read (T2, B); lockW (T1, C); read(T1,C);
+write(T1,C); unlock(T1, C); lockW (T1, B); lockW (T2, A); lockR(T2,C);
+...
+```
+Considere as seguintes afirmações:
+
+(I) O trecho mostra um exemplo de aplicação do protocolo 2PL (*two phase lock* ou tranca em 2 fases). \
+(II) O trecho viola o protocolo 2PL. \
+(III) O trecho mostra um exemplo em que há *deadlock* (impasse) entre T1 e T2. \
+(IV) O trecho não tem *deadlock* entre T1 e T2. \
+(V) Nada se pode afirmar. \
+Estão corretas as afirmações:"
+2006-57,"O código abaixo implementa uma função que calcula o MDC de dois números inteiros usando o algoritmo de Euclides:
+```
+   function mdc (int a, int b) 
+   int temp, value;
+   a := abs(a);
+   b:= abs(b);
+   if (a = 0) then
+      value := b;    // b é o MDC
+   else if (b = 0) then
+      exceção;
+      else
+         repeat
+            temp := b;
+            b:= a mod b;
+            a := temp;
+         until (b = 0)
+         value := a;
+      end if;
+   return value;
+end mdc
+```
+Qual dos conjuntos de teste dados a seguir poderiam ser usados para atender ao critério de todos os ramos?"
+2008-32,"Analise as seguintes afirmativas.
+
+I. Uma arquitetura *multithreading* executa simultaneamente o código de diversos fluxos de instruções (*threads*). \
+II. Em uma arquitetura VLIW, o controle da execução das várias instruções por ciclo de máquina é feito pelo compilador. \
+III. Uma arquitetura superescalar depende de uma boa taxa de acerto do mecanismo de predição de desvio para obter um bom desempenho. \
+IV. Os processadores vetoriais são um tipo de arquitetura SIMD. \
+V. Um processador *dual-core* é mais eficiente em termos de consumo de energia do que dois processadores *single-core* de mesma tecnologia.
+
+A  partir da análise, pode-se concluir que"
+2008-54,"Um processador tem cinco estágios de *pipeline*. Suponha que cada uma das etapas do processador (busca, decodificação, execução, leitura ou escrita de dados em memória e escrita em registrador) seja executada em 5ns. \
+O tempo total para que 5 instruções sejam executadas em *pipeline*, supondo que não haja dependência de dados entre as instruções é"
+2009-26,"Considere uma arquitetura de memória com as seguintes características:
+- Memória logicamente particionada em segmentos paginados.
+- Endereços virtuais de 32 bits: 8 para segmentos, 11 para páginas, o restante para o endereçamento na página.
+- Endereços físicos de 20 bits e páginas de 8KB.
+
+Caso o particionamento lógico fosse o de paginação pura, a relação entre o número de páginas virtuais e o número de frames seria equivalente a:"
+2010-05,"Considere os conjuntos de polinômios $ A = \{1, x, 3x^2 - 1, 5x^3 - 3\} $ e $ B = \{1, x, x^2, x^3\} $ e o produto interno $\langle p, q \rangle = \int_{-1}^1 p(x)q(x) \, dx.$
+
+Com base no enunciado, considere as afirmativas a seguir.
+
+I. $ A $ é um conjunto linearmente independente.\
+II. $ B $ é um conjunto linearmente independente.\
+III. $ A $ é a base ortogonal do conjunto de polinômios de grau até 3.\
+IV. $ B $ é a base ortogonal do conjunto de polinômios de grau até 3.
+
+Assinale a alternativa correta:"
+2010-30,"O mecanismo de herança, no paradigma da programação orientada a objetos, é uma forma de reutilização de software na qual uma nova classe é criada, absorvendo membros de uma classe existente e aprimorada com capacidades novas ou modificadas.
+Considere as seguintes classes descritas na linguagem C++.
+```
+#include <iostream>
+using namespace std;
+class A {
+protected:
+  int v;
+public:
+  A() { v = 0; };
+  void m1() {
+    v += 10;
+    m2();
+  };
+
+  void m2() {
+    v += 20;
+  };
+
+  int getv() {
+    return v;
+  };
+};
+class B : public A {
+public:
+  void m2() {
+    v += 30;
+  };
+};
+```
+Se essas classes forem utilizadas a partir do programa a seguir,
+```
+int main()
+{
+  B *Obj = new B();
+  Obj->m1();
+  Obj->m2();
+  cout << Obj->getv() << endl;
+  return 0;
+}
+```
+a saída do código computacional acima será:"
+2012-22,"O algoritmo $ALGSORT$ ordena vetores de números inteiros distintos usando apenas comparações. Nesse algoritmo, a função $menor(V, i, j)$ retorna o índice $l$, tal que $V [l]$ é o menor número no vetor $V [i..j]$. O custo de tempo de pior caso de $menor(V, i, j)$ é igual a $j - i$ comparações. De forma similar, a função $maior(V, i, j)$ retorna um índice $g$, tal que $V [g]$ é o maior número no vetor $V [i..j]$, também com custo de execução de $j - i$ comparações no pior caso. Para ordenar o vetor $X[1..n]$, $ALGSORT(V, i, j)$ é chamado com os parâmetros, $V = X$, $i = 1$ e $j = n$.
+
+```
+ALGSORT (V,i,j);
+(1) Se j-i=0 então retorne;
+(2) Se j-i=1 então
+       Se V[j] < V[i] então
+           Troque(V[j],V[i]);
+       Fim;
+       retorne;
+   Fim;
+(3) l = menor(V,i,j);
+(4) Troque(V[i],V[l]);
+(5) g = maior(V,i,j);
+(6) Troque(V[j],V[g]);
+(7) ALGSORT (V,i+1,j-1);
+```
+
+Com relação ao projeto do algoritmo $ALGSORT$, assinale a alternativa correta."
+2014-69,"O aprendizado de máquina pode ser definido como o campo da Inteligência Artificial que visa à construção de sistemas que se aperfeiçoam automaticamente com a experiência.
+
+Assinale a alternativa que apresenta, corretamente, técnicas e/ou algoritmos característicos da área de aprendizado de máquina."
+2016-02,"Seja a transformação linear $ T: \mathbb{R}^2 \rightarrow \mathbb{R}^2 $ descrita por
+$$
+T(x_1, x_2) =
+\begin{bmatrix}
+1 & 3 \\
+-3 & 0.5
+\end{bmatrix}
+X
+\begin{bmatrix} 
+x_1 \\
+x_2
+\end{bmatrix},
+$$
+a alternativa que apresenta corretamente a lei da transformação linear e a imagem de $ \mathbf{v} = (-3,4) $ é:"
+2016-09,"A respeito das propriedades da relação definida por $R \subseteq A \times A$, para $A = \{x \in \mathbb{N} \text{ tal que } 1 \leq x \leq 6\}$, descrita pela matriz de incidência da relação
+$$
+A = \begin{bmatrix}
+1 & 0 & 0 & 0 & 0 & 0 \\
+0 & 1 & 1 & 0 & 0 & 1 \\
+0 & 1 & 1 & 0 & 0 & 1 \\
+0 & 0 & 0 & 1 & 0 & 0 \\
+0 & 1 & 1 & 0 & 1 & 1 \\
+0 & 0 & 0 & 0 & 0 & 1 \\
+\end{bmatrix}
+\quad \text{para} \quad
+a_{ij} = 
+\begin{cases}
+0, & \text{se } (i,j) \notin R \\
+1, & \text{se } (i,j) \in R
+\end{cases}
+$$
+é correto afirmar que essa relação é:"
+2016-27,Assinale a alternativa correta sobre o Paradigma de Programação Imperativo.
+2016-35,"Quanto às propriedades de cada tipo de índice, ao comparar número de entradas de índice e densidade, é correto afirmar que:"
+2016-40," linguagem $ L = \{a^n b^m \mid n \leq m + 3\}, \text{ para } n \geq 0 \text{ e } m \geq 0 $, é:"
+2016-47,"Dada a função F(A,B,C,D) composta dos termos mínimos (minterm)={0, 2, 6, 8, 9, 11, 12, 13} e dos termos não essenciais (don’t care)={5, 13}. Simplifique essa função como soma de produtos. O símbolo ’ representa o complemento:"
+2017-21,"Suponha que, ao invés de dividir em duas partes, foi criada uma versão do merge- sort que divida a entrada em quatro partes, ordene cada quarta-parte, e, finalmente, combine essas quatro partes usando um procedimento O(n). A equação de recorrência que descreve o tempo de execução desse algoritmo é:"
+2017-27,"A saída do trecho de código em C abaixo é:
+```
+   int i = 0, j = -9, k = 7, cont;
+
+    for (cont = 4; cont < 11; cont++) {
+        i = cont + 5;
+        while (k > 0) {
+            k = k - 1;
+            j = k + j / 2;
+        }
+    }
+
+    printf(""i: %d j: %d k: %d "", i, j, k);
+```"
+2017-31,"Quando uma expressão contém duas ocorrências adjacentes de operadores com o mesmo nível de precedência, a questão sobre qual deles é avaliado primeiro responde-se pelas regras de:"
+2018-29,"Um algoritmo de compressão toma como entrada uma sequência de bits (bitstream), e a converte em outro bitstream, representando a entrada comprimida. Analise as assertivas abaixo sobre a técnica de compressão de Huffman:\\
+I. É mais eficiente, para compressão de arquivos texto, do que a técnica de codificação corrida (do inglês RLE – run-length encoding).\
+II. A técnica exige como entradas um bitstream e um conjunto de códigos livres de prefixo, que associa símbolos a um conjunto de bits.\
+III. O bitstream comprimido resultante inclui o conjunto de códigos utilizado para realizar a compressão.
+
+Quais estão corretas?"
+2018-45,"Um impasse (deadlock) pode ser definido como a condição em que todo processo, em um conjunto de processos, aguarda por um evento que somente outro processo desse conjunto poderá fazer acontecer. De acordo com Coffman et al. (1971), as condições para que ocorra um impasse (de recurso) são encadeamento circular de dois ou mais processos, exclusão mútua, posse e espera de recursos,"
+2019-06,"Para quais valores de a e b, *f(x)* é contínua em *x = 1* e *x = 4*.
+$$
+f(x) = 
+\begin{cases}
+x & \text{se } x \leq 1 \\
+ax + b & \text{se } 1 < x < 4 \\
+-2x & \text{se } x \geq 4
+\end{cases}
+$$"
+2022-10,Calcule  $\lim_{x \to \infty} \frac{(2x+3)^3(3x -2)^2}{x^5 + 5}$:
+2022-28,"Analise o código em Linguagem C (Compilador Ansi C) abaixo e assinale a alternativa que corresponde a saída na tela.
+```
+
+int *p, **r, a = -1, c, b=10;
+p = &a;
+r = &p;
+c = **r + b--;
+
+printf(""%d"", c);
+
+```"
+2022-55,"Considere que os produtos de uma loja são modelados pelo esquema de relação
+**PROD(Codigo, Descricao, Preco)**, em que **Codigo** é a chave primária da relação. O banco de dados possui vários produtos, onde se observa pelo menos $n$ ($n>10$) preços distintos. A consulta a seguir, que está escrita conforme o formalismo da álgebra relacional, usa as operações projeção, seleção, produto cartesiano e renomeação, as quais são representadas pelos símbolos $\pi$, $\sigma$, $\times$ e $\rho$, respectivamente.
+|$\pi$ PROD.Codigo $\sigma$ PROD.Preco < CLONE.Preco (PROD $\times$ $\rho$ CLONE (PROD)))|
+|-|
+
+O processamento dessa consulta resulta no código de todos os produtos:"
+2024-38,"O __________________, de __________________, demonstra limitações dos sistemas formais e a impossibilidade de provar certas afirmações dentro deles. Já o
+__________________, de __________________, pergunta se um determinado programa irá
+eventualmente parar ou entrar em um loop infinito para uma entrada dada. Ambos os resultados destacam a existência de limites fundamentais para o que podemos provar em sistemas formais ou calcular em sistemas computacionais.
+
+Assinale a alternativa que preenche, correta e respectivamente, as lacunas do trecho acima."

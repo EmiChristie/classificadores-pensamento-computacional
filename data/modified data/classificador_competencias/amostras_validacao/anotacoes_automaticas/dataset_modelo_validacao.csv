@@ -1,0 +1,815 @@
+id,enunciado,prompt,it1_comp_decomposicao,it1_comp_reconhecimento_padroes,it1_comp_abstracao,it1_comp_algoritmos,it1_comp_generalizacao,it2_comp_decomposicao,it2_comp_reconhecimento_padroes,it2_comp_abstracao,it2_comp_algoritmos,it2_comp_generalizacao,it3_comp_decomposicao,it3_comp_reconhecimento_padroes,it3_comp_abstracao,it3_comp_algoritmos,it3_comp_generalizacao
+2008-03,"Considere as imagens $I_1$, dada por $I_1(i,j) = 9((i+j)\mod 2)$, e $I_2$, \, dada por $I_2(i,j) = 9((i+j)\mod 3)$, 
+representadas nas tabelas abaixo para dimensões $ 5 \times 5 $:\
+Imagem $ I_1 $:
+
+| 0 | 9 | 0 | 9 | 0 |
+|---|---|---|---|---|
+| 9 | 0 | 9 | 0 | 9 |
+| 0 | 9 | 0 | 9 | 0 |
+| 9 | 0 | 9 | 0 | 9 |
+| 0 | 9 | 0 | 9 | 0 |
+
+Imagem $ I_2 $:
+
+| 0 | 9 | 18 | 0 | 9 |
+|---|---|---|---|---|
+| 9 | 18 | 0 | 9 | 18 |
+| 18 | 0 | 9 | 18 | 0 |
+| 0 | 9 | 18 | 0 | 9 |
+| 9 | 18 | 0 | 9 | 18 |
+
+Dada a janela $ V(i,j) $ de dimensões $ 3 \times 3 $ centrada no pixel $ (i,j) $ de uma imagem $ I $, considere os filtros que atribuem a $ (i,j) $ o valor dado pela média e pela mediana dos valores de $ I $ em $ V(i,j) $.","
+QUESTÃO:
+Considere as imagens $I_1$, dada por $I_1(i,j) = 9((i+j)\mod 2)$, e $I_2$, \, dada por $I_2(i,j) = 9((i+j)\mod 3)$, 
+representadas nas tabelas abaixo para dimensões $ 5 \times 5 $:\
+Imagem $ I_1 $:
+
+| 0 | 9 | 0 | 9 | 0 |
+|---|---|---|---|---|
+| 9 | 0 | 9 | 0 | 9 |
+| 0 | 9 | 0 | 9 | 0 |
+| 9 | 0 | 9 | 0 | 9 |
+| 0 | 9 | 0 | 9 | 0 |
+
+Imagem $ I_2 $:
+
+| 0 | 9 | 18 | 0 | 9 |
+|---|---|---|---|---|
+| 9 | 18 | 0 | 9 | 18 |
+| 18 | 0 | 9 | 18 | 0 |
+| 0 | 9 | 18 | 0 | 9 |
+| 9 | 18 | 0 | 9 | 18 |
+
+Dada a janela $ V(i,j) $ de dimensões $ 3 \times 3 $ centrada no pixel $ (i,j) $ de uma imagem $ I $, considere os filtros que atribuem a $ (i,j) $ o valor dado pela média e pela mediana dos valores de $ I $ em $ V(i,j) $.
+",True,False,False,True,False,False,True,True,False,False,True,False,False,True,False
+2015-31,"Considere o código em linguagem C a seguir.
+```
+void funcao (float n) { }
+main() {
+long numero;
+funcao (numero);
+}
+```
+No referido código, a conversão implícita de tipos é um polimorfismo chamado","
+QUESTÃO:
+Considere o código em linguagem C a seguir.
+```
+void funcao (float n) { }
+main() {
+long numero;
+funcao (numero);
+}
+```
+No referido código, a conversão implícita de tipos é um polimorfismo chamado
+",False,True,True,False,False,False,True,True,False,False,False,True,True,False,False
+2023-54,"Seja o alfabeto $A = \{b, k, z\}$. Expressões regulares sobre $A$ são definidas (da forma habitual) como cadeias (*strings*) contendo símbolos do alfabeto dado pela união de $A$ com o conjunto $\{ (, ), *, | \}$. Assim: \
+\* $()$ e $e$, as quais denotam respectivamente a linguagem vazia e a linguagem que contém apenas a cadeia vazia. \
+\* Cada símbolo do alfabeto é uma expressão regular, denotando a linguagem formada pelo símbolo. \
+\* Dadas expressões regulares $R$, $R1$ e $R2$, notamos com $R^*$, $(R1 | R2)$ e $R1 R2$ as expressões regulares, representando, respectivamente, as operações de Estrela de Kleene (repetição), Escolha e Concatenação.
+
+A notação $R?$ é usada como abreviatura para $(R | e )$, marcando que $R$ é opcional. Sejam os Tokens de uma certa linguagem definidos pelas expressões regulares sobre $A$ a seguir:
+|Token|Expressão Regular|
+|-|-|
+|T1|$k? b? z z^* k$|
+|T2|$z? k? b b^* z$|
+|T3|$b? z? k k^* b$|
+
+Seja um analisador léxico que reconhece os tokens acima, procurando sempre casar a maior parte possível da entrada (maior prefixo possível). Caso a cadeia $kkbzkbbkkb$ seja dada como entrada ao analisador léxico, qual será a sequência de tokens devolvida por ele?","
+QUESTÃO:
+Seja o alfabeto $A = \{b, k, z\}$. Expressões regulares sobre $A$ são definidas (da forma habitual) como cadeias (*strings*) contendo símbolos do alfabeto dado pela união de $A$ com o conjunto $\{ (, ), *, | \}$. Assim: \
+\* $()$ e $e$, as quais denotam respectivamente a linguagem vazia e a linguagem que contém apenas a cadeia vazia. \
+\* Cada símbolo do alfabeto é uma expressão regular, denotando a linguagem formada pelo símbolo. \
+\* Dadas expressões regulares $R$, $R1$ e $R2$, notamos com $R^*$, $(R1 | R2)$ e $R1 R2$ as expressões regulares, representando, respectivamente, as operações de Estrela de Kleene (repetição), Escolha e Concatenação.
+
+A notação $R?$ é usada como abreviatura para $(R | e )$, marcando que $R$ é opcional. Sejam os Tokens de uma certa linguagem definidos pelas expressões regulares sobre $A$ a seguir:
+|Token|Expressão Regular|
+|-|-|
+|T1|$k? b? z z^* k$|
+|T2|$z? k? b b^* z$|
+|T3|$b? z? k k^* b$|
+
+Seja um analisador léxico que reconhece os tokens acima, procurando sempre casar a maior parte possível da entrada (maior prefixo possível). Caso a cadeia $kkbzkbbkkb$ seja dada como entrada ao analisador léxico, qual será a sequência de tokens devolvida por ele?
+",True,True,False,True,False,True,True,False,True,False,True,False,True,True,False
+2014-21,"Considere o pseudocódigo a seguir.
+
+```
+    HUFFMAN(C)
+(1) n = |C|
+(2) Q = C
+(3) for i=1 to n-1
+(4)    alocar um novo nó z
+(5)    z.esquerda = x = EXTRAIR_MIN(Q)
+(6)    z.direita = y = EXTRAIR_MIN(Q)
+(7)    z.freq = x.freq + y.freq
+(8)    INSERIR(Q, z)
+(9) return EXTRAIR_MIN(Q) //retorna a raiz da árvore
+```
+
+Sobre o pseudocódigo, é correto afirmar que é um algoritmo","
+QUESTÃO:
+Considere o pseudocódigo a seguir.
+
+```
+    HUFFMAN(C)
+(1) n = |C|
+(2) Q = C
+(3) for i=1 to n-1
+(4)    alocar um novo nó z
+(5)    z.esquerda = x = EXTRAIR_MIN(Q)
+(6)    z.direita = y = EXTRAIR_MIN(Q)
+(7)    z.freq = x.freq + y.freq
+(8)    INSERIR(Q, z)
+(9) return EXTRAIR_MIN(Q) //retorna a raiz da árvore
+```
+
+Sobre o pseudocódigo, é correto afirmar que é um algoritmo
+",False,True,True,True,False,False,True,True,True,False,False,True,True,True,False
+2019-47,"Seja um circuito lógico com três entradas, A, B, C, e uma saída S. Considerando que o valor da saída S é igual ao valor da entrada A quando as entradas B e C estão no mesmo nível lógico, e que o valor da saída S é igual ao inverso do valor da entrada A quando as entradas B e C estão em níveis lógicos opostos, assinale a alternativa que apresenta a expressão lógica correspondente ao circuito.","
+QUESTÃO:
+Seja um circuito lógico com três entradas, A, B, C, e uma saída S. Considerando que o valor da saída S é igual ao valor da entrada A quando as entradas B e C estão no mesmo nível lógico, e que o valor da saída S é igual ao inverso do valor da entrada A quando as entradas B e C estão em níveis lógicos opostos, assinale a alternativa que apresenta a expressão lógica correspondente ao circuito.
+",False,True,True,False,False,False,True,True,False,False,False,True,True,False,False
+2017-21,"Suponha que, ao invés de dividir em duas partes, foi criada uma versão do merge- sort que divida a entrada em quatro partes, ordene cada quarta-parte, e, finalmente, combine essas quatro partes usando um procedimento O(n). A equação de recorrência que descreve o tempo de execução desse algoritmo é:","
+QUESTÃO:
+Suponha que, ao invés de dividir em duas partes, foi criada uma versão do merge- sort que divida a entrada em quatro partes, ordene cada quarta-parte, e, finalmente, combine essas quatro partes usando um procedimento O(n). A equação de recorrência que descreve o tempo de execução desse algoritmo é:
+",True,True,False,True,True,False,True,True,True,True,True,True,True,True,True
+2018-27,"Considere o seguinte código em Linguagem C:
+```
+
+      int a = 7, b = 9, c = -1;
+      int *ptr, *pty, *ptx;
+         ptr = &a;
+         ptx = &b;
+         pty = &c;
+
+         printf (""%d %d %d %d %d %d \n"", a, b, c,
+      *ptr, *pty, *ptx);
+         a = *ptr + *pty;
+         b = *ptx + 1;
+         printf (""%d %d %d %d %d %d \n"", a, b, c,
+      *ptr, *pty, *ptx);
+   
+
+```
+
+Assinale a alternativa que corresponde à saída impressa na tela.","
+QUESTÃO:
+Considere o seguinte código em Linguagem C:
+```
+
+      int a = 7, b = 9, c = -1;
+      int *ptr, *pty, *ptx;
+         ptr = &a;
+         ptx = &b;
+         pty = &c;
+
+         printf (""%d %d %d %d %d %d \n"", a, b, c,
+      *ptr, *pty, *ptx);
+         a = *ptr + *pty;
+         b = *ptx + 1;
+         printf (""%d %d %d %d %d %d \n"", a, b, c,
+      *ptr, *pty, *ptx);
+   
+
+```
+
+Assinale a alternativa que corresponde à saída impressa na tela.
+",False,False,False,True,False,False,False,False,True,False,False,False,False,True,False
+2017-44,"Considere que um processador tenha 16 bits de endereçamento de byte. Sua cache possui mapeamento direto com uma capacidade de 128 palavras e blocos de 8 palavras. O endereço se divide em campos para acesso à cache de acordo com a seguinte representação:
+```
+| Nome                         | Símbolo |
+|------------------------------|---------|
+| Etiqueta                     | i       |
+| Índice                       | ii      |
+| Palavra dentro do bloco      | iii     |
+| Byte dentro da palavra       | iv      |
+```
+
+O número de bits de cada um dos campos acima, ou seja, os valores de i, ii, iii e iv são, respectivamente:","
+QUESTÃO:
+Considere que um processador tenha 16 bits de endereçamento de byte. Sua cache possui mapeamento direto com uma capacidade de 128 palavras e blocos de 8 palavras. O endereço se divide em campos para acesso à cache de acordo com a seguinte representação:
+```
+| Nome                         | Símbolo |
+|------------------------------|---------|
+| Etiqueta                     | i       |
+| Índice                       | ii      |
+| Palavra dentro do bloco      | iii     |
+| Byte dentro da palavra       | iv      |
+```
+
+O número de bits de cada um dos campos acima, ou seja, os valores de i, ii, iii e iv são, respectivamente:
+",False,False,True,False,False,False,False,True,False,False,True,False,True,False,False
+2010-34,"Considere o conjunto de operações descritas a seguir, em linguagem de transferência entre registradores.
+```
+F1: REM ← CP;
+F2: RDM ← M[REM], CP ← CP + 1;;
+F3: RI ← RDM; 
+```
+Dados: `REM` é o registrador de endereços da memória; `RDM` é o registrador de dados da memória; `RI` é o registrador de instruções; `CP` é o contador de programa e `M[X]` é o conteúdo de memória indicado pelo endereço `X`. 
+
+Assinale a alternativa que indica a que fase do processamento de uma instrução em uma máquina *pipeline* corresponde o conjunto de operações descrito.","
+QUESTÃO:
+Considere o conjunto de operações descritas a seguir, em linguagem de transferência entre registradores.
+```
+F1: REM ← CP;
+F2: RDM ← M[REM], CP ← CP + 1;;
+F3: RI ← RDM; 
+```
+Dados: `REM` é o registrador de endereços da memória; `RDM` é o registrador de dados da memória; `RI` é o registrador de instruções; `CP` é o contador de programa e `M[X]` é o conteúdo de memória indicado pelo endereço `X`. 
+
+Assinale a alternativa que indica a que fase do processamento de uma instrução em uma máquina *pipeline* corresponde o conjunto de operações descrito.
+",False,False,True,True,False,False,False,True,True,False,False,False,True,True,False
+2005-25,"Uma lista ligada possui a seguinte definição de nó:
+```
+type ap = ↑no;
+     no = record
+             info : integer;
+             link : ap
+          end;
+```
+Como o procedimento a seguir deve ser complementado para inverter uma lista ligada?
+```
+procedure inverte(var h: ↑no);
+    var p,q : ↑no;
+    begin
+        if h <> NIL
+            then begin
+                p := h↑.link;
+                h↑.link := NIL;
+                while p <> NIL do
+                    begin
+                    ________;
+                    ________;
+                    ________;
+                    ________;
+                    end
+                end
+    end;
+```","
+QUESTÃO:
+Uma lista ligada possui a seguinte definição de nó:
+```
+type ap = ↑no;
+     no = record
+             info : integer;
+             link : ap
+          end;
+```
+Como o procedimento a seguir deve ser complementado para inverter uma lista ligada?
+```
+procedure inverte(var h: ↑no);
+    var p,q : ↑no;
+    begin
+        if h <> NIL
+            then begin
+                p := h↑.link;
+                h↑.link := NIL;
+                while p <> NIL do
+                    begin
+                    ________;
+                    ________;
+                    ________;
+                    ________;
+                    end
+                end
+    end;
+```
+",True,False,False,True,False,True,False,False,True,False,True,False,False,True,False
+2009-47,"Seja o programa em Prolog a seguir:
+```
+pai(abel, bernardo).
+pai(abel, bia).
+mae(ana, bernardo).
+mae(ana, bia).
+
+parenteSimples(X,Y) :- pai(xX,Y).
+parenteSimples(X,Y) :- mae(X,Y).
+
+irmao(X,Y) :- parenteSimples(Z,X), parenteSimples(Z,Y),X \=Y.
+```
+Qual a resposta para a entrada:
+
+```
+irmao(X,Y).
+```
+
+Supondo que para cada resposta do programa é digitado “;” (ponto e vírgula).","
+QUESTÃO:
+Seja o programa em Prolog a seguir:
+```
+pai(abel, bernardo).
+pai(abel, bia).
+mae(ana, bernardo).
+mae(ana, bia).
+
+parenteSimples(X,Y) :- pai(xX,Y).
+parenteSimples(X,Y) :- mae(X,Y).
+
+irmao(X,Y) :- parenteSimples(Z,X), parenteSimples(Z,Y),X \=Y.
+```
+Qual a resposta para a entrada:
+
+```
+irmao(X,Y).
+```
+
+Supondo que para cada resposta do programa é digitado “;” (ponto e vírgula).
+",True,False,False,True,False,True,False,False,True,False,True,False,False,True,False
+2018-50,"Qual o número total de processos criados com a execução do programa a seguir?
+Considere que todas as operações executadas serão realizadas com sucesso.
+```
+
+      int main (void){
+         unsigned long int i;
+         for(i=0; i<6;i++)
+            if( fork() >= 0 )
+               continue;
+            else break;
+      }
+
+```","
+QUESTÃO:
+Qual o número total de processos criados com a execução do programa a seguir?
+Considere que todas as operações executadas serão realizadas com sucesso.
+```
+
+      int main (void){
+         unsigned long int i;
+         for(i=0; i<6;i++)
+            if( fork() >= 0 )
+               continue;
+            else break;
+      }
+
+```
+",False,False,False,True,False,False,False,False,True,False,False,False,False,True,False
+2013-51,"Uma empresa de auditoria foi contratada para analisar o banco de dados do SUS (Sistema Único de Saúde). A primeira tarefa é encontrar os pares de médicos cadastrados que possuem o mesmo nome (homônimos) e números diferentes no CRM (Conselho Regional de Medicina) para verificar possíveis fraudes. Considere que a tabela que armazena os médicos possui o cadastro no CRM como chave primária e as seguintes colunas: nome, endereço, telefone, especialidade, datadeingresso. 
+
+Assinale a alternativa que apresenta, corretamente, a consulta em SQL que busca os resultados ordenados pelo nome dos médicos.","
+QUESTÃO:
+Uma empresa de auditoria foi contratada para analisar o banco de dados do SUS (Sistema Único de Saúde). A primeira tarefa é encontrar os pares de médicos cadastrados que possuem o mesmo nome (homônimos) e números diferentes no CRM (Conselho Regional de Medicina) para verificar possíveis fraudes. Considere que a tabela que armazena os médicos possui o cadastro no CRM como chave primária e as seguintes colunas: nome, endereço, telefone, especialidade, datadeingresso. 
+
+Assinale a alternativa que apresenta, corretamente, a consulta em SQL que busca os resultados ordenados pelo nome dos médicos.
+",True,False,True,True,False,True,False,True,True,False,True,False,True,False,False
+2024-43,"Analise a execução a seguir considerando que todos os arquivos de cabeçalho necessários estão inclusos no tempo de compilação e que o programa executa ininterruptamente do início até o seu término.
+```
+int lbm = 0;
+
+void * func(void *i){ lbm = lbm + 1; }
+
+int main (void){
+   int i;
+   pthread_t t[10];
+
+   for(i=0;i<10;i++){
+      pthread_create(&t[i], NULL, func, NULL);
+
+   for(i=0;i<10;i++){
+      pthread_join(t[i], NULL);
+
+   printf(“%d”, lbm);
+}
+```
+
+Assinale a alternativa que melhor representa o resultado da execução do programa acima.","
+QUESTÃO:
+Analise a execução a seguir considerando que todos os arquivos de cabeçalho necessários estão inclusos no tempo de compilação e que o programa executa ininterruptamente do início até o seu término.
+```
+int lbm = 0;
+
+void * func(void *i){ lbm = lbm + 1; }
+
+int main (void){
+   int i;
+   pthread_t t[10];
+
+   for(i=0;i<10;i++){
+      pthread_create(&t[i], NULL, func, NULL);
+
+   for(i=0;i<10;i++){
+      pthread_join(t[i], NULL);
+
+   printf(“%d”, lbm);
+}
+```
+
+Assinale a alternativa que melhor representa o resultado da execução do programa acima.
+",False,False,False,True,False,False,False,False,True,False,False,False,False,True,False
+2008-61,"Uma empresa precisa instalar um servidor de modo a atender três outros computadores localizados nos pontos $A(0;1)$, $B(0;-1)$ e $C(3; 0)$. \
+Em qual ponto $P$ o servidor deve ser instalado de modo a minimizar a soma das distâncias de $P$ a $A$, $B$ e $C$?","
+QUESTÃO:
+Uma empresa precisa instalar um servidor de modo a atender três outros computadores localizados nos pontos $A(0;1)$, $B(0;-1)$ e $C(3; 0)$. \
+Em qual ponto $P$ o servidor deve ser instalado de modo a minimizar a soma das distâncias de $P$ a $A$, $B$ e $C$?
+",False,False,True,False,False,False,False,True,False,False,False,False,True,False,False
+2007-24,"Considere um arquivo texto que contenha uma mensagem de 10.000 caracteres utilizando os caracteres A, B e C, com probabilidades 0,1, 0,1 e 0,8 respectivamente. Ao utilizar o *algoritmo de Huffman* para compressão/codificação do referido texto, as seguintes afirmativas são apresentadas.
+
+I. O comprimento médio dos códigos para os referidos caracteres é 1, 2. \
+II. Se forem utilizados todos os pares possíveis de símbolos para a construção da
+árvore de *Huffman*, então o comprimento médio dos códigos para os referidos pares é menor que 1, 2 por caractere. \
+III. A codificação de *Huffman* a partir de todos os pares possíveis de caracteres sempre produz códigos de menor comprimento médio.
+
+Os dados acima permitem afirmar que","
+QUESTÃO:
+Considere um arquivo texto que contenha uma mensagem de 10.000 caracteres utilizando os caracteres A, B e C, com probabilidades 0,1, 0,1 e 0,8 respectivamente. Ao utilizar o *algoritmo de Huffman* para compressão/codificação do referido texto, as seguintes afirmativas são apresentadas.
+
+I. O comprimento médio dos códigos para os referidos caracteres é 1, 2. \
+II. Se forem utilizados todos os pares possíveis de símbolos para a construção da
+árvore de *Huffman*, então o comprimento médio dos códigos para os referidos pares é menor que 1, 2 por caractere. \
+III. A codificação de *Huffman* a partir de todos os pares possíveis de caracteres sempre produz códigos de menor comprimento médio.
+
+Os dados acima permitem afirmar que
+",False,True,True,True,False,False,True,True,True,False,False,True,True,True,False
+2012-28,"Nas linguagens de programação, uma questão importante é o escopo das declarações. Por exemplo, o escopo de uma declaração de `x` é a região do programa em que os usos de `x` se referem a essa declaração. Nesse sentido, a ligação de um nome a um escopo pode ser estática ou dinâmica. No programa C, a seguir, o identificador `x` é uma macro composta pela expressão `++y`. Por ser uma macro, a resolução de `x` não é realizada somente em termos do texto do programa.
+```
+#include<stdio.h>
+#define x ++y int y = 2;
+void M() { int y = 1; printf (""%d "", x); }
+void N() { printf(""%d "", x); }
+int main() {
+  M();
+  N();
+  return 0;
+}
+```
+Com base nessa execução, assinale a alternativa que apresenta, corretamente, a saída desse programa.","
+QUESTÃO:
+Nas linguagens de programação, uma questão importante é o escopo das declarações. Por exemplo, o escopo de uma declaração de `x` é a região do programa em que os usos de `x` se referem a essa declaração. Nesse sentido, a ligação de um nome a um escopo pode ser estática ou dinâmica. No programa C, a seguir, o identificador `x` é uma macro composta pela expressão `++y`. Por ser uma macro, a resolução de `x` não é realizada somente em termos do texto do programa.
+```
+#include<stdio.h>
+#define x ++y int y = 2;
+void M() { int y = 1; printf (""%d "", x); }
+void N() { printf(""%d "", x); }
+int main() {
+  M();
+  N();
+  return 0;
+}
+```
+Com base nessa execução, assinale a alternativa que apresenta, corretamente, a saída desse programa.
+",False,False,True,True,False,False,False,True,True,False,False,False,False,True,False
+2006-21,"Considere dois sistemas **A** e **B** compostos por um processador, cache e memória cuja única diferença é a cache de dados. As caches de dados possuem em comum palavras de 2 Bytes, capacidade (por exemplo, 2 KBytes), tamanho de bloco (por exemplo, 8 Bytes por linha) e são implementadas com a mesma tecnologia, porém com organizações diferentes como definidas abaixo:
+
+**(Cache de A)** Cache com mapeamento direto, utilizando políticas *write-through* e *no-write allocate* (escritas não utilizam a cache)\
+**(Cache de B)** Cache *4-way set-associative*, utilizando políticas *write-back*, *write-allocate* e LRU
+
+Considere as seguintes afirmações para os sistemas A e B executando um mesmo programa típico:
+
+**(I)** O sistema A deve possuir um *miss rate* maior do que B\
+**(II)** O sistema B deve possuir um *hit rate* menor do que A \
+**(III)** A cache de dados de A é mais rápida do que a de B\
+**(IV)** A cache de dados de A é mais simples de ser implementada do que a de B\
+**(V)** Em média, uma escrita de dados no sistema A é mais rápido do que em B \
+**(VI)** As caches de dados de A e B possuem o mesmo número de linhas
+
+Quais são as afirmações verdadeiras?","
+QUESTÃO:
+Considere dois sistemas **A** e **B** compostos por um processador, cache e memória cuja única diferença é a cache de dados. As caches de dados possuem em comum palavras de 2 Bytes, capacidade (por exemplo, 2 KBytes), tamanho de bloco (por exemplo, 8 Bytes por linha) e são implementadas com a mesma tecnologia, porém com organizações diferentes como definidas abaixo:
+
+**(Cache de A)** Cache com mapeamento direto, utilizando políticas *write-through* e *no-write allocate* (escritas não utilizam a cache)\
+**(Cache de B)** Cache *4-way set-associative*, utilizando políticas *write-back*, *write-allocate* e LRU
+
+Considere as seguintes afirmações para os sistemas A e B executando um mesmo programa típico:
+
+**(I)** O sistema A deve possuir um *miss rate* maior do que B\
+**(II)** O sistema B deve possuir um *hit rate* menor do que A \
+**(III)** A cache de dados de A é mais rápida do que a de B\
+**(IV)** A cache de dados de A é mais simples de ser implementada do que a de B\
+**(V)** Em média, uma escrita de dados no sistema A é mais rápido do que em B \
+**(VI)** As caches de dados de A e B possuem o mesmo número de linhas
+
+Quais são as afirmações verdadeiras?
+",True,True,True,False,False,True,True,True,False,False,True,True,True,False,False
+2005-35,"Em uma estrutura de árvore binária de busca, foram inseridos os elementos “h”, “a”, “b”, “c”, “i”, “j”, nesta sequência. O tamanho do caminho entre um nó qualquer da árvore e a raiz é dada pelo número de arestas neste caminho. Qual o tamanho do maior caminho na árvore, após a inserção dos dados acima?","
+QUESTÃO:
+Em uma estrutura de árvore binária de busca, foram inseridos os elementos “h”, “a”, “b”, “c”, “i”, “j”, nesta sequência. O tamanho do caminho entre um nó qualquer da árvore e a raiz é dada pelo número de arestas neste caminho. Qual o tamanho do maior caminho na árvore, após a inserção dos dados acima?
+",False,False,False,True,False,False,False,False,True,False,False,False,False,True,False
+2006-37,"Considere o programa:
+```
+program p;
+   var n: integer;
+   function f(n: integer; var k: integer): integer;
+      var p,q:integer;
+   begin (* f *)
+      if n < 2
+         then begin
+               f :=n;
+               k := 0
+            end
+         else begin
+               f := f(n-1, p) + f(n-2, q);
+               k := p + q + 1 
+            end;
+      write(n,' ',k,'; ')
+   end (* f *); 
+   begin
+   n := 4; 
+   write (f (3,n) ,n)
+   end.
+```
+Quais os valores impressos pelo programa?","
+QUESTÃO:
+Considere o programa:
+```
+program p;
+   var n: integer;
+   function f(n: integer; var k: integer): integer;
+      var p,q:integer;
+   begin (* f *)
+      if n < 2
+         then begin
+               f :=n;
+               k := 0
+            end
+         else begin
+               f := f(n-1, p) + f(n-2, q);
+               k := p + q + 1 
+            end;
+      write(n,' ',k,'; ')
+   end (* f *); 
+   begin
+   n := 4; 
+   write (f (3,n) ,n)
+   end.
+```
+Quais os valores impressos pelo programa?
+",True,False,False,True,False,True,False,False,True,False,True,False,False,True,False
+2008-13,"Observe a seguinte gramática:
+```
+  DECL → IF | a
+  IF → if ( EXP ) DECL ELSE
+  ELSE → else DECL | \epsilon
+  EXP → 1 | 0
+```
+Sendo `$` o símbolo que representa final de arquivo, é CORRETO afirmar que","
+QUESTÃO:
+Observe a seguinte gramática:
+```
+  DECL → IF | a
+  IF → if ( EXP ) DECL ELSE
+  ELSE → else DECL | \epsilon
+  EXP → 1 | 0
+```
+Sendo `$` o símbolo que representa final de arquivo, é CORRETO afirmar que
+",True,True,True,False,False,True,True,True,False,False,True,True,True,False,False
+2006-29,"Considere a função Pot que calcula $x^n$ , para $x$ real e $n$ inteiro:
+```
+Function Pot(x: real; n: integer): real;
+   begin
+      if x = 0
+      then
+         Pot := 0
+      else 
+         if n = 0
+         then
+            Pot := 1
+         else 
+            if n < 0
+            then
+               Pot := 1/Pot(x,abs(n))
+            else 
+               if odd(n)
+               then
+                  Pot := x * sqr(Pot(x,(n-1) div 2))
+               else
+                  Pot := sqr(Pot(x,n div 2))
+      end;
+```
+Seja $T(n)$ o tempo de execução da função Pot para as entradas $x$ e $n$. A ordem de $T(n)$ é","
+QUESTÃO:
+Considere a função Pot que calcula $x^n$ , para $x$ real e $n$ inteiro:
+```
+Function Pot(x: real; n: integer): real;
+   begin
+      if x = 0
+      then
+         Pot := 0
+      else 
+         if n = 0
+         then
+            Pot := 1
+         else 
+            if n < 0
+            then
+               Pot := 1/Pot(x,abs(n))
+            else 
+               if odd(n)
+               then
+                  Pot := x * sqr(Pot(x,(n-1) div 2))
+               else
+                  Pot := sqr(Pot(x,n div 2))
+      end;
+```
+Seja $T(n)$ o tempo de execução da função Pot para as entradas $x$ e $n$. A ordem de $T(n)$ é
+",True,True,True,True,True,True,True,True,True,True,True,True,True,True,True
+2013-13,"Admita que um novo conectivo binário, rotulado pelo símbolo $\updownarrow$, seja definido pela tabela-verdade a seguir:
+
+|$P$|$Q$|$P \updownarrow Q$|
+|-|-|-|
+|V|V|F|
+|V|F|V|
+|F|V|F|
+|F|F|F|
+
+Com base nessa definição e nas operações usuais com os conectivos $\lor$, $\land$ e $\sim$, considere as afirmativas a seguir:
+
+I. $P \updownarrow Q$ é equivalente a $Q \updownarrow P$. \
+II. $(P \updownarrow Q) \lor (Q \updownarrow P)$ não é uma contingência. \
+III. $(Q \updownarrow P) \land (P \updownarrow Q)$ é uma contradição. \
+IV. $ \sim [(Q \updownarrow P) \land (P \updownarrow Q)]$ é uma tautologia. 
+
+Assinale a alternativa correta.","
+QUESTÃO:
+Admita que um novo conectivo binário, rotulado pelo símbolo $\updownarrow$, seja definido pela tabela-verdade a seguir:
+
+|$P$|$Q$|$P \updownarrow Q$|
+|-|-|-|
+|V|V|F|
+|V|F|V|
+|F|V|F|
+|F|F|F|
+
+Com base nessa definição e nas operações usuais com os conectivos $\lor$, $\land$ e $\sim$, considere as afirmativas a seguir:
+
+I. $P \updownarrow Q$ é equivalente a $Q \updownarrow P$. \
+II. $(P \updownarrow Q) \lor (Q \updownarrow P)$ não é uma contingência. \
+III. $(Q \updownarrow P) \land (P \updownarrow Q)$ é uma contradição. \
+IV. $ \sim [(Q \updownarrow P) \land (P \updownarrow Q)]$ é uma tautologia. 
+
+Assinale a alternativa correta.
+",True,False,False,False,True,True,False,False,False,True,True,True,False,False,False
+2024-34,"Analise o código em Linguagem C (Compilador Ansi C) abaixo:
+```
+int f_rec(char s[]) {
+   if (s[0] == '\0') {
+      return 0;
+   }
+   return 1 + f_rec(s + 1);
+}
+
+int main() {
+   char str[] = ""Ola mundo!"";
+   int var = f_rec(str);
+   double resultado = var / 2;
+   printf(""%f\n"", resultado);
+   return 0;
+}
+```
+Considerando o código apresentado, assinale a alternativa correta.","
+QUESTÃO:
+Analise o código em Linguagem C (Compilador Ansi C) abaixo:
+```
+int f_rec(char s[]) {
+   if (s[0] == '\0') {
+      return 0;
+   }
+   return 1 + f_rec(s + 1);
+}
+
+int main() {
+   char str[] = ""Ola mundo!"";
+   int var = f_rec(str);
+   double resultado = var / 2;
+   printf(""%f\n"", resultado);
+   return 0;
+}
+```
+Considerando o código apresentado, assinale a alternativa correta.
+",True,True,False,True,False,True,True,False,True,False,True,True,False,True,False
+2019-17,"Uma pessoa deseja fazer uma compra na Internet e, para isso, precisa se cadastrar em um site. A senha de cadastro deve ser formada por exatamente 9 caracteres , e somente os caracteres $, @ e # podem ser usados. Quantas senhas diferentes, contendo pelo menos uma ocorrência de cada caractere, existem?","
+QUESTÃO:
+Uma pessoa deseja fazer uma compra na Internet e, para isso, precisa se cadastrar em um site. A senha de cadastro deve ser formada por exatamente 9 caracteres , e somente os caracteres $, @ e # podem ser usados. Quantas senhas diferentes, contendo pelo menos uma ocorrência de cada caractere, existem?
+",True,False,True,False,False,True,False,True,False,False,True,False,True,False,False
+2003-41," Considere as seguintes tabelas em uma base de dados relacional:
+```
+Departamento (CodDepto, NomeDepto)
+Empregado (CodEmp, NomeEmp, CodDepto)
+```
+Deseja-se obter uma tabela na qual cada linha é a concatenação de uma linha da tabela Departamento com uma linha da tabela de Empregado. Caso um departamento não possua empregados, seu linha no resultado deve conter vazio (NULL) nos campos referentes ao empregado. A operação de álgebra relacional que deve ser aplicada para combinar estas duas tabelas é:","
+QUESTÃO:
+ Considere as seguintes tabelas em uma base de dados relacional:
+```
+Departamento (CodDepto, NomeDepto)
+Empregado (CodEmp, NomeEmp, CodDepto)
+```
+Deseja-se obter uma tabela na qual cada linha é a concatenação de uma linha da tabela Departamento com uma linha da tabela de Empregado. Caso um departamento não possua empregados, seu linha no resultado deve conter vazio (NULL) nos campos referentes ao empregado. A operação de álgebra relacional que deve ser aplicada para combinar estas duas tabelas é:
+",False,True,True,False,False,False,True,True,False,False,False,True,True,False,False
+2009-70,"Sejam as seguintes tabelas em um banco de dados relacional:\
+**Tabela de Compradores**
+
+| CID  | CNOME            | CIDADE         | DESCONTO |
+|------|------------------|----------------|----------|
+| C001 | Lojas Cacique     | Rio de Janeiro  | 10,00    |
+| C002 | Lojas Livres      | São Paulo       | 12,00    |
+| C003 | Mercado Fácil     | Curitiba        | 8,00     |
+| C004 | Papelaria Simão   | Recife          | 6,00     |
+| C005 | Lojas da Silva    | Manaus          | 0,00     |
+
+**Tabela de Produtos**
+
+| PID  | NOME      | CLIENTE | QUANT  | PREÇO |
+|------|-----------|---------|--------|-------|
+| p01  | Pente     | C001    | 11000  | 10    |
+| p02  | Escova    | C002    | 20000  | 10    |
+| p03  | Barbeador | C003    | 15000  | 20    |
+| p04  | Caneta    | C003    | 20000  | 1     |
+| p05  | Lápis     | C004    | 10000  | 1     |
+| p06  | Caderno   | C004    | 14000  | 5     |
+| p07  | Bloco     | C005    | 5000   | 1,5   |
+
+Qual o resultado da seguinte consulta em SQL? 
+
+```
+SELECT CNOME, NOME, PRECO*(1-DESCONTO/100) AS PF
+FROM COMPRADORES, PRODUTO
+WHERE
+ DESCONTO > (SELECT AVG(DESCONTO) FROM COMPRADORES)
+ AND CID=CLIENTE
+ORDER BY NOME, CNOME;
+```","
+QUESTÃO:
+Sejam as seguintes tabelas em um banco de dados relacional:\
+**Tabela de Compradores**
+
+| CID  | CNOME            | CIDADE         | DESCONTO |
+|------|------------------|----------------|----------|
+| C001 | Lojas Cacique     | Rio de Janeiro  | 10,00    |
+| C002 | Lojas Livres      | São Paulo       | 12,00    |
+| C003 | Mercado Fácil     | Curitiba        | 8,00     |
+| C004 | Papelaria Simão   | Recife          | 6,00     |
+| C005 | Lojas da Silva    | Manaus          | 0,00     |
+
+**Tabela de Produtos**
+
+| PID  | NOME      | CLIENTE | QUANT  | PREÇO |
+|------|-----------|---------|--------|-------|
+| p01  | Pente     | C001    | 11000  | 10    |
+| p02  | Escova    | C002    | 20000  | 10    |
+| p03  | Barbeador | C003    | 15000  | 20    |
+| p04  | Caneta    | C003    | 20000  | 1     |
+| p05  | Lápis     | C004    | 10000  | 1     |
+| p06  | Caderno   | C004    | 14000  | 5     |
+| p07  | Bloco     | C005    | 5000   | 1,5   |
+
+Qual o resultado da seguinte consulta em SQL? 
+
+```
+SELECT CNOME, NOME, PRECO*(1-DESCONTO/100) AS PF
+FROM COMPRADORES, PRODUTO
+WHERE
+ DESCONTO > (SELECT AVG(DESCONTO) FROM COMPRADORES)
+ AND CID=CLIENTE
+ORDER BY NOME, CNOME;
+```
+",True,False,False,True,False,True,False,False,True,False,True,False,False,True,False
+2013-30,"Considere o trecho de código em linguagem de programação C a seguir.
+```
+main()
+  {
+    int myCount = 0;
+    while (myCount < 10)
+    {
+      printf(""%d"",myCount+1);
+    }
+    system(""pause"");
+}
+```
+Assinale a alternativa que apresenta, corretamente, o que esse trecho de código fará ao ser executado.","
+QUESTÃO:
+Considere o trecho de código em linguagem de programação C a seguir.
+```
+main()
+  {
+    int myCount = 0;
+    while (myCount < 10)
+    {
+      printf(""%d"",myCount+1);
+    }
+    system(""pause"");
+}
+```
+Assinale a alternativa que apresenta, corretamente, o que esse trecho de código fará ao ser executado.
+",False,False,False,True,False,False,False,False,True,False,False,False,False,True,False
+2014-03,"Acerca da posição relativa das retas $r$ e $s$ no espaço $\mathbb{R}^3$, com vetores diretores $\vec{r} = (1, 2, 3)$ e $\vec{s} = (0, 2, 3)$ passando, respectivamente, pelos pontos $(0, 0, 3)$ e $(1, 2, 0)$, assinale a alternativa correta.","
+QUESTÃO:
+Acerca da posição relativa das retas $r$ e $s$ no espaço $\mathbb{R}^3$, com vetores diretores $\vec{r} = (1, 2, 3)$ e $\vec{s} = (0, 2, 3)$ passando, respectivamente, pelos pontos $(0, 0, 3)$ e $(1, 2, 0)$, assinale a alternativa correta.
+",False,False,True,False,False,False,False,True,False,False,False,False,True,False,False
+2003-36,"Para que faixa de valores da variável $x$ o seguinte segmento de código imprime a letra `C`?
+```
+if (x <= 200)
+    if (x < 100)
+        if (x < 0) printf(""A"")
+        else printf(""B"")
+    else printf(""C"")
+else printf(""D"")
+```","
+QUESTÃO:
+Para que faixa de valores da variável $x$ o seguinte segmento de código imprime a letra `C`?
+```
+if (x <= 200)
+    if (x < 100)
+        if (x < 0) printf(""A"")
+        else printf(""B"")
+    else printf(""C"")
+else printf(""D"")
+```
+",True,False,False,True,False,True,False,False,True,False,True,False,False,True,False

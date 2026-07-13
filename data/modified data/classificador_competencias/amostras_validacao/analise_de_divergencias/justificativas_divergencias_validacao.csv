@@ -1,0 +1,178 @@
+id,enunciado,competencia,classificacao_modelo,classificacao_avaliadores,prompt,justificativa_modelo
+2008-13,"Observe a seguinte gramática:
+```
+  DECL → IF | a
+  IF → if ( EXP ) DECL ELSE
+  ELSE → else DECL | \epsilon
+  EXP → 1 | 0
+```
+Sendo `$` o símbolo que representa final de arquivo, é CORRETO afirmar que",Decomposição,True,False,"
+QUESTÃO:
+Observe a seguinte gramática:
+```
+  DECL → IF | a
+  IF → if ( EXP ) DECL ELSE
+  ELSE → else DECL | \epsilon
+  EXP → 1 | 0
+```
+Sendo `$` o símbolo que representa final de arquivo, é CORRETO afirmar que
+
+COMPETÊNCIA:
+Decomposição
+
+SEU VEREDITO:
+True
+
+VEREDITO HUMANO:
+False
+","Considerei Decomposição porque resolver a questão sobre essa gramática tende a exigir analisar separadamente as produções de `DECL`, `IF`, `ELSE` e `EXP`, especialmente o papel de `ELSE → else DECL | ε` na estrutura global. Ainda assim, é um caso limítrofe: se a alternativa correta puder ser obtida apenas por uma inspeção direta de uma propriedade pontual da gramática, sem tratar cada componente como subproblema independente, então é defensável não marcar Decomposição."
+2008-13,"Observe a seguinte gramática:
+```
+  DECL → IF | a
+  IF → if ( EXP ) DECL ELSE
+  ELSE → else DECL | \epsilon
+  EXP → 1 | 0
+```
+Sendo `$` o símbolo que representa final de arquivo, é CORRETO afirmar que",Abstração,True,False,"
+QUESTÃO:
+Observe a seguinte gramática:
+```
+  DECL → IF | a
+  IF → if ( EXP ) DECL ELSE
+  ELSE → else DECL | \epsilon
+  EXP → 1 | 0
+```
+Sendo `$` o símbolo que representa final de arquivo, é CORRETO afirmar que
+
+COMPETÊNCIA:
+Abstração
+
+SEU VEREDITO:
+True
+
+VEREDITO HUMANO:
+False
+","Considerei Abstração porque resolver a questão exige operar sobre uma representação formal de alto nível — a gramática — e raciocinar sobre propriedades sintáticas derivadas dela, não apenas sobre um caso concreto. Ainda assim, é um caso limítrofe: se a questão pedia só uma verificação técnica direta sobre a própria gramática, sem traduzir entre níveis de representação nem construir uma nova representação conceitual, então é defensável não marcar Abstração."
+2010-34,"Considere o conjunto de operações descritas a seguir, em linguagem de transferência entre registradores.
+```
+F1: REM ← CP;
+F2: RDM ← M[REM], CP ← CP + 1;;
+F3: RI ← RDM; 
+```
+Dados: `REM` é o registrador de endereços da memória; `RDM` é o registrador de dados da memória; `RI` é o registrador de instruções; `CP` é o contador de programa e `M[X]` é o conteúdo de memória indicado pelo endereço `X`. 
+
+Assinale a alternativa que indica a que fase do processamento de uma instrução em uma máquina *pipeline* corresponde o conjunto de operações descrito.",Abstração,True,False,"
+QUESTÃO:
+Considere o conjunto de operações descritas a seguir, em linguagem de transferência entre registradores.
+```
+F1: REM ← CP;
+F2: RDM ← M[REM], CP ← CP + 1;;
+F3: RI ← RDM; 
+```
+Dados: `REM` é o registrador de endereços da memória; `RDM` é o registrador de dados da memória; `RI` é o registrador de instruções; `CP` é o contador de programa e `M[X]` é o conteúdo de memória indicado pelo endereço `X`. 
+
+Assinale a alternativa que indica a que fase do processamento de uma instrução em uma máquina *pipeline* corresponde o conjunto de operações descrito.
+
+COMPETÊNCIA:
+Abstração
+
+SEU VEREDITO:
+True
+
+VEREDITO HUMANO:
+False
+","Meu veredito de Abstração é defensável porque a resolução exige mapear micro-operações concretas em RTL para uma fase conceitual mais geral do pipeline, isto é, sair de uma descrição operacional de baixo nível para uma categoria funcional abstrata. Ainda assim, é um caso limítrofe: se a correção humana entendeu que basta reconhecer diretamente o ciclo de busca sem construir uma nova representação relevante, então é plausível não marcar Abstração."
+2012-28,"Nas linguagens de programação, uma questão importante é o escopo das declarações. Por exemplo, o escopo de uma declaração de `x` é a região do programa em que os usos de `x` se referem a essa declaração. Nesse sentido, a ligação de um nome a um escopo pode ser estática ou dinâmica. No programa C, a seguir, o identificador `x` é uma macro composta pela expressão `++y`. Por ser uma macro, a resolução de `x` não é realizada somente em termos do texto do programa.
+```
+#include<stdio.h>
+#define x ++y int y = 2;
+void M() { int y = 1; printf (""%d "", x); }
+void N() { printf(""%d "", x); }
+int main() {
+  M();
+  N();
+  return 0;
+}
+```
+Com base nessa execução, assinale a alternativa que apresenta, corretamente, a saída desse programa.",Abstração,True,False,"
+QUESTÃO:
+Nas linguagens de programação, uma questão importante é o escopo das declarações. Por exemplo, o escopo de uma declaração de `x` é a região do programa em que os usos de `x` se referem a essa declaração. Nesse sentido, a ligação de um nome a um escopo pode ser estática ou dinâmica. No programa C, a seguir, o identificador `x` é uma macro composta pela expressão `++y`. Por ser uma macro, a resolução de `x` não é realizada somente em termos do texto do programa.
+```
+#include<stdio.h>
+#define x ++y int y = 2;
+void M() { int y = 1; printf (""%d "", x); }
+void N() { printf(""%d "", x); }
+int main() {
+  M();
+  N();
+  return 0;
+}
+```
+Com base nessa execução, assinale a alternativa que apresenta, corretamente, a saída desse programa.
+
+COMPETÊNCIA:
+Abstração
+
+SEU VEREDITO:
+True
+
+VEREDITO HUMANO:
+False
+","Considerei Abstração porque a resolução pede ir além do texto superficial do programa e modelar o efeito da macro `x` como a expressão `++y`, distinguindo esse nível de substituição do nível do código escrito. Ainda assim, é um caso limítrofe: se a questão for vista apenas como simulação direta das regras de escopo e expansão de macros, pode-se defender que há só execução/entendimento procedural, sem construção de uma nova representação."
+2014-03,"Acerca da posição relativa das retas $r$ e $s$ no espaço $\mathbb{R}^3$, com vetores diretores $\vec{r} = (1, 2, 3)$ e $\vec{s} = (0, 2, 3)$ passando, respectivamente, pelos pontos $(0, 0, 3)$ e $(1, 2, 0)$, assinale a alternativa correta.",Abstração,True,False,"
+QUESTÃO:
+Acerca da posição relativa das retas $r$ e $s$ no espaço $\mathbb{R}^3$, com vetores diretores $\vec{r} = (1, 2, 3)$ e $\vec{s} = (0, 2, 3)$ passando, respectivamente, pelos pontos $(0, 0, 3)$ e $(1, 2, 0)$, assinale a alternativa correta.
+
+COMPETÊNCIA:
+Abstração
+
+SEU VEREDITO:
+True
+
+VEREDITO HUMANO:
+False
+","Considerei Abstração porque a resolução exige traduzir a descrição geométrica verbal e os dados concretos (pontos e vetores) para o modelo formal de retas em \(\mathbb{R}^3\) e então operar nesse nível para decidir sua posição relativa. Ainda assim, é um caso limítrofe: se se entender que a questão já fornece diretamente a representação matemática essencial e só pede aplicação mecânica de critérios analíticos, então é defensável não marcar Abstração."
+2013-51,"Uma empresa de auditoria foi contratada para analisar o banco de dados do SUS (Sistema Único de Saúde). A primeira tarefa é encontrar os pares de médicos cadastrados que possuem o mesmo nome (homônimos) e números diferentes no CRM (Conselho Regional de Medicina) para verificar possíveis fraudes. Considere que a tabela que armazena os médicos possui o cadastro no CRM como chave primária e as seguintes colunas: nome, endereço, telefone, especialidade, datadeingresso. 
+
+Assinale a alternativa que apresenta, corretamente, a consulta em SQL que busca os resultados ordenados pelo nome dos médicos.",Algoritmos,True,False,"
+QUESTÃO:
+Uma empresa de auditoria foi contratada para analisar o banco de dados do SUS (Sistema Único de Saúde). A primeira tarefa é encontrar os pares de médicos cadastrados que possuem o mesmo nome (homônimos) e números diferentes no CRM (Conselho Regional de Medicina) para verificar possíveis fraudes. Considere que a tabela que armazena os médicos possui o cadastro no CRM como chave primária e as seguintes colunas: nome, endereço, telefone, especialidade, datadeingresso. 
+
+Assinale a alternativa que apresenta, corretamente, a consulta em SQL que busca os resultados ordenados pelo nome dos médicos.
+
+COMPETÊNCIA:
+Algoritmos
+
+SEU VEREDITO:
+True
+
+VEREDITO HUMANO:
+False
+","Considerei Algoritmos porque resolver a questão exige compreender o procedimento operacional de uma consulta SQL, especialmente a lógica de autojunção, filtragem por igualdade de nome e diferença de CRM, seguida da ordenação. Ainda assim, é um caso limítrofe: se a leitura humana entende a tarefa apenas como reconhecimento declarativo da consulta correta, sem necessidade de acompanhar processamento passo a passo, então é defensável não marcar essa competência."
+2007-24,"Considere um arquivo texto que contenha uma mensagem de 10.000 caracteres utilizando os caracteres A, B e C, com probabilidades 0,1, 0,1 e 0,8 respectivamente. Ao utilizar o *algoritmo de Huffman* para compressão/codificação do referido texto, as seguintes afirmativas são apresentadas.
+
+I. O comprimento médio dos códigos para os referidos caracteres é 1, 2. \
+II. Se forem utilizados todos os pares possíveis de símbolos para a construção da
+árvore de *Huffman*, então o comprimento médio dos códigos para os referidos pares é menor que 1, 2 por caractere. \
+III. A codificação de *Huffman* a partir de todos os pares possíveis de caracteres sempre produz códigos de menor comprimento médio.
+
+Os dados acima permitem afirmar que",Generalização,False,True,"
+QUESTÃO:
+Considere um arquivo texto que contenha uma mensagem de 10.000 caracteres utilizando os caracteres A, B e C, com probabilidades 0,1, 0,1 e 0,8 respectivamente. Ao utilizar o *algoritmo de Huffman* para compressão/codificação do referido texto, as seguintes afirmativas são apresentadas.
+
+I. O comprimento médio dos códigos para os referidos caracteres é 1, 2. \
+II. Se forem utilizados todos os pares possíveis de símbolos para a construção da
+árvore de *Huffman*, então o comprimento médio dos códigos para os referidos pares é menor que 1, 2 por caractere. \
+III. A codificação de *Huffman* a partir de todos os pares possíveis de caracteres sempre produz códigos de menor comprimento médio.
+
+Os dados acima permitem afirmar que
+
+COMPETÊNCIA:
+Generalização
+
+SEU VEREDITO:
+False
+
+VEREDITO HUMANO:
+True
+","Meu veredito como False é defensável porque a questão pode ser resolvida avaliando apenas este caso específico de distribuição de probabilidades e estas três assertivas, sem exigir formular uma regra para qualquer entrada ou classe geral de instâncias. Ainda assim, é um caso limítrofe: a assertiva III usa “sempre”, o que força um juízo universal sobre a estratégia de Huffman por pares, e por isso é plausível que os humanos tenham marcado Generalização."

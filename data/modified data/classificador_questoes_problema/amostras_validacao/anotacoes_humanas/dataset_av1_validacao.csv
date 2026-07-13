@@ -1,0 +1,736 @@
+id,enunciado,av1_ehQuestaoProblema
+2013-13,"Admita que um novo conectivo binário, rotulado pelo símbolo $\updownarrow$, seja definido pela tabela-verdade a seguir:
+
+|$P$|$Q$|$P \updownarrow Q$|
+|-|-|-|
+|V|V|F|
+|V|F|V|
+|F|V|F|
+|F|F|F|
+
+Com base nessa definição e nas operações usuais com os conectivos $\lor$, $\land$ e $\sim$, considere as afirmativas a seguir:
+
+I. $P \updownarrow Q$ é equivalente a $Q \updownarrow P$. \
+II. $(P \updownarrow Q) \lor (Q \updownarrow P)$ não é uma contingência. \
+III. $(Q \updownarrow P) \land (P \updownarrow Q)$ é uma contradição. \
+IV. $ \sim [(Q \updownarrow P) \land (P \updownarrow Q)]$ é uma tautologia. 
+
+Assinale a alternativa correta.",TRUE
+2018-07,Determine a matriz inversa de $A = \frac{1}{13}\begin{pmatrix}1 & 3 & 5\\ 0 & -1 & 4\\ 1 & 1 & 0\end{pmatrix}$:,FALSE
+2007-30,"Suponha que tenhamos à nossa disposição um algoritmo `MULT` que efetua a multiplicação de duas matrizes $ A_{p \times q} $ e $ B_{q \times r} $ dadas como entrada com $ p \times q \times r $ multiplicações de escalares. Esse algoritmo é, então, usado para definir o seguinte problema de decisão chamado `MULTMAT`:
+
+**ENTRADA**: vetor $ p[0], p[1], \ldots, p[n] $, um inteiro positivo $ m $.\
+**QUESTÃO**: existe uma sequência de multiplicações de duas matrizes com o algoritmo `MULT` que produz o resultado de $ A_1A_2 \cdots A_n $, em que cada $ A_i $, para todo $ i \in \{ 1, 2, \ldots, n \} $, é uma matriz de dimensões $ p[i - 1] \times p[i] $, com $ m $ multiplicações de escalares no máximo?
+
+Considere as seguintes afirmativas.
+
+**I.** O algoritmo abaixo demonstra que `MULTMAT` está na classe de problemas $ P $.
+```
+Chamada: MULTMAT(p, m)
+1: q ← Q(p, 0, n)
+2: se q \leq m então
+3:     retorna “Sim”
+4: retorna “Não”
+
+Chamada: Q(p, i, j)
+5: se i = j então
+6:     retorna 0
+7: q ← \infty
+8: para k ← i, i + 1, ..., j - 1 faça
+9:     r ← Q(p, i, k) + Q(p, k + 1, j) + p[i - 1]p[k]p[j]
+10:    se r < q então
+11:        q ← r
+12: retorna q
+```
+**II.** `MULTMAT` está na classe de problemas $ NP $.\
+**III.** Se I e II são corretas, então $P = NP$.
+
+Assinale a alternativa que apresenta a(s) afirmativa(s) CORRETA(S).",TRUE
+2017-69,O termo Aprendizado de Máquina pode ser corretamente definido como:,FALSE
+2008-26,"Em um grafo $G(V,E)$, o grau de um vértice é o número de vértices adjacentes a $v$.
+
+A esse respeito, assinale a afirmativa CORRETA.",FALSE
+2016-60,"Em relação às características do protocolo IP, analise as afirmativas abaixo e assinale V, se verdadeiras, ou F, se falsas.
+- ( ) O protocolo IP garante a entrega de mensagens.
+- ( ) O endereçamento IP é hierárquico.
+- ( ) O protocolo IP garante que não há duplicação de pacotes. 
+
+A ordem correta de preenchimento dos parênteses, de cima para baixo, é:",FALSE
+2016-48,"Analise as seguintes definições de *pipeline* de instruções simples, superescalar e *multithreading* simultâneo:
+
+I. *Pipeline* instruções simples: instruções individuais que são executadas através de um *pipeline* de estágios, de maneira que, enquanto uma instrução está sendo executada em um estágio, outra instrução está sendo executada em outro estágio do *pipeline*.\
+II. Superescalar: um *pipeline* é construído por meio da replicação de recursos de execução, o que permite a execução paralela de instruções em *pipelines* paralelos.\
+III. *Multithreading* simultâneo (SMT): bancos de registros são replicados para que múltiplas threads possam compartilhar o uso dos recursos de *pipelines*.
+
+Quais estão corretas?",FALSE
+2022-03,"Assinale a alternativa que indica o produto escalar e o produto vetorial dos vetores
+$\vec{u} =(3,-1,2)$ e $\vec{v} =(1,-2,-1)$, respectivamente.",FALSE
+2022-61,"A codificação ______________ tem como estratégia realizar a decomposição de uma imagem monocromática ou colorida em várias imagens binárias. Cada uma dessas imagens binárias é comprimida utilizando métodos de compressão binária.
+
+Assinale a alternativa que preenche corretamente a lacuna do trecho acima.",FALSE
+2007-24,"Considere um arquivo texto que contenha uma mensagem de 10.000 caracteres utilizando os caracteres A, B e C, com probabilidades 0,1, 0,1 e 0,8 respectivamente. Ao utilizar o *algoritmo de Huffman* para compressão/codificação do referido texto, as seguintes afirmativas são apresentadas.
+
+I. O comprimento médio dos códigos para os referidos caracteres é 1, 2. \
+II. Se forem utilizados todos os pares possíveis de símbolos para a construção da
+árvore de *Huffman*, então o comprimento médio dos códigos para os referidos pares é menor que 1, 2 por caractere. \
+III. A codificação de *Huffman* a partir de todos os pares possíveis de caracteres sempre produz códigos de menor comprimento médio.
+
+Os dados acima permitem afirmar que",TRUE
+2023-43,"O aumento dos requisitos de paralelismo nas aplicações modernas exige mecanismos de bloqueio (locking) e sincronização cada vez mais eficientes. Nesse contexto, dois mecanismos muito usados são semáforos e spin locks. Sobre esses dois mecanismos, assinale a alternativa correta.",FALSE
+2018-67,"Qual é a classe de algoritmos de sincronização que assegura que, em um conjunto de processos distribuídos, pelo menos, um processo por vez tem acesso a um recurso compartilhado?",FALSE
+2005-47,"Requisitos são capacidades e condições para as quais um sistema deve ter conformidade. Analise as afirmações a seguir.
+
+(I) No Processo Unificado, requisitos são categorizados de acordo com o modelo FURPS+, onde o U do acrônimo representa requisitos de usabilidade. \
+(II) Casos de uso são documentos em forma de texto, não diagramas, e modelagem de casos de uso é basicamente um ato de escrever estórias de uso de um sistema. \
+(III) UML (*Unified Modeling Language*) provê notação para se construir o diagrama de casos de uso, que ilustra os nomes dos casos de uso, atores e seus relacionamentos. \
+Considerando-se as três afirmações (I), (II) e (III) acima, identifique a única alternativa válida:",FALSE
+2017-26,"O caminhamento pré-fixado à esquerda para uma Árvore Binária de Pesquisa (ABP) é 44, 30, 12, 26, 36, 33, 92, 64, 46, 98. O caminhamento pré-fixado à direta para a mesma árvore é:",TRUE
+2004-70,Assinale a alternativa que apresenta um protocolo de roteamento baseado no algoritmo vetor-distância e é classificado como IGP (*Interior Gateway Protocol*):,FALSE
+2013-61,"Com relação aos meios físicos de transmissão utilizados em redes de comunicação, considere as afirmativas a seguir.
+
+I. As fibras óticas monomodo apresentam uma atenuação maior que as fibras multimodo e são mais baratas.\
+II. Nos cabos de par trançado, a largura de banda disponível é independente da distância percorrida pelo cabeamento.\
+III. Nas transmissões em fibras óticas, a fonte de luz pode ser um LED (Light Emitting Diode) ou um laser semicondutor.\
+IV. Os cabos coaxiais, em suas versões mais modernas, podem apresentar largura de banda da ordem de GHz.
+
+Assinale a alternativa correta.",FALSE
+2007-33,"Seja $L = < r_1, \dots, r_n >$ uma lista qualquer de inteiros não necessariamente distintos.
+
+A esse respeito, assinale a alternativa **INCORRETA**.",FALSE
+2019-14,"Resolva a identidade $\overline{\bar{C} \cdot (\bar{D} + \bar{E})}$ , aplicando, se necessário, as leis de álgebra de
+Boole.",FALSE
+2010-56,"Em uma rede de computadores, cujos roteadores estão configurados para atualizar suas tabelas de roteamento por meio do emprego de protocolos de roteamento, é correto afirmar:",FALSE
+2007-45,"Considere a gramática regular abaixo onde $+_{i}$ e $x_{i}$ são operadores unários e $n,m > 0$
+$$
+\begin{array}{l}
+A \rightarrow +_{1}B \mid +_{2}B \mid \ldots \mid +_{n}B \mid B \\
+B \rightarrow x_{1}B \mid x_{2}B \mid \ldots \mid x_{m}B \mid \mathit{id}
+\end{array}
+$$
+Nesse caso, é **CORRETO** afirmar que",FALSE
+2003-03,Assinale a proposição verdadeira.,FALSE
+2003-43,"Considere a seguinte tabela em uma base de dados relacional (chave primária sublinhada):
+
+<code>Tabela1(<u>CodAluno,CodDisciplina,AnoSemestre,</u> NomeAluno, NomeDisciplina,
+CodNota, DescricaoNota)</code>
+
+Considere as seguintes dependências funcionais:
+- `CodAluno` → `NomeAluno`
+- `CodDisciplina` → `NomeDisciplina`
+- (`CodAluno`,`CodDisciplina`,`AnoSemestre`) → `CodNota`
+- (`CodAluno`,`CodDisciplina`,`AnoSemestre`) → `DescricaoNota`
+- `CodNota` → `DescricaoNota`
+
+Considerando as formas normais, qual das afirmativas abaixo se aplica:",TRUE
+2022-05,"Considere a função $F: R^3 -> R$ dada por: $F(x, y, z) = zx^2+e^zx^3-z^5sen(y)-1$. Assinale a alternativa que apresenta o gradiente de $F$ no ponto $(1, 0, 0)$.",FALSE
+2019-01,"Seja uma matriz quadrada de terceira ordem $A = \begin{pmatrix}2 & 3 & 5 \\ 7 & 11 & 13\\ 17 & 19 &  23\end{pmatrix}$, calcule o determinante:",FALSE
+2022-04,"Considere a equação do círculo $x^2+y^2-2x+4y+1=0$. A partir dessa equação,
+determine o raio do círculo.",FALSE
+2018-46,"No sistema operacional, existem três métodos fundamentais de realizar entrada e saída (E/S). O método mais simples é chamado de E/S _________, em que se tem a CPU realizando todo o trabalho. Na E/S _________, a CPU não fica tão dedicada à rotina de E/S como no método anterior, podendo realizar outras atividades enquanto a operação de E/S está em andamento. Já a
+E/S _________ tem o menor consumo de CPU dentre os três métodos, porém, em geral, tem o menor desempenho.
+
+Assinale a alternativa que preenche, correta e respectivamente, as lacunas do trecho acima.",FALSE
+2024-66,Assinale a alternativa correta.,FALSE
+2011-57,"A UML (*Unified Modeling Language*) é uma linguagem visual para visualizar, especificar, construir e documentar os artefatos dos sistemas. A palavra visual é importante, pois a UML é uma notação diagramática. \
+Em relação aos diagramas da UML, é correto afirmar:",FALSE
+2013-36,"Sobre a escolha adequada para um algoritmo de ordenação, considere as afirmativas a seguir.
+
+I. Quando os cenários de pior caso for a preocupação, o algoritmo ideal é o Heap Sort.\
+II. Quando o vetor apresenta a maioria dos elementos ordenados, o algoritmo ideal é o Insertion Sort.\
+III. Quando o interesse for um bom resultado para o médio caso, o algoritmo ideal é o Quick Sort.\
+IV. Quando o interesse é o melhor caso e o pior caso de mesma complexidade, o algoritmo ideal é o Bubble Sort.
+
+Assinale a alternativa correta.",FALSE
+2005-04,"Dada a matriz de transformação linear
+$$
+A = \begin{pmatrix}
+1 & 3 & 2 \\
+2 & 1 & 1 \\
+3 & 2 & 3
+\end{pmatrix}
+$$
+pode-se afirmar que:",FALSE
+2012-61,"O uso de RPC é considerado um marco no desenvolvimento de sistemas distribuídos por possibilitar que a programação desses sistemas seja semelhante à programação de sistemas convencionais. 
+
+Assinale a alternativa que apresenta, corretamente, as características essenciais para se obter esse *status*.",FALSE
+2017-56,"A UML é um conjunto de notações que servem para modelagem de diferentes aspectos de um sistema de software. Essas notações permitem criar diferentes tipos de diagramas, dentre eles:
+- Um Diagrama de ________________ permite modelar a arquitetura do sistema em tempo de execução, mostrando a configuração dos elementos de hardware (nós) e como os componentes de software são mapeados nestes nós.
+- Um Diagrama de _____________ permite modelar a organização estrutural da arquitetura/implementação em termos de componentes de software e suas dependências.
+- Um Diagrama de _____________ permite modelar a troca de mensagens entre objetos, enfatizando seu sequenciamento no tempo.
+- Um Diagrama de _____________ permite modelar a arquitetura através de agrupamentos lógicos, e de dependências entre estes. 
+
+Assinale a alternativa que preenche, correta e respectivamente, as lacunas do trecho acima.",FALSE
+2002-56,"Quando trabalhando com sistemas baseados em trocas de mensagens, temporizações (*time-outs*) são utilizadas para:",FALSE
+2015-01,"Considere a transformação linear $ T: \mathbb{R}^3 \to \mathbb{R}^3 $ cuja matriz em relação à base canônica é
+$$
+[T] = \begin{bmatrix}
+1 & 2 & -1 \\
+0 & 2 & 3 \\
+1 & -1 & 1
+\end{bmatrix}.
+$$
+A imagem, pela transformação $ T $, do subespaço $ x + y + 2z = 0 $ de $ \mathbb{R}^3 $, é o seguinte plano de equação:",FALSE
+2003-57,"Considere as seguintes afirmações sobre resolução de problemas em IA.
+
+I. A* é um conhecido algoritmo de busca heurística. \
+II. O *Minimax* é um dos principais algoritmos para jogos de dois jogadores, como o xadrez. \
+III. Busca em espaço de estados é uma das formas de resolução de problemas em IA.
+
+São corretas:",FALSE
+2015-66,"No contexto de algoritmos genéticos, cruzamento (ou crossover) é uma operação em que",FALSE
+2024-26,"No caminhamento ____________ de uma árvore T, a raiz de T é visitada em primeiro lugar, e então as subárvores enraizadas nos seus filhos são percorridas recursivamente. Se a árvore
+é ordenada, então as subárvores são percorridas de acordo com a ordem dos filhos.
+
+Assinale a alternativa que preenche corretamente a lacuna do trecho acima.",FALSE
+2013-67,"Em relação aos mapas auto-organizáveis, relacione os termos técnicos, na coluna da esquerda, com suas definições, na coluna da direita.\
+**(I) Agrupamento.**\
+**(II) Aprendizado competitivo.**\
+**(III) Neurônio vencedor.**\
+**(IV) Redes recorrentes.**\
+**(V) Vizinhança.**\
+-------------------------------------------------------\
+**(A) Define quantos neurônios em torno do vencedor terão seus pesos ajustados, ou seja, define a área de influência do nó vencedor. Sua arquitetura pode assumir vários formatos diferentes.**\
+**(B) Organização das classes na camada de saída de um Mapa de Kohonen. Embora não seja essencial, os nós dessa camada nor malmente são organizados em forma de grade.**\
+**(C) Rede Neural que pode ter conexões que voltem dos nós de saída aos nós de entrada e que pode ter também conexões arbitrárias entre quaisquer nós. Desse modo, seu estado interno pode ser alterado conforme conjuntos de entradas são apresentados à rede.**\
+**(D) Resultado de um mecanismo que permite o direito de responder a um específico subconjunto de dados, de forma que somente um neurônio de saída, ou um neurônio por grupo, esteja ativo em um determinado instante.**\
+**(E) Técnica que usa o princípio de que apenas um neurônio fornece a saída da rede em resposta a uma entrada.**
+
+Assinale a alternativa que contém a associação correta.",FALSE
+2017-61,"Sobre a transformada wavelet para processamento digital de imagens, é correto afirmar que:",FALSE
+2023-55,"Analise as seguintes assertivas, em relação à análise sintática no contexto da construção de compiladores para linguagens de programação e assinale a alternativa correta.\
+I. O funcionamento do algoritmo de análise sintática ascendente (Bottom-up, LR) corresponde ao percurso da árvore sintática do programa a partir das folhas (representando os símbolos terminais da gramática que define a linguagem), até chegar à raiz (que representa a variável ou símbolo não terminal inicial da gramática).\
+II. O funcionamento do algoritmo de análise sintática descendente (Top-down, LL) corresponde ao percurso da árvore sintática do programa a partir das folhas (representando as variáveis ou símbolos não terminais da gramática que define a linguagem), até chegar à raiz (que representa a sequência de símbolos terminais da gramática).\
+III. Dada uma gramática LL(1) qualquer, se verifica que os lados direitos de qualquer par de regras dela não contêm prefixos não vazios em comum. Por exemplo, uma gramática com regras **X -> abBc** e **Y -> ab** não pode ser LL(1), pois o prefixo **ab** aparece nos lados direitos de ambas as regras.\
+IV. Na construção de tabelas de análise sintática LR, podem aparecer três tipos de conflitos:
+Conflitos Empilhar/Empilhar, Conflitos Empilhar/Reduzir e Conflitos Reduzir/Reduzir.
+- V. Na notação de gramáticas LL(k) e LR(k), o primeiro símbolo (L) indica que a entrada é
+lida/processada da esquerda para a direita (Left-to-right). O segundo símbolo (L ou R) indica que a derivação implementada pelo algoritmo na construção/percurso da árvore sintática é mais
+à esquerda (L) ou mais à direita (R).",FALSE
+2016-04,"O ângulo entre os vetores $\vec{u} = (2,2,0)$ e $\vec{v} = (0,3,-3)$ é:",FALSE
+2006-58,A percepção humana é um processo ativo fundamental na interação humano-computador. Duas classes importantes de teorias que explicam a maneira como percebemos são representadas pelas abordagens construtivista e ecológica. Assinale a alternativa incorreta:,FALSE
+2008-51,"Considere o seguinte termo do cálculo-lambda:
+$$
+M = (\lambda x . \lambda y . x ) ( \lambda u .\lambda z .u )
+$$
+Considerando a forma normal que resulta da redução completa do termo M , assinale a alternativa **CORRETA**.",FALSE
+2014-17,"Considerando que a prova do POSCOMP da área de Matemática tem 20 questões de múltipla escolha, assinale a alternativa que apresenta, corretamente, o número de gabaritos possíveis das 20 questões, com 5 alternativas por questão, contendo uma única alternativa correta.",FALSE
+2023-26,"A ordenação ________________ determina, para cada elemento de entrada x, o número de elementos menores que x e usa essa informação para inserir o elemento x diretamente em sua posição no arranjo de saída. Por exemplo, se 17 elementos forem menores que x, então x pertence à posição de saída 18. Assinale a alternativa que preenche corretamente a lacuna do trecho acima.",FALSE
+2010-32,"Considere o algoritmo a seguir.
+```
+PROC (n)
+  se n <= 1 então
+    retorna 1 + n;
+  senão
+    retorna PROC(n/2) + PROC(n/2);
+  fim se
+```
+Assinale a alternativa que indica corretamente quantas comparações são feitas para uma entrada $n > 0$, onde $n$ é um número natural.",TRUE
+2002-70,Qual das informações a seguir NÃO é colocada no registro de ativação na chamada de funções?,FALSE
+2010-51,"No processo de síntese da imagem de uma cena tridimensional, também denominado *pipeline* gráfico, diversas operações são executadas em sequência. O objetivo destas operações é converter as primitivas geométricas que descrevem os objetos da cena em alto-nível, junto com a especificação da câmera sintética, em uma coleção de *pixels* na tela. 
+
+Assinale a alternativa que apresenta a sequência correta dessas operações.",FALSE
+2024-47,"Analise o texto a seguir, que descreve um programa que solicita um salário ao usuário e mostra o imposto a pagar:
+- Se o salário for negativo ou zero, mostre o erro respectivo.
+- Se o salário for maior que 1000, paga 10% de imposto, se não paga apenas 5%.
+Para resolver o problema descrito acima, qual instrução deve ser utilizada?",TRUE
+2013-05,"Considerando a transformação linear do plano $T (x, y) = (15x + y, 34x + 27y)$, assinale a alternativa correta.",FALSE
+2011-10,"A proporção de computadores acessando um provedor em um dado instante $ t $ a partir das 8 horas é dada por
+$$
+N(t) = \frac{1}{1 + 3e^{-kt}},
+$$
+onde o instante $ t $ é dado em horas e $ k $ é uma constante positiva. A proporção estimada de computadores acessando este provedor ao meio-dia é de:",FALSE
+2014-68,"Considere a expressão regular a seguir.
+$$
+(c^*a[abc]^*b[abc]^*) \mid c^*
+$$
+Assinale a alternativa que descreve, corretamente, todas as cadeias geradas por essa expressão regular.",FALSE
+2002-48,Marque a alternativa onde todos os conceitos estão corretos.,FALSE
+2003-14,O resto da divisão de $6^{81} - 5^{64}$ por 7 é igual a,FALSE
+2005-49,"Considere as seguintes afirmações sobre o objetivo da atividade de validação de software:
+
+(I) Verificar se o produto está sendo corretamente construído. \
+(II) Verificar se o produto está sendo corretamente avaliado. \
+(III) Verificar se o produto correto está sendo construído. 
+
+Quais são as afirmações verdadeiras?",FALSE
+2008-52,"Analise as seguintes afirmativas.
+
+I. Condições de corrida podem ocorrer se múltiplas *threads* fazem leituras de um dado compartilhado, mesmo que nenhuma realize escritas. \
+II. O uso de *mutex* para a exclusão mútua em seções críticas garante que não haja condição de corrida, porém pode ocasionar *deadlocks* se não for corretamente empregado. \
+III. Monitores são baseados em um tipo abstrato de dados e um controle de acesso aos dados. Apenas funções do monitor acessam os dados e apenas uma *thread* ou processo pode executar funções de um monitor por vez. \
+IV. Semáforos têm duas operações, P( ) e V( ), sendo que apenas a operação P( ) pode bloquear um processo ou *thread*.
+
+A análise permite concluir que",FALSE
+2013-59,"Leia as definições a seguir.
+- Seja A uma imagem em níveis de cinza.
+- Seja B a imagem resultante da Equalização do Histograma da imagem A.
+- Seja C a imagem resultante da Equalização do Histograma da imagem B.
+
+Com base nessas definições e nos conceitos utilizados em processamento digital de imagens, considere as afirmativas a seguir.
+
+I. A comparação do histograma de duas imagens é uma medida de similaridade que indica se as duas imagens são impressões visuais de uma mesma cena.\
+II. A imagem B é igual à imagem C.\
+III. O histograma da imagem é uma função discreta que representa a probabilidade de se encontrar uma determinada cor na imagem.\
+IV. O histograma de duas imagens, em níveis de cinza, fornece a informação se uma das imagens está mais clara ou mais escura ou possui a mesma luminosidade.
+
+Assinale a alternativa correta.",FALSE
+2010-38,"Um analista de sistemas foi convidado para opinar sobre por que um determinado sistema tinha desempenho ruim. Considerando que o analista observou que o sistema tinha alta taxa de acesso a disco, por demanda de entrada e saída dos processos, qual das alternativas abaixo pode explicar o baixo desempenho?",TRUE
+2019-40,"Considere as seguintes afirmações sobre classes de problemas:
+
+I. O problema de decisão CAM, descrito a seguir, pertence à classe de complexidade P. \
+CAM (caminho em grafo)\
+Entrada: uma tripla $(G,a,b)$ em que 
+- G é um grafo
+- a e b são nodos de G \
+Pergunta: Existe caminho em G iniciando em a e terminando em b? \
+II. Um problema X pertence à classe de problemas NP-completos quando satisfaz às seguintes condições:
+- X pertence à classe NP, e
+- todo problema Y da classe NP pode ser reduzido em tempo polinomial a X. \
+III. Se um problema de decisão X pertence à classe P, então o complemento do problema X (problema com as mesmas instâncias que X, porém com as respectivas respostas invertidas) pertence à classe NP.
+
+Quais estão corretas?",TRUE
+2002-54,Qual das seguintes condições não é necessária para a ocorrência de um *deadlock*?,FALSE
+2019-31,"De acordo com a Teoria de Sistema de Tipos, classifique a função a seguir:
+```
+
+int soma(int x,int y) {
+   return x+y;
+}
+
+```",TRUE
+2011-51,"Considere a relação a seguir, definida na linguagem SQL padrão.
+```
+CREATE TABLE EMPREGADO
+(     CODIGO NUMBER(4) PRIMARY KEY,
+      NOME VARCHAR2(10),
+      SALARIO NUMBER(7,2)
+)
+```
+Considere também as consultas (C1, C2, C3 e C4) a seguir, expressas na linguagem SQL. \
+**C1:**
+```
+select NOME from EMPREGADO
+where CODIGO in ((select CODIGO from EMPREGADO)
+                  minus
+                 (select E1.CODIGO from EMPREGADO E1, EMPREGADO E2
+                  where E1.SALARIO < E2.SALARIO)
+                 )
+```
+Obs: o operador minus realiza a operação de subtração entre relações. \
+**C2:**
+```
+select NOME from EMPREGADO
+where SALARIO = (select max(SALARIO) from EMPREGADO)
+```
+**C3:**
+```
+Select NOME from EMPREGADO
+where SALARIO >= all (select SALARIO from EMPREGADO)
+```
+**C4:**
+```
+select NOME from EMPREGADO
+where CODIGO in ( select E1.CODIGO from EMPREGADO E1, EMPREGADO E2
+                  where E1.SALARIO > E2.SALARIO
+                )
+```
+Com relação às consultas, assinale a alternativa correta.",TRUE
+2009-36,"Considere as seguintes afirmativas relativas à ocorrência de ""deadlocks"" (ou impasses).
+
+I. A estratégia de tratamento de ""deadlocks"" conhecida como prevenção requer que se determine uma condição suficiente a que eles ocorram. Uma vez determinada a condição, os algoritmos de manipulação dos recursos compartilhados em questão devem ser projetados de forma que,
+garantidamente, ela jamais ocorra. \
+II. A estratégia de tratamento de ""deadlocks"" conhecida como detecção requer que se determine uma condição suficiente a que eles ocorram. Uma vez determinada a condição, o tratamento por detecção consiste em verificar sua validade e, em caso afirmativo, concluir que existe um ""deadlock"". \
+III. As estratégias conhecidas como prevenção e detecção para o tratamento de
+""deadlocks"" são complementares uma à outra: Enquanto a primeira guia o projeto dos algoritmos de compartilhamento de recursos para que ""deadlocks"" jamais ocorram, a segunda trata de impedir que ocorram quaisquer condições necessárias à ocorrência de ""deadlocks"". \
+IV. Para que ocorra um ""deadlock"" é necessário que haja um ciclo de espera envolvendo um determinado conjunto de processos. Uma estratégia comum de prevenção é a criação de algoritmos de compartilhamento de recursos que impeçam a ocorrência desses ciclos. 
+
+Assinale a alternativa CORRETA:",FALSE
+2015-69,Em qual arquitetura de rede neural artificial o algoritmo da retropropagação de erros (backpropagation) é utilizado para treinamento?,FALSE
+2022-66,"No contexto de algoritmos genéticos, assinale a alternativa correta.",FALSE
+2005-22,"Para a representação de número ponto flutuante no padrão IEEE, quais das afirmações a seguir são verdadeiras?
+
+(I) Quando a fração e o expoente são zero, o número representado é zero. \
+(II) Quando o expoente é zero, o número representado é desnormalizado. \
+(III) Quando todos os bits do expoente são iguais a um e a fração é zero, o número é $+\infty$ ou $-\infty$.\
+(IV) Quando todos os bits do expoente são iguais a um e a fração é diferente de zero, a representação não é número.",FALSE
+2002-27,"Suponha que $T$ seja uma árvore AVL inicialmente vazia, e considere a inserção dos elementos $10, 20, 30, 5, 15, 2$ em $T$, nesta ordem. Qual das sequências abaixo corresponde a um percurso de $T$ em pré-ordem:",FALSE
+2002-47,"Sobre a UML, quais das seguintes afirmações são verdadeiras? \
+I) A UML é o método de desenvolvimento de software mais utilizado na atualidade. \
+II) A UML é uma evolução das linguagens para especificação dos conceitos dos métodos de
+Booch, OMT e OOSE e também de outros métodos de especificação de requisitos de software orientados a objetos ou não. \
+III) A UML é composta dos seguintes diagramas: Diagrama de Caso de Uso, Diagrama de
+Classes, Diagrama de Colaboração, Diagrama de Estados, entre outros. \
+IV) Em UML pode-se representar tão somente relacionamentos de Agregação, Associação e
+Composição.",FALSE
+2005-20,"Seja $R$ o reticulado no plano formado pelos pares de números inteiros no intervalo $[-2n, 2n]$, $n$ inteiro maior que 1, e $S$ o círculo de raio $n$ e centro $(0, 0)$:
+$$
+\begin{align*}
+R & = \{ (i, j) \in \mathbb{Z^2}: - 2n \leq i \leq 2n \text{ e } - 2n \leq j \leq 2n \}, \\
+S & = \{ (x,y) \in \mathbb{R^2}: x^2 + y^2 = n^2 \}. 
+\end{align*}
+$$
+Uma amostra aleatória é tomada do reticulado de modo que cada ponto tem probabilidade 0,5 de ser escolhido, com as escolhas feitas de maneira independente. Qual o número de pontos esperados no interior do círculo $S$?",FALSE
+2022-68,"Encontre a maior linguagem para o alfabeto {a,b} utilizando apenas uma expressão regular abaixo:",FALSE
+2006-37,"Considere o programa:
+```
+program p;
+   var n: integer;
+   function f(n: integer; var k: integer): integer;
+      var p,q:integer;
+   begin (* f *)
+      if n < 2
+         then begin
+               f :=n;
+               k := 0
+            end
+         else begin
+               f := f(n-1, p) + f(n-2, q);
+               k := p + q + 1 
+            end;
+      write(n,' ',k,'; ')
+   end (* f *); 
+   begin
+   n := 4; 
+   write (f (3,n) ,n)
+   end.
+```
+Quais os valores impressos pelo programa?",TRUE
+2007-66,"Considere os pares de endereços de *hosts* e suas respectivas máscaras de endereços listados abaixo.
+
+I. 192.168.0.43/255.255.255.192 e 192.168.0.66/255.255.255.192 \
+II. 192.168.1.97/255.255.255.224 e 192.168.1.118/255.255.255.224 \
+III. 192.168.2.115/255.255.255.128 e 192.168.2.135/255.255.255.128 \
+IV. 192.168.3.34/255.255.255.240 e 192.168.3.46/255.255.255.240 \
+V. 192.168.4.167/255.255.255.224 e 192.168.4.207/255.255.255.224
+
+Os itens nos quais o par citado pertence a uma mesma sub-rede são",FALSE
+2006-34,"Sejam [6, 4, 2, 1, 3, 5, 8, 7, 9] e [7, 4, 3, 2, 1, 6, 5, 10, 9, 8, 11] as sequências produzidas pelo percurso em pré-ordem das árvores binárias de busca T1 e T2, respectivamente. Assina-le a afirmação incorreta:",FALSE
+2003-16,"Assinale a forma correta da negação da seguinte frase: \
+""Algumas pessoas gostam de matemática.""",FALSE
+2012-34,"Arquivos são organizados em sequência de dados ou registros, que são mapeados para blocos de armazenamento secundário. Existem três tipos de arquivos: sequencial, direto e indexado.
+
+Sobre arquivos indexados, considere as afirmativas a seguir.
+
+I. Em um índice denso, existe um registro para cada valor de chave no arquivo principal. \
+II. Em um índice esparso, existe um registro para cada conjunto de valores de chave no arquivo principal. \
+III. Com o índice denso, o tempo para localizar dados no arquivo principal é menor do que com o índice esparso. \
+IV. Com o índice esparso, o espaço utilizado com o arquivo de índice é maior do que com índice denso. 
+
+Assinale a alternativa correta.",FALSE
+2013-28,"Com base nos conhecimentos sobre programação, relacione as linguagens ou pseudolinguagens de programação, na coluna da esquerda, com seus principais tipos de dados básicos, na coluna da direita.\
+**(I) C**\
+**(II) C#**\
+**(III) Java**\
+**(IV) Pascal**\
+**(V) VisuAlg**\
+---------------------------------------------------\
+**(A) caracter, logico, inteiro, real.**\
+**(B) char, boolean, integer, real.**\
+**(C) char, int, boolean, float, double.**\
+**(D) char, int, bool, float, double.**\
+**(E) char, int, float, double.**
+
+Assinale a alternativa que contém a associação correta.",FALSE
+2015-24,"Considere T uma árvore binária cheia, em que $n, n_e , n_i$ e $h$ representam o número de nós, o número de nós externos, o número de nós internos e a altura de T, respectivamente. Portanto, a essa árvore T aplica-se a seguinte propriedade:",FALSE
+2010-45,"Dado um inteiro fixo $k > 0$ e a linguagem $L = \{a^{2n}c^nb^n; n \leq k\}$, podemos afirmar que",FALSE
+2014-32,"Sobre grafos, considere as afirmativas a seguir.
+
+I. A busca em profundidade em um grafo não dirigido irá produzir arestas de árvore e de cruzamento.\
+II. A busca em profundidade decompõe um grafo dirigido em suas componentes fortemente conexas.\
+III. Um grafo dirigido é acíclico quando uma busca em profundidade não produzir arestas de retorno.\
+IV. Uma ordenação topológica de um grafo é uma ordenação linear de seus vértices. 
+
+Assinale a alternativa correta.",FALSE
+2019-22,"Considere as seguintes funções:
+$$
+f(n) = 2^n
+
+g(n) = n!
+
+h(n) = n^{\log n}
+$$
+
+Assinale a alternativa correta a respeito do comportamento assintótico de $f(n)$, $g(n)$ e $h(n)$.",FALSE
+2015-46,"Considere um cenário de um sistema operacional que implementa um sistema de arquivos com método de alocação de espaço em disco baseado na alocação encadeada, a exemplo do popular sistema de arquivos FAT ( file allocation table). Em um disco rígido com tamanho de setor igual a 512 bytes, criou-se uma partição e a formatou com esse sistema de arquivos usando 2048 bytes para o tamanho de blocos (clusters). Durante a escrita de dados em diferentes arquivos nessa partição, foi criado o arquivo ARQ.DAT que, após ter todos os seus dados armazenados, totalizou 1024 bytes de tamanho. Nesse cenário, o arquivo ARQ.DAT",TRUE
+2018-39,"Considere os seguintes formalismos:\\
+I. Autômatos finitos.\\
+II. Autômatos finitos com uma pilha.\\
+III. Autômatos finitos com duas pilhas.
+
+Quais contêm SOMENTE os formalismos nos quais a variante não determinística reconhece o mesmo conjunto de linguagens que a respectiva versão determinística?",FALSE
+2019-59,A realização da equalização do histograma de uma imagem resulta em obter:,FALSE
+2006-25,"Dada uma lista linear de $n + 1$ elementos ordenados e alocados sequencialmente, qual é o número médio (número esperado) de elementos que devem ser movidos para que se faça uma inserção na lista, considerando-se igualmente prováveis as $n+1$ posições de inserção?",FALSE
+2006-02,"Seja o sistema de equações lineares nas variáveis $x$, $y$ e $z$:
+$$
+\begin{align*}
+& x + y - z = 1 \\
+& 2x + 3y + az = 3 \\
+& x + ay + 3z = 2
+\end{align*}
+$$
+Assinale a alternativa com os valores de $a$ para os quais o sistema possui respectivamente:
+
+(i) nenhuma solução, (ii) mais de uma solução, (iii) uma única solução.",FALSE
+2023-04,"Nos jogos da Mega-Sena, são sorteados a cada concurso 6 números no intervalo de
+1 a 60. Leva o prêmio quem acertar os 6 números sorteados. O apostador, ao fazer um jogo, pode optar por preencher um bilhete com 6, 7, 8 ou 9 números escolhidos. Se o apostador registra um bilhete com 8 números escolhidos, quantos bilhetes de 6 números ele faria com os mesmos 8 números escolhidos?",TRUE
+2008-29,Assinale a afirmativa INCORRETA.,FALSE
+2008-28,"Seja $G(V,E)$ um grafo tal que $|V| = n$ e $|E| = m$.
+
+Analise as seguintes sentenças:
+
+I. Se $G$ é acíclico com no máximo $n - 1$ arestas, então $G$ é uma árvore. \
+II. Se $G$ é um ciclo, então $G$ tem $n$ árvores geradoras distintas. \
+III. Se $G$ é conexo com no máximo $n - 1$ arestas, então $G$ é uma árvore. \
+IV. Se $G$ é conexo e tem um ciclo, então para toda árvore geradora $T$ de $G$, $E(G) - E(T) = \emptyset $.
+
+A análise permite concluir que",FALSE
+2010-44,"Em relação a autômatos e linguagens, podemos afirmar:",FALSE
+2005-60,"O termo imagem se refere a uma função bidimensional de intensidade de luz, denotada por $f(x, y)$, onde o valor ou amplitude de f nas coordenadas espaciais $(x, y)$ representa a intensidade (brilho) da imagem neste ponto. Para que uma imagem possa ser processada num computador, a função $f(x, y)$ deve ser discretizada tanto espacialmente quanto em amplitude. Estes dois processos recebem as seguintes denominações, respectivamente:",FALSE
+2006-09,Assinale a proposição logicamente equivalente a $\neg (p \lor q) \lor (\neg p \land q)$,FALSE
+2002-36,"Uma árvore binária é declarada em C como
+```
+typedef struct no *apontador;
+struct no {
+         int valor;
+         apontador esq, dir;
+          };
+```
+onde `esq` e `dir` representam ligações para os filhos esquerdo e direito de um nó da árvore, respectivamente. Qual das seguintes alternativas é uma implementação correta da operação que inverte as posições dos filhos esquerdo e direito de um nó `p` da árvore, onde `t` é um apontador auxiliar.",TRUE
+2011-55,"Com relação ao processo tradicional de síntese de imagens em computação gráfica, relacione a 
+coluna da esquerda com a coluna da direita.
+
+|(I) Projeção Perspectiva|(A) Responsável pela remoção das linhas e superfícies ocultas.|
+|-|-|
+|(II) Volume de Visualização|(B) Define a porção visível da cena.|
+|(III) Modelo de Gouraud|(C) Mapeia coordenadas num espaço tridimensional para um espaço bidimensional.|
+|(IV) Algoritmo de Z-buffer|(D) Efetua interpolação linear das cores.|
+|(V) Rasterização|(E) Encontra as coordenadas de pixel na tela.|
+
+Assinale a alternativa que contém a associação correta.",FALSE
+2024-45,"Sobre os tipos de dados básicos, assinale a alternativa correta.",FALSE
+2018-44,"Considere um computador no qual o interpretador do nível 0 (hardware interpretando o microcódigo) gasta 20 nanosegundos ($20$x$10^{-9}$ segundos) por microinstrução, e o interpretador do nível 1 (microcódigo interpretando a linguagem de máquina convencional) necessita de 25 microinstruções para interpretar uma instrução de máquina convencional. Um programa teste, já em linguagem de máquina convencional, leva 50 segundos para executar.\
+a) Quanto tempo levará o programa teste para executar se o tempo para executar uma microinstrução for aumentado para 30 nanosegundos?\
+b) Quanto tempo levará o programa teste para executar se uma instrução de máquina convencional necessitar de somente 15 microinstruções para ser interpretada?",TRUE
+2003-20,"A área do triângulo $ABC$ de vértices $A = (2, 2, 0)$, $B = (-1, 0, 2)$ e $C = (0, 4, 3)$ é igual a",FALSE
+2023-23,"Considere o seguinte trecho de código:
+```
+
+for (i = 1; i <= n; i++) {
+   for (j = 1; j <= m; j++) {
+      // instruções O(1)
+   }
+}
+
+```
+Qual das seguintes afirmações é verdadeira sobre a complexidade assintótica desse trecho de código?",TRUE
+2005-64,O DNS (*Domain Name System*) é um serviço de diretórios na Internet que:,FALSE
+2016-61,"No contexto de processamento de imagens, um filtro do tipo passa-baixa produz o seguinte resultado:",FALSE
+2007-28,"Considere o seguinte enunciado e as possibilidades de sua complementação.
+
+A regra de inferência utilizada pela linguagem Prolog, denominada “regra de resolução”,
+
+I. opera com fórmulas contendo apenas quantificadores existenciais. \
+II. é capaz de reduzir fórmulas quantificadas à suas correspondentes formas clausais. \
+III. opera sobre fórmulas em forma clausal pelo corte de literais de sinais opostos. \
+IV. opera sobre fórmulas em forma clausal pelo corte de literais de mesmo sinal. \
+V. produz deduções que evitam a construção de árvores de dedução lineares.
+
+Completa(m) CORRETAMENTE o enunciado acima",FALSE
+2015-35,"Em organização de arquivos e dados, um diretório é um arquivo mantido pelo sistema de arquivos, que contém uma lista de outros arquivos e, possivelmente, de outros diretórios. Em sistemas de diretório que suportam",FALSE
+2010-21,"Um estudante de computação precisa resolver um problema bastante importante, que é executar as operações que estão descritas abaixo, cuja estrutura é uma pilha. Tão logo ele retire algum elemento desta pilha, estes deverão ser inseridos em uma fila, cuja entrada é pela esquerda e a saída, pela direita. 
+
+Assinale a alternativa que contém a sequência correta de entrada dos elementos na fila.
+```
+PUSH P
+PUSH E
+PUSH R
+PUSH T
+PUSH O
+POP
+POP
+PUSH S
+PUSH O
+PUSH L
+POP
+POP
+POP
+```",TRUE
+2018-41,"Abaixo são apresentadas duas linguagens formais sobre o alfabeto {a,b,c}:\
+L1 = { $a^nb^n | n>1$ }\
+L2 = { $b^na^pc^q | n \geq 0, p \geq 0, q \geq 0 $}\
+Considere as seguintes afirmações:\
+I. L1 é uma linguagem regular.\
+II. L2 é uma linguagem regular.\
+III. L2 é uma linguagem livre de contexto.
+
+Quais estão corretas?",FALSE
+2018-06,"Determine os valores de a e b para que a função abaixo seja contínua em todo o seu domínio:
+$$
+f(x) = 
+\begin{cases}
+-3.sen(x) & \text{se } x <-\dfrac{\pi}{2} \\
+a.sen(x) + b, & \text{se } -\dfrac{\pi}{2} \leq x \leq \dfrac{\pi}{2} \\
+cos(x), & \text{se } x > \dfrac{\pi}{2}
+\end{cases}
+$$",FALSE
+2023-11,"Calcule o vetor diretor da interseção dos seguintes planos:
+$$
+x + 2y + z = 3
+
+2x - y +3z = 4$$",FALSE
+2006-30,"Seja $P$ o problema de ordenar, usando comparação, $n \geq 1$ elementos e $\mathcal{C}$ a classe dos algoritmos que resolvem $P$. O limitante inferior de $\mathcal{C}$ é:",FALSE
+2015-11,Uma expressão booleana equivalente à expressão $( x \lor y )\to z$ é dada por:,FALSE
+2015-64,"Um dos objetivos do projeto de um Sistema Distribuído é fornecer transparência, ocultando aspectos distribuídos dos usuários do sistema. Um sistema transparente proporciona um ambiente em que os seus componentes apresentam-se logicamente centralizados, mesmo fisicamente separados. Entre os vários tipos de transparência que os sistemas distribuídos podem fornecer, o ocultamento do fato de que há várias cópias de um recurso disponíveis no sistema é conhecido como",FALSE
+2022-33,"Sobre os testes de condições em linguagem de programação, é correto afirmar que:",FALSE
+2014-67,"A comunicação entre processos de sistemas distribuídos não pode ser por memória compartilhada, somente por trocas de mensagens de baixo nível. Por esse motivo, foram desenvolvidas várias técnicas que permitem expressar a comunicação de formas intermediárias, entre elas a chamada de procedimento remoto (RPC).
+
+Em relação à RPC, atribua V (verdadeiro) ou F (falso) às afirmativas a seguir.
+
+( ) A *Interface Definition Language* (IDL) é utilizada para declarar e definir os algoritmos e suas variáveis, que estão disponíveis em um servidor para os clientes poderem utilizar.\
+( ) Máquinas baseadas em processadores *little endian* não podem realizar RPC com máquinas baseadas em processadores big endian.\
+( ) O procedimento mínimo de execução de uma RPC envolve o envio dos parâmetros de chamada e das instruções de máquina a serem executadas.\
+( ) É uma técnica para permitir a comunicação entre dois processos localizados em máquinas distintas, ao mesmo tempo que esconde do programador a troca de mensagens.\
+( ) Parâmetros passados como valor devem ser copiados e, quando muito, codificados. Já a passagem de parâmetros por referência não tem uma solução geral, precisam ser tratados caso a caso.
+
+Assinale a alternativa que contém, de cima para baixo, a sequência correta.",FALSE
+2019-09,"Simplifique, com a ajuda dos Mapas de Karnaugh, a função cuja expressão em termos canônicos é: $f(x, y, z) = \Sigma m(2,3,4,5,6,7)$",FALSE
+2009-07,"Em um cabo de fibra ótica a quantidade de informação $I$ que passa por ele durante a hora $h$, é aproximada pela função
+$$
+I(h) = 50 - 10 sin{\frac{h\pi}{12}}
+$$
+Calcule o horário de pico de tráfego de informação no período de 9h às 21h.",FALSE
+2022-67,"Uma transação entra em um estado de falha quando o sistema determina que ela já
+não pode prosseguir a sua execução normal. A transação deve ser desfeita e, entra, então, em estado abortado. Nesse momento, o sistema tem duas opções:",FALSE
+2024-29,Qual dos seguintes métodos permite a transferência de dados entre um dispositivo de entrada e saída e a memória principal sem o intermédio da CPU?,FALSE
+2012-02,"Seja o espaço vetorial $V = \mathbb{R}^2$. \
+Com relação a esse espaço, assinale a alternativa correta.",FALSE
+2007-59,"Analise o seguinte conjunto de afirmativas caracterizando agentes computacionais e os ambientes em que operam.
+
+I. Um agente reflexivo que não dispõe de modelo de seu ambiente seleciona a próxima ação que vai executar tendo por base apenas as suas percepções atuais. \
+II. Um agente capaz de planejar sequências futuras de ações não pode e não deve ter representações explícitas de seus objetivos. \
+III. Um ambiente determinístico é aquele que permite a um agente, que se encontra sozinho no ambiente, saber o resultado de uma ação realizada a partir do conhecimento do estado do ambiente no momento em que a ação foi realizada e das características da ação que o agente realizou. \
+IV. Um ambiente parcialmente observável é aquele que só permite a um agente conhecer completamente o estado atual do ambiente se o agente estiver sozinho no ambiente. \
+V. Uma função de utilidade é uma função que ajuda um agente a distinguir quais percepções atuais são mais importantes para a realização dos objetivos do agente.
+
+A esse respeito, pode-se concluir que estão CORRETAS",FALSE
+2024-23,"Assinale a alternativa que apresenta a complexidade de tempo da busca em uma tabela hash, considerando a complexidade média e do pior caso, respectivamente.",FALSE
+2009-23,"Considere o seguinte programa escrito em C:
+```
+#include<stdio.h>
+#include<string.h>
+int main (void)
+{
+   char texto[]= ""foi muito facil"";
+   int i;
+
+   for (i = 0; i < strlen(texto); i++)
+   {
+        if (texto[i] == ' ') break;
+   }
+   i++;
+
+   for ( ; i < strlen(texto); i++)
+   {
+        printf(""%c"", texto[i]);
+   }
+    return 0;
+}
+```
+O que será impresso quando o programa for executado?",TRUE
+2011-01,"Considere a matriz a seguir.
+$$
+ A = \begin{bmatrix}
+2 & 4 & 2 \\
+1 & 5 & 2 \\
+4 & -1 & 9
+\end{bmatrix} 
+$$
+No método da eliminação de Gauss, foram efetuados os seguintes passos para se obter uma matriz na forma degrau:
+
+I. Subtraiu-se a metade da primeira linha da segunda.\
+II. Subtraiu-se o dobro da primeira linha da terceira.\
+III. Adicionou-se o triplo da segunda linha à terceira.
+
+Em termos matriciais, o processo descrito corresponde a:",TRUE
+2010-12,"A definição do Teorema Binomial de Newton é
+$$
+(x + y)^n = \sum_{i=0}^n \binom{n}{i}x^{n-i}y^i.
+$$
+Assim, dado o seguinte somatório
+$$
+S_n = \sum_{i=1}^n \binom{n}{i},
+$$
+Assim, dado o seguinte somatório qual o valor de $S_n$ ?",FALSE
+2016-38,"Assinale a alternativa correta a respeito do algoritmo em Java a seguir.
+
+```
+
+Set<Integer> numeros = new TreeSet<Integer>();
+Random rand = new Random();
+while (numeros.size() < 20){
+    numeros.add(rand.nextInt(101));
+}
+System.out.println(""Números: "" + numeros);
+
+```",TRUE
+2005-61,"Qual a capacidade máxima segundo o Teorema de Nyquist de um canal de 2 MHz sem ruído, se sinais de 8 (oito) níveis são transmitidos?",FALSE
+2002-65,Na criptografia com chave pública:,FALSE
+2010-54,"Assinale a alternativa que indica a função de transformação $T(r)$ utilizada para se obter a imagem negativa de uma imagem monocromática, em que os *pixels* podem assumir valores no intervalo entre $0$ e $L-1$ e em que $r$ representa o valor do pixel na imagem original.",FALSE
+2018-64,"Quando um processo na máquina A chama um procedimento na máquina B, o processo chamador em A é suspenso, e a execução do procedimento chamado ocorre em B.
+Informações podem ser transportadas do chamador para quem foi chamado nos parâmetros e podem voltar no resultado do procedimento. Absolutamente nada da troca de mensagens é visível para o programador. Esse método é conhecido como:",FALSE
+2010-04,"Entre os cinco pontos dados a seguir, três estão alinhados. Quais são eles? 
+
+Dados: $A = (1, 6)$, $B = (3, 4)$, $C = (2, 4)$, $D = (3, 2)$ e $E = (0, \frac{15}{2})$",FALSE
+2011-50,"Seja $G$ um grafo conexo com $n$ vértices. Considere duas rotulações dos vértices de $G$ obtidas por duas buscas em $G$, uma em largura, $l()$, e outra em profundidade, $p()$, ambas iniciadas no vértice $v$. Em cada rotulação, os vértices receberam um número de 1 a $n$, o qual representa a ordem em que foram alcançados na busca em questão. Assim, $l(v) = p(v) = 1$; enquanto $l(x) > 1$ e $p(x) > 1$ para todo vértice $x$ diferente de $v$. Considere dois vértices $u$ e $w$ de $G$ e denote por $d(u, w)$ a distância em $G$ de $u$ até $w$. 
+
+Com base nesses dados, assinale a alternativa correta.",TRUE
+2010-53,"Considere um objeto em 3D ancorado no seu centro de massa $p = (x_c , y_c , z_c )$. Qual a transformação necessária para rotacioná-lo em $\Theta$ graus, contra relógio, ao redor do eixo $x$, sem alterar a sua posição no espaço? Assuma que a matriz $T$ realiza translações, a matriz $R_x$ realiza rotações de $\Theta$ graus ao redor do eixo $x$, contra relógio.",TRUE
+2011-66,"A conversão de imagens de RGB para tons de cinza pode ser realizada através da média dos componentes de cores. No entanto, esta conversão produz uma escala de brilho na qual a percepção não é equivalente ao brilho na imagem colorida. 
+
+A forma adequada de calcular a luminância $Y$ é dada pela equação:",FALSE
+2007-62,"Um sistema de codificação e compressão de imagens consiste de dois blocos, que são: o _codificador_ e o _decodificador_. Entre as diversas técnicas de codificação, a mais popular é o _código de Huffman_. Considere a tabela abaixo, em que é apresentado o código resultante num processo de codificação.
+| Probabilidade | Código   |
+|--------------|----------|
+| 0,35         | 1        |
+| 0,25         | 01       |
+| 0,2          | 010      |
+| 0,1          | 0101     |
+| 0,05         | 01011    |
+| 0,03         | 010110   |
+| 0,01         | 0101100  |
+
+Nesse caso, o comprimento médio do código obtido foi de:",FALSE
+2022-50,"Ao processar um arquivo mapeado em memória, a leitura de dados do arquivo em disco para a memória principal ocorre como resultado de uma:",FALSE
+2007-47,"Considere a gramática *G* abaixo, em que $\epsilon$ representa o *string* nulo.
+$$
+\begin{array}{l}
+S \rightarrow B \mid C \mid D \\
+A \rightarrow \epsilon \\
+B \rightarrow d \\
+C \rightarrow Aac \mid bAc \\
+D \rightarrow Bcd \mid bBa
+\end{array}
+$$
+A esse respeito, analise as seguintes afirmativas.
+
+I. *G* é SLR(1)\
+II. *G* é LALR(1)\
+III. *G* é LR(1)
+
+A análise permite concluir que",TRUE
+2015-63,"Em um texto fonte de linguagem de programação, o compilador realiza a identificação da função gramatical das palavras, a verificação da estrutura gramatical dos comandos e dos seus significados. Os componentes arquiteturais de um compilador que realizam essas atividades são, respectivamente,",FALSE
+2003-27,"Uma gramática G é definida por:
+$$
+G = (\{x, y, z\}, \{S, W, X, Y, Z\}, P, S)
+$$
+na qual os membros de $P$ são:
+$$
+\begin{align*}
+& S \rightarrow WZ \\
+& W \rightarrow X \mid Y \\
+& X \rightarrow x \mid xX \\
+& Y \rightarrow y \mid yY \\
+& Z \rightarrow z \mid zZ \\
+\end{align*}
+$$
+Qual das expressões regulares abaixo corresponde a esta gramática?",FALSE

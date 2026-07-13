@@ -1,0 +1,203 @@
+<!--
+	THIS EXAMPLE WAS DOWNLOADED FROM https://echarts.apache.org/examples/en/editor.html?c=matrix-covariance&code=tVXdjtpGFL7nKY6USG4jWvwDBrybrVhY2ou0qpKLXCCkHewBRrE91njYLt3yHH2HvkZerOd4xuCptlESKcgand_v_MyZQyrLWkMqi4prXqaC1_AaVt5i7vXBe_s7nbPb5nxD58-_eeurXm8wgNVjH459eGC5VOuegcmYZuTeA0CLTLCdLFmO3MrvA37j8bpPXNAH_MaB4cI-4BeElo36gF8QxIYd9gG_cIScgU3lDzKVSn38B9NltUVHPLJpsJFt7I0GsaOQNEggS7TVYJjRkDRIIEu01WDEwCcNEgSONEUncEQZYaYNHLJEWw0lPrFwxCJtNVRA40O4hm7gKDX82hyItTkgSbYNHHkbunFCQ1JhKxsVBRuve3QrstJClngBT2inpcy1qJKGAahkLUibgKdl5VEQgK1UBdOaqwS2hzJtvL-rmGJF_b31A1BcH1QJ95YFuK61kuXu5uVTd2xWxu9HmoGVv16f4OPf8AmTAE2uBxbqeqMGN-cAc-eGE7jeYKyub0ium9bh_qohTniemhbtlMjaurHYBIa-qTfnW53A2HJK7PbIBq12I7WWBVmfkR5nj6I-Qx0rju1LmeY7qY62h5RQ4jwgI6-rXOiZ4qhsO1nv5R8JaHXgJmFjyDDEG1EitGu3ZXltDc_5HL8-H1E-cFWjA8X_hik-iPrA8l_ZefIKgUNnW1ywR2x4GBguZXl6yNkmd7ISmhe_cHM3cWQdSfheZHqfQGhFUgleoo2HdWmBWLYB9lpbs2YAvEJkWc7RwvbiLSt3nXJSiVssaRaX-Xkvlst5OMEt2BXNbv3J0BX503jsiu7GkziOHdFiMY5HE0c0n43iyIW_HUXD4M4RzaZh4F-s1t1eA_QGr6BiOcelm3GsQeHyZjk-55Jp8cCs0-cUO13M4-XSCT0NZpNl4Igmo8nsLnJE4ygeLkJHFAfRYu46jibhdDZ2RMO7YNhpr1PZqwFdU83xgnHYTZ5t8iUraOjdFXGGsU9iz5kuWLvl2jdBpx0AXAVsw_NLT7qTf0lzK0v93o6it5F51imBdO_EnxguiFppR_kZi9XcBf1v4p_ogePednecWWvOEjaGN68h9uEnuH_KKbe_Xj418tPpHhIUZkx96MguMPY1d_JUIsUX1U2oQXRF54nxXmy3204Lnm9RR30OaC5BffhfYN_3vwj4UpOlzPKhHy-qPasva7JdH-_0kRZNN4GNVBlX8zaJKOoOd6u2ayf4RMhn4f8D7rbuWWgDTOe6d7r6Fw&enc=deflate
+	⚠ Please be aware that this chart is not an official demo of Apache ECharts but is made by user-generated code.
+-->
+<!DOCTYPE html>
+<html lang="en" style="height: 100%">
+<head>
+  <meta charset="utf-8">
+</head>
+<body style="height: 100%; margin: 0">
+  <div id="container" style="height: 100%"></div>
+
+  
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+  
+  <!-- Uncomment this line if you want to dataTool extension
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5/dist/extension/dataTool.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to use gl extension
+  <script type="text/javascript" src="https://echarts.apache.org/en/js/vendors/echarts-gl/dist/echarts-gl.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to echarts-stat extension
+  <script type="text/javascript" src="https://echarts.apache.org/en/js/vendors/echarts-stat/dist/ecStat.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to echarts-graph-modularity extension
+  <script type="text/javascript" src="https://echarts.apache.org/en/js/vendors/echarts-graph-modularity/dist/echarts-graph-modularity.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to use map
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@4.9.0/map/js/world.js"></script>
+  -->
+  <!-- Uncomment these two lines if you want to use bmap extension
+  <script type="text/javascript" src="https://api.map.baidu.com/api?v=3.0&ak=YOUR_API_KEY"></script>
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5/dist/extension/bmap.min.js"></script>
+  -->
+
+  <script type="text/javascript">
+    var dom = document.getElementById('container');
+    var myChart = echarts.init(dom, null, {
+      renderer: 'canvas',
+      useDirtyRect: false
+    });
+    var app = {};
+    
+    var option;
+
+    const competencies = ['DC', 'RP', 'AB', 'AL', 'GN'];
+
+// [x, y, valor]
+const data = [
+  // diagonal
+  [0, 0, 77],
+  [1, 1, 71],
+  [2, 2, 121],
+  [3, 3, 116],
+  [4, 4, 25],
+
+  // co-ocorrências
+  [0, 1, 25], [1, 0, 25],
+  [0, 2, 32], [2, 0, 32],
+  [0, 3, 54], [3, 0, 54],
+  [0, 4, 10], [4, 0, 10],
+
+  [1, 2, 51], [2, 1, 51],
+  [1, 3, 38], [3, 1, 38],
+  [1, 4, 21], [4, 1, 21],
+
+  [2, 3, 34], [3, 2, 34],
+  [2, 4, 18], [4, 2, 18],
+
+  [3, 4, 17], [4, 3, 17]
+];
+
+option = {
+  tooltip: {
+    position: 'top',
+    formatter: function (params) {
+      return `
+        <strong>${competencies[params.data[0]]} × ${competencies[params.data[1]]}</strong><br/>
+        Co-ocorrência: <b>${params.data[2]}</b>
+      `;
+    }
+  },
+
+  grid: {
+    top: 40,
+    left: 70,
+    right: 140,
+    bottom: 40
+  },
+
+  xAxis: {
+    type: 'category',
+    data: competencies,
+    splitArea: {
+      show: true
+    },
+    axisLine: {
+      show: false
+    }
+  },
+
+  yAxis: {
+    type: 'category',
+    data: competencies,
+    inverse: true,
+    splitArea: {
+      show: true
+    },
+    axisLine: {
+      show: false
+    }
+  },
+
+  visualMap: {
+    min: 0,
+    max: 121,
+    calculable: true,
+    itemHeight: 630,
+    itemWidth: 20,
+    orient: 'vertical',
+    right: 20,
+    top: 'middle',
+
+    inRange: {
+      color: [
+        '#FFC28C',
+        '#FAB084',
+        '#F09674',
+        '#E78666',
+        '#DD7658',
+        '#CA563C',
+        '#B5341E',
+        '#A9210C',
+      ]
+    }
+  },
+  
+/* paleta de cores alternativa
+      inRange: {
+      color: [
+        '#9DC6FF',
+        '#91A8F1',
+        '#858AE3',
+        '#7364D2',
+        '#613DC1',
+        '#5829A7',
+        '#4E148C',
+      ]
+    }
+  },
+*/
+
+  series: [
+    {
+      name: 'Co-ocorrência',
+      type: 'heatmap',
+      data: data,
+
+      label: {
+        show: true,
+        fontWeight: 'bold',
+        fontSize: 13,
+      
+        formatter: function (params) {
+          const value = params.data[2];
+          return value >= 60 ? `{light|${value}}` : `{dark|${value}}`;
+        },
+      
+        rich: {
+          light: {
+            color: '#fff',
+            fontWeight: 'bold'
+          },
+          dark: {
+            color: '#000',
+            fontWeight: 'bold'
+          }
+        }
+      },
+
+      emphasis: {
+        itemStyle: {
+          borderColor: '#333',
+          borderWidth: 1
+        }
+      },
+
+      itemStyle: {
+        borderColor: '#fff',
+        borderWidth: 1
+      }
+    }
+  ]
+};
+
+    if (option && typeof option === 'object') {
+      myChart.setOption(option);
+    }
+
+    window.addEventListener('resize', myChart.resize);
+  </script>
+</body>
+</html>

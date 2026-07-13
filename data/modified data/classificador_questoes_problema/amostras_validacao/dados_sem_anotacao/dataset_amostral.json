@@ -1,0 +1,2414 @@
+[
+  {
+    "id": "2013-13",
+    "edicao": 2013,
+    "numero": 13,
+    "enunciado": "Admita que um novo conectivo binário, rotulado pelo símbolo $\\updownarrow$, seja definido pela tabela-verdade a seguir:\n\n|$P$|$Q$|$P \\updownarrow Q$|\n|-|-|-|\n|V|V|F|\n|V|F|V|\n|F|V|F|\n|F|F|F|\n\nCom base nessa definição e nas operações usuais com os conectivos $\\lor$, $\\land$ e $\\sim$, considere as afirmativas a seguir:\n\nI. $P \\updownarrow Q$ é equivalente a $Q \\updownarrow P$. \\\nII. $(P \\updownarrow Q) \\lor (Q \\updownarrow P)$ não é uma contingência. \\\nIII. $(Q \\updownarrow P) \\land (P \\updownarrow Q)$ é uma contradição. \\\nIV. $ \\sim [(Q \\updownarrow P) \\land (P \\updownarrow Q)]$ é uma tautologia. \n\nAssinale a alternativa correta.",
+    "alternativas": [
+      "a) Somente as afirmativas I e II são corretas.",
+      "b) Somente as afirmativas I e IV são corretas.",
+      "c) Somente as afirmativas III e IV são corretas.",
+      "d) Somente as afirmativas I, II e III são corretas.",
+      "e) Somente as afirmativas II, III e IV são corretas."
+    ],
+    "area_conhecimento": "Matemática",
+    "area": "Lógica Matemática",
+    "subarea": "Lógica Proposicional e de Predicados",
+    "gabarito": "C",
+    "atributo_rag": "matematica - logica matematica - logica proposicional e de predicados"
+  },
+  {
+    "id": "2018-07",
+    "edicao": 2018,
+    "numero": 7,
+    "enunciado": "Determine a matriz inversa de $A = \\frac{1}{13}\\begin{pmatrix}1 & 3 & 5\\\\ 0 & -1 & 4\\\\ 1 & 1 & 0\\end{pmatrix}$:",
+    "alternativas": [
+      "a)  $A^{-1} = \\dfrac{1}{13}\\begin{pmatrix}1 & 0 & 1\\\\ 3 & -1 & 1\\\\ 5 & 4 & 0\\end{pmatrix}$",
+      "b) $A^{-1} =\\begin{pmatrix}1 & 3 & 5\\\\ 0 & -1 & 4\\\\ 1 & 1 & 0\\end{pmatrix}$",
+      "c) $A^{-1} = \\begin{pmatrix}-4 & 5 & 17\\\\ 4 & -5 & -4\\\\ 1 & 2 & -1\\end{pmatrix}$",
+      "d) $A^{-1} = \\dfrac{1}{13}\\begin{pmatrix}-4 & 5 & 17\\\\ 4 & -5 & -4\\\\ 1 & 2 & -1\\end{pmatrix}$",
+      "e) $A^{-1} = \\dfrac{1}{13}\\begin{pmatrix}-5 & 3 & 12\\\\ 0 & -1 & 4\\\\ -1 & 1 & -4\\end{pmatrix}$"
+    ],
+    "area_conhecimento": "Matemática",
+    "area": "Álgebra Linear",
+    "subarea": "Transformações Lineares e Matrizes",
+    "gabarito": "C",
+    "atributo_rag": "matematica - algebra linear - transformacoes lineares e matrizes"
+  },
+  {
+    "id": "2007-30",
+    "edicao": 2007,
+    "numero": 30,
+    "enunciado": "Suponha que tenhamos à nossa disposição um algoritmo `MULT` que efetua a multiplicação de duas matrizes $ A_{p \\times q} $ e $ B_{q \\times r} $ dadas como entrada com $ p \\times q \\times r $ multiplicações de escalares. Esse algoritmo é, então, usado para definir o seguinte problema de decisão chamado `MULTMAT`:\n\n**ENTRADA**: vetor $ p[0], p[1], \\ldots, p[n] $, um inteiro positivo $ m $.\\\n**QUESTÃO**: existe uma sequência de multiplicações de duas matrizes com o algoritmo `MULT` que produz o resultado de $ A_1A_2 \\cdots A_n $, em que cada $ A_i $, para todo $ i \\in \\{ 1, 2, \\ldots, n \\} $, é uma matriz de dimensões $ p[i - 1] \\times p[i] $, com $ m $ multiplicações de escalares no máximo?\n\nConsidere as seguintes afirmativas.\n\n**I.** O algoritmo abaixo demonstra que `MULTMAT` está na classe de problemas $ P $.\n```\nChamada: MULTMAT(p, m)\n1: q ← Q(p, 0, n)\n2: se q \\leq m então\n3:     retorna “Sim”\n4: retorna “Não”\n\nChamada: Q(p, i, j)\n5: se i = j então\n6:     retorna 0\n7: q ← \\infty\n8: para k ← i, i + 1, ..., j - 1 faça\n9:     r ← Q(p, i, k) + Q(p, k + 1, j) + p[i - 1]p[k]p[j]\n10:    se r < q então\n11:        q ← r\n12: retorna q\n```\n**II.** `MULTMAT` está na classe de problemas $ NP $.\\\n**III.** Se I e II são corretas, então $P = NP$.\n\nAssinale a alternativa que apresenta a(s) afirmativa(s) CORRETA(S).",
+    "alternativas": [
+      "a) Somente a afirmativa I.",
+      "b) Somente a afirmativa II.",
+      "c) Somente a afirmativa III.",
+      "d) Somente as afirmativas II e III.",
+      "e) Somente as afirmativas I, II e III."
+    ],
+    "area_conhecimento": "Fundamentos da Computação",
+    "area": "Análise de Algoritmos",
+    "subarea": "O Uso de Relações de Recorrência para Análise de Algoritmos Recursivos",
+    "gabarito": "B",
+    "atributo_rag": "fundamentos da computacao - analise de algoritmos - o uso de relacoes de recorrencia para analise de algoritmos recursivos"
+  },
+  {
+    "id": "2017-69",
+    "edicao": 2017,
+    "numero": 69,
+    "enunciado": "O termo Aprendizado de Máquina pode ser corretamente definido como:",
+    "alternativas": [
+      "a) A capacidade de um dispositivo eletrônico resolver um problema.",
+      "b) A construção de sistemas capazes de adquirir conhecimento a partir de exemplos.",
+      "c) Um programa de computador que toma decisões baseado em experiências não mapeadas.",
+      "d) Um programa de computador que executa com perfeição uma tarefa.",
+      "e) Um programa de computador que evolui automaticamente para versões aprimoradas."
+    ],
+    "area_conhecimento": "Tecnologia de Computação",
+    "area": "Inteligência Artificial",
+    "subarea": "Aprendizado de Máquina",
+    "gabarito": "B",
+    "atributo_rag": "tecnologia de computacao - inteligencia artificial - aprendizado de maquina"
+  },
+  {
+    "id": "2008-26",
+    "edicao": 2008,
+    "numero": 26,
+    "enunciado": "Em um grafo $G(V,E)$, o grau de um vértice é o número de vértices adjacentes a $v$.\n\nA esse respeito, assinale a afirmativa CORRETA.",
+    "alternativas": [
+      "a) Num grafo, o número de vértices com grau ímpar é sempre par.",
+      "b) Num grafo, o número de vértices com grau par é sempre ímpar.",
+      "c) Num grafo, sempre existe algum vértice com grau par.",
+      "d) Num grafo, sempre existe algum vértice com grau ímpar.",
+      "e) Num grafo, o número de vértices com grau ímpar é sempre igual ao número de vértices com grau par."
+    ],
+    "area_conhecimento": "Fundamentos da Computação",
+    "area": "Teoria dos Grafos",
+    "subarea": "Grafos orientados e não-orientados",
+    "gabarito": "A",
+    "atributo_rag": "fundamentos da computacao - teoria dos grafos - grafos orientados e nao-orientados"
+  },
+  {
+    "id": "2016-60",
+    "edicao": 2016,
+    "numero": 60,
+    "enunciado": "Em relação às características do protocolo IP, analise as afirmativas abaixo e assinale V, se verdadeiras, ou F, se falsas.\n- ( ) O protocolo IP garante a entrega de mensagens.\n- ( ) O endereçamento IP é hierárquico.\n- ( ) O protocolo IP garante que não há duplicação de pacotes. \n\nA ordem correta de preenchimento dos parênteses, de cima para baixo, é:",
+    "alternativas": [
+      "a) F – V – F.",
+      "b) F – F – V.",
+      "c) V – F – V.",
+      "d) V – V – F.",
+      "e) V – F – F."
+    ],
+    "area_conhecimento": "Tecnologia de Computação",
+    "area": "Redes de Computadores",
+    "subarea": "Protocolos e Serviços de Comunicação",
+    "gabarito": "A",
+    "atributo_rag": "tecnologia de computacao - redes de computadores - protocolos e servicos de comunicacao"
+  },
+  {
+    "id": "2016-48",
+    "edicao": 2016,
+    "numero": 48,
+    "enunciado": "Analise as seguintes definições de *pipeline* de instruções simples, superescalar e *multithreading* simultâneo:\n\nI. *Pipeline* instruções simples: instruções individuais que são executadas através de um *pipeline* de estágios, de maneira que, enquanto uma instrução está sendo executada em um estágio, outra instrução está sendo executada em outro estágio do *pipeline*.\\\nII. Superescalar: um *pipeline* é construído por meio da replicação de recursos de execução, o que permite a execução paralela de instruções em *pipelines* paralelos.\\\nIII. *Multithreading* simultâneo (SMT): bancos de registros são replicados para que múltiplas threads possam compartilhar o uso dos recursos de *pipelines*.\n\nQuais estão corretas?",
+    "alternativas": [
+      "A) Apenas I.",
+      "B) Apenas III.",
+      "C) Apenas I e II.",
+      "D) Apenas II e III.",
+      "E) I, II e III."
+    ],
+    "area_conhecimento": "Fundamentos da Computação",
+    "area": "Arquitetura e Organização de Computadores",
+    "subarea": "Processadores Superescalares e Superpipeline",
+    "gabarito": "C",
+    "atributo_rag": "fundamentos da computacao - arquitetura e organizacao de computadores - processadores superescalares e superpipeline"
+  },
+  {
+    "id": "2022-03",
+    "edicao": 2022,
+    "numero": 3,
+    "enunciado": "Assinale a alternativa que indica o produto escalar e o produto vetorial dos vetores\n$\\vec{u} =(3,-1,2)$ e $\\vec{v} =(1,-2,-1)$, respectivamente.",
+    "alternativas": [
+      "a) 3 e (5,5,-5).",
+      "b) 3 e (3,2,-2).",
+      "c) 3 e (2,1,3).",
+      "d) -1 e (3,2,-2).",
+      "e) 7 e (3,-2,2)."
+    ],
+    "area_conhecimento": "Matemática",
+    "area": "Geometria Analítica",
+    "subarea": "Produtos: escalar, vetorial e misto",
+    "gabarito": "A",
+    "atributo_rag": "matematica - geometria analitica - produtos: escalar, vetorial e misto"
+  },
+  {
+    "id": "2022-61",
+    "edicao": 2022,
+    "numero": 61,
+    "enunciado": "A codificação ______________ tem como estratégia realizar a decomposição de uma imagem monocromática ou colorida em várias imagens binárias. Cada uma dessas imagens binárias é comprimida utilizando métodos de compressão binária.\n\nAssinale a alternativa que preenche corretamente a lacuna do trecho acima.",
+    "alternativas": [
+      "a) aritmética",
+      "b) de Golomb",
+      "c) de Huffman",
+      "d) wavelet",
+      "e) de planos de bits"
+    ],
+    "area_conhecimento": "Tecnologia de Computação",
+    "area": "Processamento de Imagens",
+    "subarea": "Codificação",
+    "gabarito": "E",
+    "atributo_rag": "tecnologia de computacao - processamento de imagens - codificacao"
+  },
+  {
+    "id": "2007-24",
+    "edicao": 2007,
+    "numero": 24,
+    "enunciado": "Considere um arquivo texto que contenha uma mensagem de 10.000 caracteres utilizando os caracteres A, B e C, com probabilidades 0,1, 0,1 e 0,8 respectivamente. Ao utilizar o *algoritmo de Huffman* para compressão/codificação do referido texto, as seguintes afirmativas são apresentadas.\n\nI. O comprimento médio dos códigos para os referidos caracteres é 1, 2. \\\nII. Se forem utilizados todos os pares possíveis de símbolos para a construção da\nárvore de *Huffman*, então o comprimento médio dos códigos para os referidos pares é menor que 1, 2 por caractere. \\\nIII. A codificação de *Huffman* a partir de todos os pares possíveis de caracteres sempre produz códigos de menor comprimento médio.\n\nOs dados acima permitem afirmar que",
+    "alternativas": [
+      "a) apenas a afirmativa I é verdadeira.",
+      "b) apenas as afirmativas I e II são verdadeiras.",
+      "c) apenas as afirmativas I e III são verdadeiras.",
+      "d) apenas as afirmativas II e III são verdadeiras.",
+      "e) todas as afirmativas são verdadeiras."
+    ],
+    "area_conhecimento": "Fundamentos da Computação",
+    "area": "Algoritmos e Estrutura de Dados",
+    "subarea": "Metodologia de Desenvolvimento de Algoritmos",
+    "gabarito": "B",
+    "atributo_rag": "fundamentos da computacao - algoritmos e estrutura de dados - metodologia de desenvolvimento de algoritmos"
+  },
+  {
+    "id": "2023-43",
+    "edicao": 2023,
+    "numero": 43,
+    "enunciado": "O aumento dos requisitos de paralelismo nas aplicações modernas exige mecanismos de bloqueio (locking) e sincronização cada vez mais eficientes. Nesse contexto, dois mecanismos muito usados são semáforos e spin locks. Sobre esses dois mecanismos, assinale a alternativa correta.",
+    "alternativas": [
+      "a) Spin locks são adequados para cenários de muita contenção entre os processos concorrentes.",
+      "b) Semáforos são adequados para cenários de espera de curta duração para entrar na região crítica.",
+      "c) Semáforos e spin locks são adequados, respectivamente, para cenários de baixa contenção e espera de longa duração para entrar na região crítica.",
+      "d) Spin locks e semáforos são adequados para cenários de muita contenção e espera de curta duração para entrar na região crítica.",
+      "e) Semáforos e spin locks são adequados, respectivamente, para cenários de muita contenção e espera de curta duração para entrar na região crítica."
+    ],
+    "area_conhecimento": "Fundamentos da Computação",
+    "area": "Sistemas Operacionais",
+    "subarea": "Comunicação, Concorrência e Sincronização de Processos",
+    "gabarito": "E",
+    "atributo_rag": "fundamentos da computacao - sistemas operacionais - comunicacao, concorrencia e sincronizacao de processos"
+  },
+  {
+    "id": "2018-67",
+    "edicao": 2018,
+    "numero": 67,
+    "enunciado": "Qual é a classe de algoritmos de sincronização que assegura que, em um conjunto de processos distribuídos, pelo menos, um processo por vez tem acesso a um recurso compartilhado?",
+    "alternativas": [
+      "a) Relógios vetoriais.",
+      "b) Eleição.",
+      "c) Exclusão mútua distribuída.",
+      "d) Relógios lógicos.",
+      "e) Posicionamento global."
+    ],
+    "area_conhecimento": "Tecnologia de Computação",
+    "area": "Sistemas Distribuídos",
+    "subarea": "Problemas Básicos em Computação Distribuída: Coordenação e Sincronização de Processos, Exclusão Mútua, Difusão de Mensagens",
+    "gabarito": "C",
+    "atributo_rag": "tecnologia de computacao - sistemas distribuidos - problemas basicos em computacao distribuida: coordenacao e sincronizacao de processos, exclusao mutua, difusao de mensagens"
+  },
+  {
+    "id": "2005-47",
+    "edicao": 2005,
+    "numero": 47,
+    "enunciado": "Requisitos são capacidades e condições para as quais um sistema deve ter conformidade. Analise as afirmações a seguir.\n\n(I) No Processo Unificado, requisitos são categorizados de acordo com o modelo FURPS+, onde o U do acrônimo representa requisitos de usabilidade. \\\n(II) Casos de uso são documentos em forma de texto, não diagramas, e modelagem de casos de uso é basicamente um ato de escrever estórias de uso de um sistema. \\\n(III) UML (*Unified Modeling Language*) provê notação para se construir o diagrama de casos de uso, que ilustra os nomes dos casos de uso, atores e seus relacionamentos. \\\nConsiderando-se as três afirmações (I), (II) e (III) acima, identifique a única alternativa válida:",
+    "alternativas": [
+      "a) Somente as afirmações (I) e (II) estão corretas.",
+      "b) Somente as afirmações (II) e (III) estão corretas.",
+      "c) Somente as afirmações (I) e (III) estão corretas.",
+      "d) As afirmações (I), (II) e (III) estão corretas.",
+      "e) Somente a afirmação (III) está correta."
+    ],
+    "area_conhecimento": "Tecnologia de Computação",
+    "area": "Engenharia de Software",
+    "subarea": "Engenharia de Requisitos",
+    "gabarito": "D",
+    "atributo_rag": "tecnologia de computacao - engenharia de software - engenharia de requisitos"
+  },
+  {
+    "id": "2017-26",
+    "edicao": 2017,
+    "numero": 26,
+    "enunciado": "O caminhamento pré-fixado à esquerda para uma Árvore Binária de Pesquisa (ABP) é 44, 30, 12, 26, 36, 33, 92, 64, 46, 98. O caminhamento pré-fixado à direta para a mesma árvore é:",
+    "alternativas": [
+      "a) 26, 12, 33, 36, 30, 46, 64, 98, 92, 44",
+      "b) 44, 92, 98, 64, 46, 30, 36, 33, 12, 26",
+      "c) 12, 26, 30, 33, 36, 44, 46, 64, 92, 98",
+      "d) 98, 46, 64, 92, 33, 36, 26, 12, 30, 44",
+      "e) 98, 92, 64, 46, 44, 36, 33, 30, 26, 12"
+    ],
+    "area_conhecimento": "Fundamentos da Computação",
+    "area": "Algoritmos e Estrutura de Dados",
+    "subarea": "Árvores e suas Generalizações: Árvores Binárias, Árvores de Busca e Árvores Balanceadas",
+    "gabarito": "B",
+    "atributo_rag": "fundamentos da computacao - algoritmos e estrutura de dados - arvores e suas generalizacoes: arvores binarias, arvores de busca e arvores balanceadas"
+  },
+  {
+    "id": "2004-70",
+    "edicao": 2004,
+    "numero": 70,
+    "enunciado": "Assinale a alternativa que apresenta um protocolo de roteamento baseado no algoritmo vetor-distância e é classificado como IGP (*Interior Gateway Protocol*):",
+    "alternativas": [
+      "a) OSPF",
+      "b) ICMP",
+      "c) BGP",
+      "d) RIP",
+      "e) RSVP"
+    ],
+    "area_conhecimento": "Tecnologia de Computação",
+    "area": "Redes de Computadores",
+    "subarea": "Interconexão de Redes",
+    "gabarito": "D",
+    "atributo_rag": "tecnologia de computacao - redes de computadores - interconexao de redes"
+  },
+  {
+    "id": "2013-61",
+    "edicao": 2013,
+    "numero": 61,
+    "enunciado": "Com relação aos meios físicos de transmissão utilizados em redes de comunicação, considere as afirmativas a seguir.\n\nI. As fibras óticas monomodo apresentam uma atenuação maior que as fibras multimodo e são mais baratas.\\\nII. Nos cabos de par trançado, a largura de banda disponível é independente da distância percorrida pelo cabeamento.\\\nIII. Nas transmissões em fibras óticas, a fonte de luz pode ser um LED (Light Emitting Diode) ou um laser semicondutor.\\\nIV. Os cabos coaxiais, em suas versões mais modernas, podem apresentar largura de banda da ordem de GHz.\n\nAssinale a alternativa correta.",
+    "alternativas": [
+      "a) Somente as afirmativas I e II são corretas.",
+      "b) Somente as afirmativas I e IV são corretas.",
+      "c) Somente as afirmativas III e IV são corretas.",
+      "d) Somente as afirmativas I, II e III são corretas.",
+      "e) Somente as afirmativas II, III e IV são corretas."
+    ],
+    "area_conhecimento": "Tecnologia de Computação",
+    "area": "Redes de Computadores",
+    "subarea": "Tipos de Enlace, Códigos, Modos e Meios de Transmissão",
+    "gabarito": "C",
+    "atributo_rag": "tecnologia de computacao - redes de computadores - tipos de enlace, codigos, modos e meios de transmissao"
+  },
+  {
+    "id": "2007-33",
+    "edicao": 2007,
+    "numero": 33,
+    "enunciado": "Seja $L = < r_1, \\dots, r_n >$ uma lista qualquer de inteiros não necessariamente distintos.\n\nA esse respeito, assinale a alternativa **INCORRETA**.",
+    "alternativas": [
+      "a) Existe um algoritmo determinístico ótimo de complexidade $0(n)$ para selecionar o maior elemento de $L$.",
+      "b) Existe um algoritmo determinístico de complexidade $O(n \\log n)$ para selecionar,\npara $1\\leq i \\leq n$, o *i-ésimo* menor elemento de $L$.",
+      "c) Se existe um algoritmo linear para selecionar o *i-ésimo* menor elemento de $L$,\nentão, usando esse algoritmo, é possível pro jetar um algoritmo linear para ordenar $L$ em ordem não crescente.",
+      "d) Existe um algoritmo linear para determinar o terceiro maior elemento de $L$.",
+      "e) Existe um algoritmo que, percorrendo uma única vez $L$, pode determinar o menor e o maior elemento de $L$."
+    ],
+    "area_conhecimento": "Fundamentos da Computação",
+    "area": "Análise de Algoritmos",
+    "subarea": "Análise de Algoritmos Iterativos e Recursivos",
+    "gabarito": "C",
+    "atributo_rag": "fundamentos da computacao - analise de algoritmos - analise de algoritmos iterativos e recursivos"
+  },
+  {
+    "id": "2019-14",
+    "edicao": 2019,
+    "numero": 14,
+    "enunciado": "Resolva a identidade $\\overline{\\bar{C} \\cdot (\\bar{D} + \\bar{E})}$ , aplicando, se necessário, as leis de álgebra de\nBoole.",
+    "alternativas": [
+      "a) $\\bar{C} + (D \\cdot E)$",
+      "b) $\\bar{C} + (C + E)$",
+      "c) $C + (\\bar{C} \\cdot \\bar{E})$",
+      "d) $\\bar{C} \\cdot (D \\cdot E)$",
+      "e) $(C + D) \\cdot (C + E)$"
+    ],
+    "area_conhecimento": "Matemática",
+    "area": "Matemática Discreta",
+    "subarea": "Funções e Formas Booleanas, Álgebra Booleana, Minimização de Funções Booleanas",
+    "gabarito": "E",
+    "atributo_rag": "matematica - matematica discreta - funcoes e formas booleanas, algebra booleana, minimizacao de funcoes booleanas"
+  },
+  {
+    "id": "2010-56",
+    "edicao": 2010,
+    "numero": 56,
+    "enunciado": "Em uma rede de computadores, cujos roteadores estão configurados para atualizar suas tabelas de roteamento por meio do emprego de protocolos de roteamento, é correto afirmar:",
+    "alternativas": [
+      "a) Roteadores de borda, que ligam a rede local a redes remotas, tipicamente suportam dois protocolos de roteamento: um protocolo interno para a comunicação com os roteadores locais e um protocolo externo para a comunicação com os roteadores de redes remotas.",
+      "b) Ao se interromper o uso dos protocolos do roteamento, a rede deixará de operar porque não haverá possibilidade de atualização das tabelas de roteamento dos roteadores.",
+      "c) Roteadores que empregam protocolos de roteamento trocam mensagens de controle de tais protocolos apenas quando os enlaces da rede se tornam inoperantes ou quando os mesmos voltam a operar.",
+      "d) O RIP (*Routing Information Protocol*), que emprega o algoritmo de roteamento *vetor distância*, vem sucedendo nas redes locais o protocolo OSPF (*Open Shortest Path First*), o qual emprega o algoritmo *estado de enlace*.",
+      "e) Protocolos de aplicação, como o HTTP, podem diretamente controlar os protocolos de roteamento ao solicitarem que os roteadores da rede calculem rotas alternativas para transportar o tráfego dos protocolos de aplicação."
+    ],
+    "area_conhecimento": "Tecnologia de Computação",
+    "area": "Redes de Computadores",
+    "subarea": "Interconexão de Redes",
+    "gabarito": "A",
+    "atributo_rag": "tecnologia de computacao - redes de computadores - interconexao de redes"
+  },
+  {
+    "id": "2007-45",
+    "edicao": 2007,
+    "numero": 45,
+    "enunciado": "Considere a gramática regular abaixo onde $+_{i}$ e $x_{i}$ são operadores unários e $n,m > 0$\n$$\n\\begin{array}{l}\nA \\rightarrow +_{1}B \\mid +_{2}B \\mid \\ldots \\mid +_{n}B \\mid B \\\\\nB \\rightarrow x_{1}B \\mid x_{2}B \\mid \\ldots \\mid x_{m}B \\mid \\mathit{id}\n\\end{array}\n$$\nNesse caso, é **CORRETO** afirmar que",
+    "alternativas": [
+      "a) sua tabela SLR tem $2n + 2m + 4$ estados.",
+      "b) sua tabela SLR tem $2^n + 2^m + 4$ estados.",
+      "c) sua tabela SLR tem $2(n - 2)(m - 2)$ estados.",
+      "d) sua tabela SLR tem $2(n + 2)(m + 2)$ estados.",
+      "e) sua tabela SLR tem $2n + 2(m + 2)$ estados."
+    ],
+    "area_conhecimento": "Tecnologia de Computação",
+    "area": "Compiladores",
+    "subarea": "Análise Léxica e Sintática",
+    "gabarito": "ANULADA",
+    "atributo_rag": "tecnologia de computacao - compiladores - analise lexica e sintatica"
+  },
+  {
+    "id": "2003-03",
+    "edicao": 2003,
+    "numero": 3,
+    "enunciado": "Assinale a proposição verdadeira.",
+    "alternativas": [
+      "a) Para todo número real positivo $x$, tem-se $x \\geq \\sqrt{x}$.",
+      "b) Para todo número real $x$, tem-se $\\mid x - 2 \\mid > 0$.",
+      "c) Para todo número real não nulo e positivo, tem-se $x + \\frac{1}{x} \\geq 2$.",
+      "d) Para cada número real $x$, existe um número real $y$ tal que $xy = 1$.",
+      "e) Para todo número real $x$, tem-se $\\sqrt{x^2 - 2x + 1} = x - 1$."
+    ],
+    "area_conhecimento": "Matemática",
+    "area": "Cálculo Diferencial e Integral",
+    "subarea": "Limites de Funções e de Sequências",
+    "gabarito": "C",
+    "atributo_rag": "matematica - calculo diferencial e integral - limites de funcoes e de sequencias"
+  },
+  {
+    "id": "2003-43",
+    "edicao": 2003,
+    "numero": 43,
+    "enunciado": "Considere a seguinte tabela em uma base de dados relacional (chave primária sublinhada):\n\n<code>Tabela1(<u>CodAluno,CodDisciplina,AnoSemestre,</u> NomeAluno, NomeDisciplina,\nCodNota, DescricaoNota)</code>\n\nConsidere as seguintes dependências funcionais:\n- `CodAluno` → `NomeAluno`\n- `CodDisciplina` → `NomeDisciplina`\n- (`CodAluno`,`CodDisciplina`,`AnoSemestre`) → `CodNota`\n- (`CodAluno`,`CodDisciplina`,`AnoSemestre`) → `DescricaoNota`\n- `CodNota` → `DescricaoNota`\n\nConsiderando as formas normais, qual das afirmativas abaixo se aplica:",
+    "alternativas": [
+      "a) A tabela encontra-se na primeira forma normal, mas não na segunda forma normal.",
+      "b) A tabela encontra-se na segunda forma normal, mas não na terceira forma normal.",
+      "c) A tabela encontra-se na terceira forma normal, mas não na quarta forma normal.",
+      "d) A tabela não está na primeira forma normal.",
+      "e) A tabela está na quarta forma normal."
+    ],
+    "area_conhecimento": "Tecnologia de Computação",
+    "area": "Banco de Dados",
+    "subarea": "Modelagem e Projeto de Banco de Dados",
+    "gabarito": "A",
+    "atributo_rag": "tecnologia de computacao - banco de dados - modelagem e projeto de banco de dados"
+  },
+  {
+    "id": "2022-05",
+    "edicao": 2022,
+    "numero": 5,
+    "enunciado": "Considere a função $F: R^3 -> R$ dada por: $F(x, y, z) = zx^2+e^zx^3-z^5sen(y)-1$. Assinale a alternativa que apresenta o gradiente de $F$ no ponto $(1, 0, 0)$.",
+    "alternativas": [
+      "a) $(3, 0, 2).$",
+      "b) $(3, 1, 1).$",
+      "c) $(0, -1, 3).$",
+      "d) $(1, 1, 1).$",
+      "e) $(1, 0, 1).$"
+    ],
+    "area_conhecimento": "Matemática",
+    "area": "Cálculo Diferencial e Integral",
+    "subarea": "Gradiente",
+    "gabarito": "A",
+    "atributo_rag": "matematica - calculo diferencial e integral - gradiente"
+  },
+  {
+    "id": "2019-01",
+    "edicao": 2019,
+    "numero": 1,
+    "enunciado": "Seja uma matriz quadrada de terceira ordem $A = \\begin{pmatrix}2 & 3 & 5 \\\\ 7 & 11 & 13\\\\ 17 & 19 &  23\\end{pmatrix}$, calcule o determinante:",
+    "alternativas": [
+      "a) Det A = -78",
+      "b) Det A = -84",
+      "c) Det A = 84",
+      "d) Det A = 78",
+      "e) Det A = -87"
+    ],
+    "area_conhecimento": "Matemática",
+    "area": "Álgebra Linear",
+    "subarea": "Transformações Lineares e Matrizes",
+    "gabarito": "A",
+    "atributo_rag": "matematica - algebra linear - transformacoes lineares e matrizes"
+  },
+  {
+    "id": "2022-04",
+    "edicao": 2022,
+    "numero": 4,
+    "enunciado": "Considere a equação do círculo $x^2+y^2-2x+4y+1=0$. A partir dessa equação,\ndetermine o raio do círculo.",
+    "alternativas": [
+      "a) 1.",
+      "b) 2.",
+      "c) 3.",
+      "d) 4.",
+      "e) 5."
+    ],
+    "area_conhecimento": "Matemática",
+    "area": "Geometria Analítica",
+    "subarea": "Círculo e Esfera",
+    "gabarito": "B",
+    "atributo_rag": "matematica - geometria analitica - circulo e esfera"
+  },
+  {
+    "id": "2018-46",
+    "edicao": 2018,
+    "numero": 46,
+    "enunciado": "No sistema operacional, existem três métodos fundamentais de realizar entrada e saída (E/S). O método mais simples é chamado de E/S _________, em que se tem a CPU realizando todo o trabalho. Na E/S _________, a CPU não fica tão dedicada à rotina de E/S como no método anterior, podendo realizar outras atividades enquanto a operação de E/S está em andamento. Já a\nE/S _________ tem o menor consumo de CPU dentre os três métodos, porém, em geral, tem o menor desempenho.\n\nAssinale a alternativa que preenche, correta e respectivamente, as lacunas do trecho acima.",
+    "alternativas": [
+      "a) usando interrupção – programada – usando DMA",
+      "b) programada – usando interrupção – usando DMA",
+      "c) usando interrupção – usando DMA – programada",
+      "d) usando DMA – programada – usando interrupção",
+      "e) programada – usando DMA – usando interrupção"
+    ],
+    "area_conhecimento": "Fundamentos da Computação",
+    "area": "Sistemas Operacionais",
+    "subarea": "Gerenciamento de Dispositivos de Entrada/Saída",
+    "gabarito": "B",
+    "atributo_rag": "fundamentos da computacao - sistemas operacionais - gerenciamento de dispositivos de entrada/saida"
+  },
+  {
+    "id": "2024-66",
+    "edicao": 2024,
+    "numero": 66,
+    "enunciado": "Assinale a alternativa correta.",
+    "alternativas": [
+      "a) O protocolo IP é baseado em datagramas e orientado à conexão.",
+      "b) O protocolo IP funciona segundo melhor esforço possível garantindo a entrega de mensagens.",
+      "c) O protocolo IP é conhecido como a cola da Internet porque ele permite que outros protocolos sejam usados no seu lugar.",
+      "d) Várias cópias de um pacote IP podem ser entregues.",
+      "e) O datagrama IP identifica o destinatário através dos campos porta de destino e número IP de destino."
+    ],
+    "area_conhecimento": "Tecnologia de Computação",
+    "area": "Redes de Computadores",
+    "subarea": "Protocolos e Serviços de Comunicação",
+    "gabarito": "D",
+    "atributo_rag": "tecnologia de computacao - redes de computadores - protocolos e servicos de comunicacao"
+  },
+  {
+    "id": "2011-57",
+    "edicao": 2011,
+    "numero": 57,
+    "enunciado": "A UML (*Unified Modeling Language*) é uma linguagem visual para visualizar, especificar, construir e documentar os artefatos dos sistemas. A palavra visual é importante, pois a UML é uma notação diagramática. \\\nEm relação aos diagramas da UML, é correto afirmar:",
+    "alternativas": [
+      "a) Os diagramas de interação descrevem como grupos de classes colaboram em algum comportamento. O diagrama de sequência é um diagrama de interação que, normalmente, captura o comportamento de vários cenários, mostrando como as classes e mensagens são passadas no contexto de um conjunto de casos de uso.",
+      "b) O diagrama de máquina de estados permite visualizar um *workflow* ou um processo de negócio. É especialmente útil para detalhar um caso de uso que descreve um *workflow* complexo envolvendo muitas partes e ações concorrentes.",
+      "c) A UML 2.0 divide os diagramas em duas categorias: (i) diagramas estruturais (ou estáticos) e (ii) diagramas comportamentais (ou dinâmicos). O diagrama de componentes é um diagrama comportamental que representa a topologia física do sistema, bem como os vários componentes de software de um sistema e suas dependências.",
+      "d) O diagrama de casos de uso apresenta as funcionalidades externamente observáveis do sistema e os elementos externos ao sistema que interagem com ele. No diagrama de casos de uso, um elemento externo que interage com o sistema é denominado de ator. Os atores podem ser, por exemplo, pessoas, outros sistemas e equipamentos.",
+      "e) Um modelo de domínio é ilustrado com um conjunto de diagramas de classes. O termo “Modelo de domínio” significa uma representação de classes conceituais do mundo real e as restrições inerentes à tecnologia a ser utilizada na solução. É importante constarem neste modelo os atributos e operações de cada classe."
+    ],
+    "area_conhecimento": "Tecnologia de Computação",
+    "area": "Engenharia de Software",
+    "subarea": "Métodos de Análise e de Projeto de Software",
+    "gabarito": "D",
+    "atributo_rag": "tecnologia de computacao - engenharia de software - metodos de analise e de projeto de software"
+  },
+  {
+    "id": "2013-36",
+    "edicao": 2013,
+    "numero": 36,
+    "enunciado": "Sobre a escolha adequada para um algoritmo de ordenação, considere as afirmativas a seguir.\n\nI. Quando os cenários de pior caso for a preocupação, o algoritmo ideal é o Heap Sort.\\\nII. Quando o vetor apresenta a maioria dos elementos ordenados, o algoritmo ideal é o Insertion Sort.\\\nIII. Quando o interesse for um bom resultado para o médio caso, o algoritmo ideal é o Quick Sort.\\\nIV. Quando o interesse é o melhor caso e o pior caso de mesma complexidade, o algoritmo ideal é o Bubble Sort.\n\nAssinale a alternativa correta.",
+    "alternativas": [
+      "a) Somente as afirmativas I e II são corretas.",
+      "b) Somente as afirmativas I e IV são corretas.",
+      "c) Somente as afirmativas III e IV são corretas.",
+      "d) Somente as afirmativas I, II e III são corretas.",
+      "e) Somente as afirmativas II, III e IV são corretas."
+    ],
+    "area_conhecimento": "Fundamentos da Computação",
+    "area": "Algoritmos e Estrutura de Dados",
+    "subarea": "Algoritmos para Pesquisa e Ordenação",
+    "gabarito": "D",
+    "atributo_rag": "fundamentos da computacao - algoritmos e estrutura de dados - algoritmos para pesquisa e ordenacao"
+  },
+  {
+    "id": "2005-04",
+    "edicao": 2005,
+    "numero": 4,
+    "enunciado": "Dada a matriz de transformação linear\n$$\nA = \\begin{pmatrix}\n1 & 3 & 2 \\\\\n2 & 1 & 1 \\\\\n3 & 2 & 3\n\\end{pmatrix}\n$$\npode-se afirmar que:",
+    "alternativas": [
+      "a) o vetor $(1, 0, 0)$ é mapeado para $(1, 3, 2)$.",
+      "b) o vetor $(1, 0, 1)$ é mapeado para $(3, 0, 2)$.",
+      "c) o vetor $(0, 1, 0)$ é mapeado para $(3, 1, 2)$.",
+      "d) o vetor $(0, 0, 1)$ é mapeado para $(3, 2, 3)$.",
+      "e) o vetor $(1, 1, 0)$ é mapeado para $(3, 2, 3)$."
+    ],
+    "area_conhecimento": "Matemática",
+    "area": "Álgebra Linear",
+    "subarea": "Transformações Lineares e Matrizes",
+    "gabarito": "C",
+    "atributo_rag": "matematica - algebra linear - transformacoes lineares e matrizes"
+  },
+  {
+    "id": "2012-61",
+    "edicao": 2012,
+    "numero": 61,
+    "enunciado": "O uso de RPC é considerado um marco no desenvolvimento de sistemas distribuídos por possibilitar que a programação desses sistemas seja semelhante à programação de sistemas convencionais. \n\nAssinale a alternativa que apresenta, corretamente, as características essenciais para se obter esse *status*.",
+    "alternativas": [
+      "a) Adoção de linguagens orientadas a objetos.",
+      "b) Adoção de linguagens voltadas à internet.",
+      "c) Uso de protocolos eficientes de conexão.",
+      "d) Programação através de interfaces.",
+      "e) Uso de DSM (*Distributed Shared Memory*)."
+    ],
+    "area_conhecimento": "Tecnologia de Computação",
+    "area": "Sistemas Distribuídos",
+    "subarea": "Comunicação entre Processos",
+    "gabarito": "D",
+    "atributo_rag": "tecnologia de computacao - sistemas distribuidos - comunicacao entre processos"
+  },
+  {
+    "id": "2017-56",
+    "edicao": 2017,
+    "numero": 56,
+    "enunciado": "A UML é um conjunto de notações que servem para modelagem de diferentes aspectos de um sistema de software. Essas notações permitem criar diferentes tipos de diagramas, dentre eles:\n- Um Diagrama de ________________ permite modelar a arquitetura do sistema em tempo de execução, mostrando a configuração dos elementos de hardware (nós) e como os componentes de software são mapeados nestes nós.\n- Um Diagrama de _____________ permite modelar a organização estrutural da arquitetura/implementação em termos de componentes de software e suas dependências.\n- Um Diagrama de _____________ permite modelar a troca de mensagens entre objetos, enfatizando seu sequenciamento no tempo.\n- Um Diagrama de _____________ permite modelar a arquitetura através de agrupamentos lógicos, e de dependências entre estes. \n\nAssinale a alternativa que preenche, correta e respectivamente, as lacunas do trecho acima.",
+    "alternativas": [
+      "a) Implantação – Classes – Sequência – Componentes",
+      "b) Componentes – Classes – Interação – Pacotes",
+      "c) Implantação – Componentes – Sequência – Pacotes",
+      "d) Componentes – Pacotes – Sequência – classes",
+      "e) Implantação – Componentes – Comunicação – Pacotes"
+    ],
+    "area_conhecimento": "Tecnologia de Computação",
+    "area": "Engenharia de Software",
+    "subarea": "Métodos de Análise e de Projeto de Software",
+    "gabarito": "C",
+    "atributo_rag": "tecnologia de computacao - engenharia de software - metodos de analise e de projeto de software"
+  },
+  {
+    "id": "2002-56",
+    "edicao": 2002,
+    "numero": 56,
+    "enunciado": "Quando trabalhando com sistemas baseados em trocas de mensagens, temporizações (*time-outs*) são utilizadas para:",
+    "alternativas": [
+      "a) Limitar o número de retransmissões de uma mensagem.",
+      "b) Arbitrar que uma mensagem transmitida foi perdida.",
+      "c) Temporariamente suspender a transmissão de mensagens.",
+      "d) Limitar o tamanho de uma mensagem transmitida.",
+      "e) Limitar o tempo para obter um recurso."
+    ],
+    "area_conhecimento": "Tecnologia de Computação",
+    "area": "Sistemas Distribuídos",
+    "subarea": "Tolerância a Falhas",
+    "gabarito": "B",
+    "atributo_rag": "tecnologia de computacao - sistemas distribuidos - tolerancia a falhas"
+  },
+  {
+    "id": "2015-01",
+    "edicao": 2015,
+    "numero": 1,
+    "enunciado": "Considere a transformação linear $ T: \\mathbb{R}^3 \\to \\mathbb{R}^3 $ cuja matriz em relação à base canônica é\n$$\n[T] = \\begin{bmatrix}\n1 & 2 & -1 \\\\\n0 & 2 & 3 \\\\\n1 & -1 & 1\n\\end{bmatrix}.\n$$\nA imagem, pela transformação $ T $, do subespaço $ x + y + 2z = 0 $ de $ \\mathbb{R}^3 $, é o seguinte plano de equação:",
+    "alternativas": [
+      "a) $x + y + 2z = 0$",
+      "b) $3x + 2y -3z = 0$",
+      "c) $- x + y - 2z = 0$",
+      "d) $4x + 7y + 9z = 0$",
+      "e) $4x - 7y + 9z = 0$"
+    ],
+    "area_conhecimento": "Matemática",
+    "area": "Álgebra Linear",
+    "subarea": "Transformações Lineares e Matrizes",
+    "gabarito": "D",
+    "atributo_rag": "matematica - algebra linear - transformacoes lineares e matrizes"
+  },
+  {
+    "id": "2003-57",
+    "edicao": 2003,
+    "numero": 57,
+    "enunciado": "Considere as seguintes afirmações sobre resolução de problemas em IA.\n\nI. A* é um conhecido algoritmo de busca heurística. \\\nII. O *Minimax* é um dos principais algoritmos para jogos de dois jogadores, como o xadrez. \\\nIII. Busca em espaço de estados é uma das formas de resolução de problemas em IA.\n\nSão corretas:",
+    "alternativas": [
+      "a) Apenas III",
+      "b) Apenas I e II",
+      "c) Apenas I e III",
+      "d) Apenas II e III",
+      "e) I, II e III"
+    ],
+    "area_conhecimento": "Tecnologia de Computação",
+    "area": "Inteligência Artificial",
+    "subarea": "Resolução de Problemas como Busca",
+    "gabarito": "E",
+    "atributo_rag": "tecnologia de computacao - inteligencia artificial - resolucao de problemas como busca"
+  },
+  {
+    "id": "2015-66",
+    "edicao": 2015,
+    "numero": 66,
+    "enunciado": "No contexto de algoritmos genéticos, cruzamento (ou crossover) é uma operação em que",
+    "alternativas": [
+      "a) a aptidão das soluções ao problema proposto é avaliada.",
+      "b) as características dos indivíduos resultantes do processo de reprodução são alteradas, acrescentando assim variedade à população.",
+      "c) as características das soluções escolhidas são recombinadas, gerando novas soluções (ou indivíduos).",
+      "d) as condições de encerramento da evolução são verificadas.",
+      "e) a seleção de indivíduos da atual geração é realizada para gerar novos indivíduos da próxima geração."
+    ],
+    "area_conhecimento": "Tecnologia de Computação",
+    "area": "Inteligência Artificial",
+    "subarea": "Árvores de Decisão, Redes Neurais e Algoritmos Genéticos",
+    "gabarito": "C",
+    "atributo_rag": "tecnologia de computacao - inteligencia artificial - arvores de decisao, redes neurais e algoritmos geneticos"
+  },
+  {
+    "id": "2024-26",
+    "edicao": 2024,
+    "numero": 26,
+    "enunciado": "No caminhamento ____________ de uma árvore T, a raiz de T é visitada em primeiro lugar, e então as subárvores enraizadas nos seus filhos são percorridas recursivamente. Se a árvore\né ordenada, então as subárvores são percorridas de acordo com a ordem dos filhos.\n\nAssinale a alternativa que preenche corretamente a lacuna do trecho acima.",
+    "alternativas": [
+      "a) simétrico",
+      "b) em largura",
+      "c) central",
+      "d) pré-fixado",
+      "e) pós-fixado"
+    ],
+    "area_conhecimento": "Fundamentos da Computação",
+    "area": "Algoritmos e Estrutura de Dados",
+    "subarea": "Árvores e suas Generalizações: Árvores Binárias, Árvores de Busca e Árvores Balanceadas",
+    "gabarito": "D",
+    "atributo_rag": "fundamentos da computacao - algoritmos e estrutura de dados - arvores e suas generalizacoes: arvores binarias, arvores de busca e arvores balanceadas"
+  },
+  {
+    "id": "2013-67",
+    "edicao": 2013,
+    "numero": 67,
+    "enunciado": "Em relação aos mapas auto-organizáveis, relacione os termos técnicos, na coluna da esquerda, com suas definições, na coluna da direita.\\\n**(I) Agrupamento.**\\\n**(II) Aprendizado competitivo.**\\\n**(III) Neurônio vencedor.**\\\n**(IV) Redes recorrentes.**\\\n**(V) Vizinhança.**\\\n-------------------------------------------------------\\\n**(A) Define quantos neurônios em torno do vencedor terão seus pesos ajustados, ou seja, define a área de influência do nó vencedor. Sua arquitetura pode assumir vários formatos diferentes.**\\\n**(B) Organização das classes na camada de saída de um Mapa de Kohonen. Embora não seja essencial, os nós dessa camada nor malmente são organizados em forma de grade.**\\\n**(C) Rede Neural que pode ter conexões que voltem dos nós de saída aos nós de entrada e que pode ter também conexões arbitrárias entre quaisquer nós. Desse modo, seu estado interno pode ser alterado conforme conjuntos de entradas são apresentados à rede.**\\\n**(D) Resultado de um mecanismo que permite o direito de responder a um específico subconjunto de dados, de forma que somente um neurônio de saída, ou um neurônio por grupo, esteja ativo em um determinado instante.**\\\n**(E) Técnica que usa o princípio de que apenas um neurônio fornece a saída da rede em resposta a uma entrada.**\n\nAssinale a alternativa que contém a associação correta.",
+    "alternativas": [
+      "a) I-A, II-C, III-E, IV-D, V-B.",
+      "b) I-B, II-A, III-E, IV-C, V-D.",
+      "c) I-B, II-E, III-D, IV-C, V-A.",
+      "d) I-E, II-A, III-B, IV-D, V-C.",
+      "e) I-E, II-C, III-D, IV-A, V-B."
+    ],
+    "area_conhecimento": "Tecnologia de Computação",
+    "area": "Inteligência Artificial",
+    "subarea": "Árvores de Decisão, Redes Neurais e Algoritmos Genéticos",
+    "gabarito": "C",
+    "atributo_rag": "tecnologia de computacao - inteligencia artificial - arvores de decisao, redes neurais e algoritmos geneticos"
+  },
+  {
+    "id": "2017-61",
+    "edicao": 2017,
+    "numero": 61,
+    "enunciado": "Sobre a transformada wavelet para processamento digital de imagens, é correto afirmar que:",
+    "alternativas": [
+      "a) É um algoritmo que produz classificação de objetos na imagem.",
+      "b) É uma técnica que permite o processamento da imagem em multirresolução.",
+      "c) É uma técnica capaz de extrair frequências da imagem sem a localização temporal das mesmas.",
+      "d) É uma técnica que permite a geração de imagens de maior resolução.",
+      "e) É um algoritmo capaz de compreender informações granulares em imagens digitais."
+    ],
+    "area_conhecimento": "Tecnologia de Computação",
+    "area": "Processamento de Imagens",
+    "subarea": "Transformadas de Imagens",
+    "gabarito": "B",
+    "atributo_rag": "tecnologia de computacao - processamento de imagens - transformadas de imagens"
+  },
+  {
+    "id": "2023-55",
+    "edicao": 2023,
+    "numero": 55,
+    "enunciado": "Analise as seguintes assertivas, em relação à análise sintática no contexto da construção de compiladores para linguagens de programação e assinale a alternativa correta.\\\nI. O funcionamento do algoritmo de análise sintática ascendente (Bottom-up, LR) corresponde ao percurso da árvore sintática do programa a partir das folhas (representando os símbolos terminais da gramática que define a linguagem), até chegar à raiz (que representa a variável ou símbolo não terminal inicial da gramática).\\\nII. O funcionamento do algoritmo de análise sintática descendente (Top-down, LL) corresponde ao percurso da árvore sintática do programa a partir das folhas (representando as variáveis ou símbolos não terminais da gramática que define a linguagem), até chegar à raiz (que representa a sequência de símbolos terminais da gramática).\\\nIII. Dada uma gramática LL(1) qualquer, se verifica que os lados direitos de qualquer par de regras dela não contêm prefixos não vazios em comum. Por exemplo, uma gramática com regras **X -> abBc** e **Y -> ab** não pode ser LL(1), pois o prefixo **ab** aparece nos lados direitos de ambas as regras.\\\nIV. Na construção de tabelas de análise sintática LR, podem aparecer três tipos de conflitos:\nConflitos Empilhar/Empilhar, Conflitos Empilhar/Reduzir e Conflitos Reduzir/Reduzir.\n- V. Na notação de gramáticas LL(k) e LR(k), o primeiro símbolo (L) indica que a entrada é\nlida/processada da esquerda para a direita (Left-to-right). O segundo símbolo (L ou R) indica que a derivação implementada pelo algoritmo na construção/percurso da árvore sintática é mais\nà esquerda (L) ou mais à direita (R).",
+    "alternativas": [
+      "a) Apenas as assertivas I e V estão corretas.",
+      "b) Apenas as assertivas II e IV estão corretas.",
+      "c) Apenas as assertivas I, II e IV estão corretas.",
+      "d) Apenas as assertivas II, III e IV estão corretas.",
+      "e) Apenas as assertivas III, IV e V estão corretas."
+    ],
+    "area_conhecimento": "Tecnologia de Computação",
+    "area": "Compiladores",
+    "subarea": "Compiladores e Interpretadores",
+    "gabarito": "A",
+    "atributo_rag": "tecnologia de computacao - compiladores - compiladores e interpretadores"
+  },
+  {
+    "id": "2016-04",
+    "edicao": 2016,
+    "numero": 4,
+    "enunciado": "O ângulo entre os vetores $\\vec{u} = (2,2,0)$ e $\\vec{v} = (0,3,-3)$ é:",
+    "alternativas": [
+      "a) 0°",
+      "b) 30°",
+      "c) 45°",
+      "d) 60°",
+      "e) 90°"
+    ],
+    "area_conhecimento": "Matemática",
+    "area": "Geometria Analítica",
+    "subarea": "Posições Relativas, Interseções, Distâncias e Ângulos",
+    "gabarito": "D",
+    "atributo_rag": "matematica - geometria analitica - posicoes relativas, intersecoes, distancias e angulos"
+  },
+  {
+    "id": "2006-58",
+    "edicao": 2006,
+    "numero": 58,
+    "enunciado": "A percepção humana é um processo ativo fundamental na interação humano-computador. Duas classes importantes de teorias que explicam a maneira como percebemos são representadas pelas abordagens construtivista e ecológica. Assinale a alternativa incorreta:",
+    "alternativas": [
+      "a) A abordagem construtivista possibilita entender como a informação que chega à\nretina é decomposta em partes significativas.",
+      "b) A abordagem ecológica possibilita entender as propriedades visuais de objetos em termos de quanto esses objetos evocam ações a serem realizadas sobre eles.",
+      "c) *Affordance* é um conceito relacionado à abordagem construtivista.",
+      "d) Psicólogos Gestaltistas foram os primeiros a descrever princípios gerais subjacentes ao processo de organização perceptual.",
+      "e) São princípios da Gestalt para organização perceptual: proximidade, similaridade, fecho, continuidade e simetria."
+    ],
+    "area_conhecimento": "Tecnologia de Computação",
+    "area": "Processamento de Imagens",
+    "subarea": "Noções de Percepção Visual Humana",
+    "gabarito": "C",
+    "atributo_rag": "tecnologia de computacao - processamento de imagens - nocoes de percepcao visual humana"
+  },
+  {
+    "id": "2008-51",
+    "edicao": 2008,
+    "numero": 51,
+    "enunciado": "Considere o seguinte termo do cálculo-lambda:\n$$\nM = (\\lambda x . \\lambda y . x ) ( \\lambda u .\\lambda z .u )\n$$\nConsiderando a forma normal que resulta da redução completa do termo M , assinale a alternativa **CORRETA**.",
+    "alternativas": [
+      "a) $(\\lambda y . z )$",
+      "b) $(\\lambda x . x ) (\\lambda z . z )$",
+      "c) $( \\lambda y . (\\lambda u .\\lambda z .u ) )$",
+      "d) $(\\lambda x . \\lambda y . x )$",
+      "e) Nenhuma das formas acima."
+    ],
+    "area_conhecimento": "Fundamentos da Computação",
+    "area": "Linguagens Formais, Autômatos e Computabilidade",
+    "subarea": "Tese de Church",
+    "gabarito": "C",
+    "atributo_rag": "fundamentos da computacao - linguagens formais, automatos e computabilidade - tese de church"
+  },
+  {
+    "id": "2014-17",
+    "edicao": 2014,
+    "numero": 17,
+    "enunciado": "Considerando que a prova do POSCOMP da área de Matemática tem 20 questões de múltipla escolha, assinale a alternativa que apresenta, corretamente, o número de gabaritos possíveis das 20 questões, com 5 alternativas por questão, contendo uma única alternativa correta.",
+    "alternativas": [
+      "a)$ \\frac{5}{20} $",
+      "b)$ \\frac{20}{5} $",
+      "c) $5 \\times 20$",
+      "d) $20^5$",
+      "e) $5^{20}$"
+    ],
+    "area_conhecimento": "Matemática",
+    "area": "Análise Combinatória",
+    "subarea": "Permutações",
+    "gabarito": "E",
+    "atributo_rag": "matematica - analise combinatoria - permutacoes"
+  },
+  {
+    "id": "2023-26",
+    "edicao": 2023,
+    "numero": 26,
+    "enunciado": "A ordenação ________________ determina, para cada elemento de entrada x, o número de elementos menores que x e usa essa informação para inserir o elemento x diretamente em sua posição no arranjo de saída. Por exemplo, se 17 elementos forem menores que x, então x pertence à posição de saída 18. Assinale a alternativa que preenche corretamente a lacuna do trecho acima.",
+    "alternativas": [
+      "a) mergesort",
+      "b) quicksort",
+      "c) por contagem",
+      "d) por fila de prioridade",
+      "e) por intercalação com sentinela"
+    ],
+    "area_conhecimento": "Fundamentos da Computação",
+    "area": "Algoritmos e Estrutura de Dados",
+    "subarea": "Algoritmos para Pesquisa e Ordenação",
+    "gabarito": "C",
+    "atributo_rag": "fundamentos da computacao - algoritmos e estrutura de dados - algoritmos para pesquisa e ordenacao"
+  },
+  {
+    "id": "2010-32",
+    "edicao": 2010,
+    "numero": 32,
+    "enunciado": "Considere o algoritmo a seguir.\n```\nPROC (n)\n  se n <= 1 então\n    retorna 1 + n;\n  senão\n    retorna PROC(n/2) + PROC(n/2);\n  fim se\n```\nAssinale a alternativa que indica corretamente quantas comparações são feitas para uma entrada $n > 0$, onde $n$ é um número natural.",
+    "alternativas": [
+      "a) $n$",
+      "b) $\\log n + 1$",
+      "c) $n \\log n + 1$",
+      "d) $n^2 + n - 1$",
+      "e) $2n - 1$"
+    ],
+    "area_conhecimento": "Fundamentos da Computação",
+    "area": "Análise de Algoritmos",
+    "subarea": "O Uso de Relações de Recorrência para Análise de Algoritmos Recursivos",
+    "gabarito": "ANULADA",
+    "atributo_rag": "fundamentos da computacao - analise de algoritmos - o uso de relacoes de recorrencia para analise de algoritmos recursivos"
+  },
+  {
+    "id": "2002-70",
+    "edicao": 2002,
+    "numero": 70,
+    "enunciado": "Qual das informações a seguir NÃO é colocada no registro de ativação na chamada de funções?",
+    "alternativas": [
+      "a) Endereço de retorno",
+      "b) Variáveis locais estáticas",
+      "c) Estado dos registradores",
+      "d) *Link* para a subrotina chamadora",
+      "e) Valor de retorno da função"
+    ],
+    "area_conhecimento": "Tecnologia de Computação",
+    "area": "Compiladores",
+    "subarea": "Ambientes de Tempo de Execução",
+    "gabarito": "B",
+    "atributo_rag": "tecnologia de computacao - compiladores - ambientes de tempo de execucao"
+  },
+  {
+    "id": "2010-51",
+    "edicao": 2010,
+    "numero": 51,
+    "enunciado": "No processo de síntese da imagem de uma cena tridimensional, também denominado *pipeline* gráfico, diversas operações são executadas em sequência. O objetivo destas operações é converter as primitivas geométricas que descrevem os objetos da cena em alto-nível, junto com a especificação da câmera sintética, em uma coleção de *pixels* na tela. \n\nAssinale a alternativa que apresenta a sequência correta dessas operações.",
+    "alternativas": [
+      "a) Projeção / Recorte / Rasterização / Visibilidade",
+      "b) Recorte / Projeção / Visibilidade / Rasterização",
+      "c) Projeção / Recorte / Visibilidade / Rasterização",
+      "d) Projeção / Rasterização / Recorte / Visibilidade",
+      "e) Recorte / Projeção / Rasterização / Visibilidade"
+    ],
+    "area_conhecimento": "Tecnologia de Computação",
+    "area": "Computação Gráfica",
+    "subarea": "O Processo de “Rendering”: Fontes de Luz, Remoção de Linhas e Superfícies Ocultas, Modelos de Tonalização (“Shading”)",
+    "gabarito": "E",
+    "atributo_rag": "tecnologia de computacao - computacao grafica - o processo de “rendering”: fontes de luz, remocao de linhas e superficies ocultas, modelos de tonalizacao (“shading”)"
+  },
+  {
+    "id": "2024-47",
+    "edicao": 2024,
+    "numero": 47,
+    "enunciado": "Analise o texto a seguir, que descreve um programa que solicita um salário ao usuário e mostra o imposto a pagar:\n- Se o salário for negativo ou zero, mostre o erro respectivo.\n- Se o salário for maior que 1000, paga 10% de imposto, se não paga apenas 5%.\nPara resolver o problema descrito acima, qual instrução deve ser utilizada?",
+    "alternativas": [
+      "a) Laço encadeado.",
+      "b) Atribuição composta.",
+      "c) Laço infinito.",
+      "d) Condicional encadeada.",
+      "e) Atribuição simples."
+    ],
+    "area_conhecimento": "Fundamentos da Computação",
+    "area": "Técnicas de Programação",
+    "subarea": "Comandos de uma Linguagem de programação",
+    "gabarito": "D",
+    "atributo_rag": "fundamentos da computacao - tecnicas de programacao - comandos de uma linguagem de programacao"
+  },
+  {
+    "id": "2013-05",
+    "edicao": 2013,
+    "numero": 5,
+    "enunciado": "Considerando a transformação linear do plano $T (x, y) = (15x + y, 34x + 27y)$, assinale a alternativa correta.",
+    "alternativas": [
+      "a) A dimensão do núcleo de $T$ é igual a 1.",
+      "b) Existem $(a, b)$ e $(c, d)$ distintos tais que $T (a, b) = T (c, d)$.",
+      "c) Imagem de $T$ é diferente de $\\mathbb{R}^2$.",
+      "d) O núcleo de $T$ é diferente de 0.",
+      "e) $T$ é inversível."
+    ],
+    "area_conhecimento": "Matemática",
+    "area": "Álgebra Linear",
+    "subarea": "Transformações Lineares e Matrizes",
+    "gabarito": "E",
+    "atributo_rag": "matematica - algebra linear - transformacoes lineares e matrizes"
+  },
+  {
+    "id": "2011-10",
+    "edicao": 2011,
+    "numero": 10,
+    "enunciado": "A proporção de computadores acessando um provedor em um dado instante $ t $ a partir das 8 horas é dada por\n$$\nN(t) = \\frac{1}{1 + 3e^{-kt}},\n$$\nonde o instante $ t $ é dado em horas e $ k $ é uma constante positiva. A proporção estimada de computadores acessando este provedor ao meio-dia é de:",
+    "alternativas": [
+      "a) $\\frac{1}{k}\\ln(2 + e^{4k})$",
+      "b) $\\frac{1}{k}\\ln\\left(\\frac{3e^{12k} + 1}{4}\\right)$",
+      "c) $\\frac{1}{k}\\ln\\left(\\frac{3e^{12k} + 1}{3 + e^{8k}}\\right)$",
+      "d) $\\frac{1}{k}\\ln\\left(\\frac{3 + e^{4k}}{4}\\right)$",
+      "e) $\\frac{1}{k}\\ln\\left(\\frac{(3 + e^{4k})^{3k}}{4}\\right)$"
+    ],
+    "area_conhecimento": "Matemática",
+    "area": "Cálculo Diferencial e Integral",
+    "subarea": "Integração de Funções Reais de uma Variável",
+    "gabarito": "D",
+    "atributo_rag": "matematica - calculo diferencial e integral - integracao de funcoes reais de uma variavel"
+  },
+  {
+    "id": "2014-68",
+    "edicao": 2014,
+    "numero": 68,
+    "enunciado": "Considere a expressão regular a seguir.\n$$\n(c^*a[abc]^*b[abc]^*) \\mid c^*\n$$\nAssinale a alternativa que descreve, corretamente, todas as cadeias geradas por essa expressão regular.",
+    "alternativas": [
+      "a) Cadeias sobre o alfabeto $\\{a, b, c\\}$ onde o primeiro $a$ precede o primeiro $b$.",
+      "b) Cadeias sobre o alfabeto $\\{a, b, c\\}$ com um número par de $a$’s.",
+      "c) Cadeias sobre o alfabeto $\\{a, b, c\\}$ contendo a substring $baa$.",
+      "d) Cadeias sobre o alfabeto $\\{a, b, c\\}$ contendo um número ímpar de $c$’s.",
+      "e) Cadeias sobre o alfabeto $\\{a, b, c\\}$ terminadas por $c$."
+    ],
+    "area_conhecimento": "Tecnologia de Computação",
+    "area": "Compiladores",
+    "subarea": "Análise Léxica e Sintática",
+    "gabarito": "A",
+    "atributo_rag": "tecnologia de computacao - compiladores - analise lexica e sintatica"
+  },
+  {
+    "id": "2002-48",
+    "edicao": 2002,
+    "numero": 48,
+    "enunciado": "Marque a alternativa onde todos os conceitos estão corretos.",
+    "alternativas": [
+      "a) Em um diagrama de fluxo de dados, uma entidade externa representa um produtor ou um consumidor de informação e está fora dos limites do sistema modelado; cada processo pode ser refinado, para explicitar um maior detalhamento; um DFD contém dois níveis de detalhamento; um processo é um transformador de informação e também está fora do sistema; o nível 0 de um DFD representa o sistema como um todo e indica os principais usuários e as funções do sistema.",
+      "b) Em um diagrama de fluxo de dados uma entidade externa representa uma fonte ou destino das informações processadas pelo sistema e está fora dos limites do sistema modelado; cada processo pode ser refinado, para explicitar um maior detalhamento; um DFD pode conter vários níveis de detalhamento; um processo é um transformador de informação; o nível 0 de um DFD representa o sistema como um todo e indica as principais fontes e destinos das informações, usualmente referenciado por Diagrama de Contexto.",
+      "c) Em um diagrama de fluxo de dados uma entidade externa representa um produtor ou um consumidor de informação e está fora dos limites do sistema modelado; cada processo deve ser refinado, para explicitar um maior detalhamento; um DFD pode conter vários níveis de detalhamento; um processo é um transformador de informação e também está fora do sistema; o nível 0 de um DFD representa o sistema como um todo e indica os principais usuários e as funções do sistema.",
+      "d) Em um diagrama de fluxo de dados uma entidade externa representa uma fonte ou destino das informações processadas pelo sistema e está fora dos limites do sistema modelado; cada processo pode ser refinado, para explicitar um maior detalhamento; um DFD pode conter vários níveis de detalhamento; um processo é um transformador de informação e também está fora do sistema; o nível 0 de um DFD representa o sistema como um todo e indica as principais fontes e destinos das informações.",
+      "e) Nenhuma das alternativas anteriores."
+    ],
+    "area_conhecimento": "Tecnologia de Computação",
+    "area": "Engenharia de Software",
+    "subarea": "Métodos de Análise e de Projeto de Software",
+    "gabarito": "B",
+    "atributo_rag": "tecnologia de computacao - engenharia de software - metodos de analise e de projeto de software"
+  },
+  {
+    "id": "2003-14",
+    "edicao": 2003,
+    "numero": 14,
+    "enunciado": "O resto da divisão de $6^{81} - 5^{64}$ por 7 é igual a",
+    "alternativas": [
+      "a) 0",
+      "b) 1",
+      "c) 2",
+      "d) 3",
+      "e) 4"
+    ],
+    "area_conhecimento": "Matemática",
+    "area": "Matemática Discreta",
+    "subarea": "Funções",
+    "gabarito": "E",
+    "atributo_rag": "matematica - matematica discreta - funcoes"
+  },
+  {
+    "id": "2005-49",
+    "edicao": 2005,
+    "numero": 49,
+    "enunciado": "Considere as seguintes afirmações sobre o objetivo da atividade de validação de software:\n\n(I) Verificar se o produto está sendo corretamente construído. \\\n(II) Verificar se o produto está sendo corretamente avaliado. \\\n(III) Verificar se o produto correto está sendo construído. \n\nQuais são as afirmações verdadeiras?",
+    "alternativas": [
+      "a) Somente a afirmação (II).",
+      "b) Somente a afirmação (III).",
+      "c) Somente as afirmações (I) e (II).",
+      "d) Somente as afirmações (II) e (III).",
+      "e) Afirmações (I), (II) e (III)."
+    ],
+    "area_conhecimento": "Tecnologia de Computação",
+    "area": "Engenharia de Software",
+    "subarea": "Verificação, Validação e Teste",
+    "gabarito": "B",
+    "atributo_rag": "tecnologia de computacao - engenharia de software - verificacao, validacao e teste"
+  },
+  {
+    "id": "2008-52",
+    "edicao": 2008,
+    "numero": 52,
+    "enunciado": "Analise as seguintes afirmativas.\n\nI. Condições de corrida podem ocorrer se múltiplas *threads* fazem leituras de um dado compartilhado, mesmo que nenhuma realize escritas. \\\nII. O uso de *mutex* para a exclusão mútua em seções críticas garante que não haja condição de corrida, porém pode ocasionar *deadlocks* se não for corretamente empregado. \\\nIII. Monitores são baseados em um tipo abstrato de dados e um controle de acesso aos dados. Apenas funções do monitor acessam os dados e apenas uma *thread* ou processo pode executar funções de um monitor por vez. \\\nIV. Semáforos têm duas operações, P( ) e V( ), sendo que apenas a operação P( ) pode bloquear um processo ou *thread*.\n\nA análise permite concluir que",
+    "alternativas": [
+      "a) apenas as afirmativas I, II e III são verdadeiras.",
+      "b) apenas as afirmativas I, III e IV são verdadeiras.",
+      "c) apenas as afirmativas II e IV são verdadeiras.",
+      "d) apenas as afirmativas II, III e IV são verdadeiras.",
+      "e) nenhuma das afirmativas é verdadeira."
+    ],
+    "area_conhecimento": "Fundamentos da Computação",
+    "area": "Sistemas Operacionais",
+    "subarea": "Comunicação, Concorrência e Sincronização de Processos",
+    "gabarito": "D",
+    "atributo_rag": "fundamentos da computacao - sistemas operacionais - comunicacao, concorrencia e sincronizacao de processos"
+  },
+  {
+    "id": "2013-59",
+    "edicao": 2013,
+    "numero": 59,
+    "enunciado": "Leia as definições a seguir.\n- Seja A uma imagem em níveis de cinza.\n- Seja B a imagem resultante da Equalização do Histograma da imagem A.\n- Seja C a imagem resultante da Equalização do Histograma da imagem B.\n\nCom base nessas definições e nos conceitos utilizados em processamento digital de imagens, considere as afirmativas a seguir.\n\nI. A comparação do histograma de duas imagens é uma medida de similaridade que indica se as duas imagens são impressões visuais de uma mesma cena.\\\nII. A imagem B é igual à imagem C.\\\nIII. O histograma da imagem é uma função discreta que representa a probabilidade de se encontrar uma determinada cor na imagem.\\\nIV. O histograma de duas imagens, em níveis de cinza, fornece a informação se uma das imagens está mais clara ou mais escura ou possui a mesma luminosidade.\n\nAssinale a alternativa correta.",
+    "alternativas": [
+      "a) Somente as afirmativas I e II são corretas.",
+      "b) Somente as afirmativas I e IV são corretas.",
+      "c) Somente as afirmativas III e IV são corretas.",
+      "d) Somente as afirmativas I, II e III são corretas.",
+      "e) Somente as afirmativas II, III e IV são corretas."
+    ],
+    "area_conhecimento": "Tecnologia de Computação",
+    "area": "Processamento de Imagens",
+    "subarea": "Análise de Imagens e Noções de Visão Computacional",
+    "gabarito": "E",
+    "atributo_rag": "tecnologia de computacao - processamento de imagens - analise de imagens e nocoes de visao computacional"
+  },
+  {
+    "id": "2010-38",
+    "edicao": 2010,
+    "numero": 38,
+    "enunciado": "Um analista de sistemas foi convidado para opinar sobre por que um determinado sistema tinha desempenho ruim. Considerando que o analista observou que o sistema tinha alta taxa de acesso a disco, por demanda de entrada e saída dos processos, qual das alternativas abaixo pode explicar o baixo desempenho?",
+    "alternativas": [
+      "a) O sistema operacional gerenciava E/S pelo algoritmo FIFO.",
+      "b) O sistema operacional entrava em *deadlock*.",
+      "c) O sistema operacional entrava em *starvation*.",
+      "d) O sistema operacional gerenciava E/S pelo algoritmo do elevador.",
+      "e) O sistema operacional usava dispositivos de DMA."
+    ],
+    "area_conhecimento": "Fundamentos da Computação",
+    "area": "Sistemas Operacionais",
+    "subarea": "Gerenciamento de Dispositivos de Entrada/Saída",
+    "gabarito": "A",
+    "atributo_rag": "fundamentos da computacao - sistemas operacionais - gerenciamento de dispositivos de entrada/saida"
+  },
+  {
+    "id": "2019-40",
+    "edicao": 2019,
+    "numero": 40,
+    "enunciado": "Considere as seguintes afirmações sobre classes de problemas:\n\nI. O problema de decisão CAM, descrito a seguir, pertence à classe de complexidade P. \\\nCAM (caminho em grafo)\\\nEntrada: uma tripla $(G,a,b)$ em que \n- G é um grafo\n- a e b são nodos de G \\\nPergunta: Existe caminho em G iniciando em a e terminando em b? \\\nII. Um problema X pertence à classe de problemas NP-completos quando satisfaz às seguintes condições:\n- X pertence à classe NP, e\n- todo problema Y da classe NP pode ser reduzido em tempo polinomial a X. \\\nIII. Se um problema de decisão X pertence à classe P, então o complemento do problema X (problema com as mesmas instâncias que X, porém com as respectivas respostas invertidas) pertence à classe NP.\n\nQuais estão corretas?",
+    "alternativas": [
+      "a) Apenas I.",
+      "b) Apenas III.",
+      "c) Apenas I e II.",
+      "d) Apenas II e III.",
+      "e) I, II e III."
+    ],
+    "area_conhecimento": "Fundamentos da Computação",
+    "area": "Linguagens Formais, Autômatos e Computabilidade",
+    "subarea": "Classes de Problemas P, NP, NP Completo e NP-Difícil",
+    "gabarito": "E",
+    "atributo_rag": "fundamentos da computacao - linguagens formais, automatos e computabilidade - classes de problemas p, np, np completo e np-dificil"
+  },
+  {
+    "id": "2002-54",
+    "edicao": 2002,
+    "numero": 54,
+    "enunciado": "Qual das seguintes condições não é necessária para a ocorrência de um *deadlock*?",
+    "alternativas": [
+      "a) Uso mutuamente exclusivo de recursos por processos.",
+      "b) Alocação parcial de recursos a processos.",
+      "c) Escalonamento preemptivo de recursos.",
+      "d) Processos em espera circular.",
+      "e) Haver compartilhamento de recursos por processos."
+    ],
+    "area_conhecimento": "Tecnologia de Computação",
+    "area": "Sistemas Distribuídos",
+    "subarea": "Sistemas Operacionais Distribuídos: Sistemas de Arquivos, Servidores de Nomes, Memória Compartilhada, Segurança",
+    "gabarito": "C",
+    "atributo_rag": "tecnologia de computacao - sistemas distribuidos - sistemas operacionais distribuidos: sistemas de arquivos, servidores de nomes, memoria compartilhada, seguranca"
+  },
+  {
+    "id": "2019-31",
+    "edicao": 2019,
+    "numero": 31,
+    "enunciado": "De acordo com a Teoria de Sistema de Tipos, classifique a função a seguir:\n```\n\nint soma(int x,int y) {\n   return x+y;\n}\n\n```",
+    "alternativas": [
+      "a) Função Somadora.",
+      "b) Função Polimórfica.",
+      "c) Função Monomórfica.",
+      "d) Função Sobrecarregada.",
+      "e) Função Abstrata."
+    ],
+    "area_conhecimento": "Fundamentos da Computação",
+    "area": "Linguagens de Programação",
+    "subarea": "Teoria dos Tipos: Sistemas de Tipos, Polimorfismo",
+    "gabarito": "C",
+    "atributo_rag": "fundamentos da computacao - linguagens de programacao - teoria dos tipos: sistemas de tipos, polimorfismo"
+  },
+  {
+    "id": "2011-51",
+    "edicao": 2011,
+    "numero": 51,
+    "enunciado": "Considere a relação a seguir, definida na linguagem SQL padrão.\n```\nCREATE TABLE EMPREGADO\n(     CODIGO NUMBER(4) PRIMARY KEY,\n      NOME VARCHAR2(10),\n      SALARIO NUMBER(7,2)\n)\n```\nConsidere também as consultas (C1, C2, C3 e C4) a seguir, expressas na linguagem SQL. \\\n**C1:**\n```\nselect NOME from EMPREGADO\nwhere CODIGO in ((select CODIGO from EMPREGADO)\n                  minus\n                 (select E1.CODIGO from EMPREGADO E1, EMPREGADO E2\n                  where E1.SALARIO < E2.SALARIO)\n                 )\n```\nObs: o operador minus realiza a operação de subtração entre relações. \\\n**C2:**\n```\nselect NOME from EMPREGADO\nwhere SALARIO = (select max(SALARIO) from EMPREGADO)\n```\n**C3:**\n```\nSelect NOME from EMPREGADO\nwhere SALARIO >= all (select SALARIO from EMPREGADO)\n```\n**C4:**\n```\nselect NOME from EMPREGADO\nwhere CODIGO in ( select E1.CODIGO from EMPREGADO E1, EMPREGADO E2\n                  where E1.SALARIO > E2.SALARIO\n                )\n```\nCom relação às consultas, assinale a alternativa correta.",
+    "alternativas": [
+      "a) Apenas as consultas C2 e C3 são equivalentes.",
+      "b) Todas as consultas são equivalentes.",
+      "c) Apenas as consultas C1 e C3 são equivalentes.",
+      "d) Apenas as consultas C1 e C4 são equivalentes.",
+      "e) Apenas as consultas C1, C2 e C3 são equivalentes."
+    ],
+    "area_conhecimento": "Tecnologia de Computação",
+    "area": "Banco de Dados",
+    "subarea": "Linguagens de Consulta",
+    "gabarito": "E",
+    "atributo_rag": "tecnologia de computacao - banco de dados - linguagens de consulta"
+  },
+  {
+    "id": "2009-36",
+    "edicao": 2009,
+    "numero": 36,
+    "enunciado": "Considere as seguintes afirmativas relativas à ocorrência de \"deadlocks\" (ou impasses).\n\nI. A estratégia de tratamento de \"deadlocks\" conhecida como prevenção requer que se determine uma condição suficiente a que eles ocorram. Uma vez determinada a condição, os algoritmos de manipulação dos recursos compartilhados em questão devem ser projetados de forma que,\ngarantidamente, ela jamais ocorra. \\\nII. A estratégia de tratamento de \"deadlocks\" conhecida como detecção requer que se determine uma condição suficiente a que eles ocorram. Uma vez determinada a condição, o tratamento por detecção consiste em verificar sua validade e, em caso afirmativo, concluir que existe um \"deadlock\". \\\nIII. As estratégias conhecidas como prevenção e detecção para o tratamento de\n\"deadlocks\" são complementares uma à outra: Enquanto a primeira guia o projeto dos algoritmos de compartilhamento de recursos para que \"deadlocks\" jamais ocorram, a segunda trata de impedir que ocorram quaisquer condições necessárias à ocorrência de \"deadlocks\". \\\nIV. Para que ocorra um \"deadlock\" é necessário que haja um ciclo de espera envolvendo um determinado conjunto de processos. Uma estratégia comum de prevenção é a criação de algoritmos de compartilhamento de recursos que impeçam a ocorrência desses ciclos. \n\nAssinale a alternativa CORRETA:",
+    "alternativas": [
+      "a) Apenas a afirmativa I é verdadeira.",
+      "b) Apenas a afirmativa II é verdadeira.",
+      "c) Apenas as afirmativas I e III são verdadeiras.",
+      "d) Apenas as afirmativas II e III são verdadeiras.",
+      "e) Apenas as afirmativas Il e IV são verdadeiras."
+    ],
+    "area_conhecimento": "Fundamentos da Computação",
+    "area": "Sistemas Operacionais",
+    "subarea": "Comunicação, Concorrência e Sincronização de Processos",
+    "gabarito": "E",
+    "atributo_rag": "fundamentos da computacao - sistemas operacionais - comunicacao, concorrencia e sincronizacao de processos"
+  },
+  {
+    "id": "2015-69",
+    "edicao": 2015,
+    "numero": 69,
+    "enunciado": "Em qual arquitetura de rede neural artificial o algoritmo da retropropagação de erros (backpropagation) é utilizado para treinamento?",
+    "alternativas": [
+      "a) Kohonen.",
+      "b) Hopfield.",
+      "c) Perceptron.",
+      "d) Rede Perceptron Multicamadas (MLP - MultiLayer perceptron).",
+      "e) Rede de base radial (RBF - Radial Basis Function) ."
+    ],
+    "area_conhecimento": "Tecnologia de Computação",
+    "area": "Inteligência Artificial",
+    "subarea": "Árvores de Decisão, Redes Neurais e Algoritmos Genéticos",
+    "gabarito": "D",
+    "atributo_rag": "tecnologia de computacao - inteligencia artificial - arvores de decisao, redes neurais e algoritmos geneticos"
+  },
+  {
+    "id": "2022-66",
+    "edicao": 2022,
+    "numero": 66,
+    "enunciado": "No contexto de algoritmos genéticos, assinale a alternativa correta.",
+    "alternativas": [
+      "a) É uma categoria de algorítmo determinístico que gera sempre a mesma saída.",
+      "b) Pode ser utilizado apenas para tratamento de problemas biológicos.",
+      "c) Utiliza uma função de aptidão (fitness) utilizado para resolver problemas de otimização.",
+      "d) São algoritmos com representação de soluções basedo apenas em números reais.",
+      "e) Nenhuma das alternativas anteriores."
+    ],
+    "area_conhecimento": "Tecnologia de Computação",
+    "area": "Inteligência Artificial",
+    "subarea": "Árvores de Decisão, Redes Neurais e Algoritmos Genéticos",
+    "gabarito": "C",
+    "atributo_rag": "tecnologia de computacao - inteligencia artificial - arvores de decisao, redes neurais e algoritmos geneticos"
+  },
+  {
+    "id": "2005-22",
+    "edicao": 2005,
+    "numero": 22,
+    "enunciado": "Para a representação de número ponto flutuante no padrão IEEE, quais das afirmações a seguir são verdadeiras?\n\n(I) Quando a fração e o expoente são zero, o número representado é zero. \\\n(II) Quando o expoente é zero, o número representado é desnormalizado. \\\n(III) Quando todos os bits do expoente são iguais a um e a fração é zero, o número é $+\\infty$ ou $-\\infty$.\\\n(IV) Quando todos os bits do expoente são iguais a um e a fração é diferente de zero, a representação não é número.",
+    "alternativas": [
+      "a) Somente as afirmações (II), (III) e (IV).",
+      "b) Somente as afirmações (I), (II) e (IV).",
+      "c) Somente as afirmações (I), (II) e (III).",
+      "d) Somente as afirmações (I), (III) e (IV).",
+      "e) Todas as afirmações."
+    ],
+    "area_conhecimento": "Fundamentos da Computação",
+    "area": "Arquitetura e Organização de Computadores",
+    "subarea": "Organização de Computadores: Memórias, Unidades Centrais de Processamento, Entrada e Saída",
+    "gabarito": "E",
+    "atributo_rag": "fundamentos da computacao - arquitetura e organizacao de computadores - organizacao de computadores: memorias, unidades centrais de processamento, entrada e saida"
+  },
+  {
+    "id": "2002-27",
+    "edicao": 2002,
+    "numero": 27,
+    "enunciado": "Suponha que $T$ seja uma árvore AVL inicialmente vazia, e considere a inserção dos elementos $10, 20, 30, 5, 15, 2$ em $T$, nesta ordem. Qual das sequências abaixo corresponde a um percurso de $T$ em pré-ordem:",
+    "alternativas": [
+      "a) $10,5,2,20,15,30$",
+      "b) $20,10,5,2,15,30$",
+      "c) $2,5,10, 15, 20,30$",
+      "d) $30,20,15,10, 5,2$",
+      "e) $15,10,5,2,20,30$"
+    ],
+    "area_conhecimento": "Fundamentos da Computação",
+    "area": "Algoritmos e Estrutura de Dados",
+    "subarea": "Árvores e suas Generalizações: Árvores Binárias, Árvores de Busca e Árvores Balanceadas",
+    "gabarito": "A",
+    "atributo_rag": "fundamentos da computacao - algoritmos e estrutura de dados - arvores e suas generalizacoes: arvores binarias, arvores de busca e arvores balanceadas"
+  },
+  {
+    "id": "2002-47",
+    "edicao": 2002,
+    "numero": 47,
+    "enunciado": "Sobre a UML, quais das seguintes afirmações são verdadeiras? \\\nI) A UML é o método de desenvolvimento de software mais utilizado na atualidade. \\\nII) A UML é uma evolução das linguagens para especificação dos conceitos dos métodos de\nBooch, OMT e OOSE e também de outros métodos de especificação de requisitos de software orientados a objetos ou não. \\\nIII) A UML é composta dos seguintes diagramas: Diagrama de Caso de Uso, Diagrama de\nClasses, Diagrama de Colaboração, Diagrama de Estados, entre outros. \\\nIV) Em UML pode-se representar tão somente relacionamentos de Agregação, Associação e\nComposição.",
+    "alternativas": [
+      "a) Todas as alternativas.",
+      "b) Apenas as alternativas I, II e III.",
+      "c) Apenas as alternativas III e IV.",
+      "d) Apenas as alternativas II e III.",
+      "e) Nenhuma delas."
+    ],
+    "area_conhecimento": "Tecnologia de Computação",
+    "area": "Engenharia de Software",
+    "subarea": "Métodos de Análise e de Projeto de Software",
+    "gabarito": "D",
+    "atributo_rag": "tecnologia de computacao - engenharia de software - metodos de analise e de projeto de software"
+  },
+  {
+    "id": "2005-20",
+    "edicao": 2005,
+    "numero": 20,
+    "enunciado": "Seja $R$ o reticulado no plano formado pelos pares de números inteiros no intervalo $[-2n, 2n]$, $n$ inteiro maior que 1, e $S$ o círculo de raio $n$ e centro $(0, 0)$:\n$$\n\\begin{align*}\nR & = \\{ (i, j) \\in \\mathbb{Z^2}: - 2n \\leq i \\leq 2n \\text{ e } - 2n \\leq j \\leq 2n \\}, \\\\\nS & = \\{ (x,y) \\in \\mathbb{R^2}: x^2 + y^2 = n^2 \\}. \n\\end{align*}\n$$\nUma amostra aleatória é tomada do reticulado de modo que cada ponto tem probabilidade 0,5 de ser escolhido, com as escolhas feitas de maneira independente. Qual o número de pontos esperados no interior do círculo $S$?",
+    "alternativas": [
+      "a) $0,5 \\cdot (4n + 1)^2$",
+      "b) $0,5 \\cdot 4 \\cdot | \\{(i, j) \\in \\mathbb{Z^2} : i^2 + j^2 < n^2 \\text{ e } i > 0, j > 0 \\} |.$",
+      "c) $0,5 \\cdot \\pi n^2$",
+      "d) $0,5 \\cdot \\frac{\\pi n^2}{(4n + 1)^2}$",
+      "e) $0,5 \\cdot | \\{(i, j) \\in \\mathbb{Z^2} : i^2 + j^2 < n^2 \\} |.$"
+    ],
+    "area_conhecimento": "Matemática",
+    "area": "Probabilidade e Estatística",
+    "subarea": "Esperança Matemática",
+    "gabarito": "E",
+    "atributo_rag": "matematica - probabilidade e estatistica - esperanca matematica"
+  },
+  {
+    "id": "2022-68",
+    "edicao": 2022,
+    "numero": 68,
+    "enunciado": "Encontre a maior linguagem para o alfabeto {a,b} utilizando apenas uma expressão regular abaixo:",
+    "alternativas": [
+      "a) $ab*$",
+      "b) $a*b*$",
+      "c) $(ab)*$",
+      "d) $(a|b)(a|b)*$",
+      "e) $(a|b)*$"
+    ],
+    "area_conhecimento": "Tecnologia de Computação",
+    "area": "Compiladores",
+    "subarea": "Análise Léxica e Sintática",
+    "gabarito": "E",
+    "atributo_rag": "tecnologia de computacao - compiladores - analise lexica e sintatica"
+  },
+  {
+    "id": "2006-37",
+    "edicao": 2006,
+    "numero": 37,
+    "enunciado": "Considere o programa:\n```\nprogram p;\n   var n: integer;\n   function f(n: integer; var k: integer): integer;\n      var p,q:integer;\n   begin (* f *)\n      if n < 2\n         then begin\n               f :=n;\n               k := 0\n            end\n         else begin\n               f := f(n-1, p) + f(n-2, q);\n               k := p + q + 1 \n            end;\n      write(n,' ',k,'; ')\n   end (* f *); \n   begin\n   n := 4; \n   write (f (3,n) ,n)\n   end.\n```\nQuais os valores impressos pelo programa?",
+    "alternativas": [
+      "a) 1 0; 0 0; 2 1; 1 0; 3 2; 2 4",
+      "b) 1 4; 0 0; 2 1; 1 0; 3 2; 2 2",
+      "c) 1 0; 0 0; 2 1; 1 0; 3 2; 2 2",
+      "d) 1 0; 0 0; 2 1; 1 0; 3 2; 2 3",
+      "e) 1 4; 0 4; 2 4; 1 4; 3 4; 2 4"
+    ],
+    "area_conhecimento": "Fundamentos da Computação",
+    "area": "Linguagens de Programação",
+    "subarea": "Paradigmas de Linguagens de Programação",
+    "gabarito": "C",
+    "atributo_rag": "fundamentos da computacao - linguagens de programacao - paradigmas de linguagens de programacao"
+  },
+  {
+    "id": "2007-66",
+    "edicao": 2007,
+    "numero": 66,
+    "enunciado": "Considere os pares de endereços de *hosts* e suas respectivas máscaras de endereços listados abaixo.\n\nI. 192.168.0.43/255.255.255.192 e 192.168.0.66/255.255.255.192 \\\nII. 192.168.1.97/255.255.255.224 e 192.168.1.118/255.255.255.224 \\\nIII. 192.168.2.115/255.255.255.128 e 192.168.2.135/255.255.255.128 \\\nIV. 192.168.3.34/255.255.255.240 e 192.168.3.46/255.255.255.240 \\\nV. 192.168.4.167/255.255.255.224 e 192.168.4.207/255.255.255.224\n\nOs itens nos quais o par citado pertence a uma mesma sub-rede são",
+    "alternativas": [
+      "a) apenas I, II, V",
+      "b) apenas I, III",
+      "c) apenas II, IV",
+      "d) apenas II, III, IV",
+      "e) apenas III, IV, V"
+    ],
+    "area_conhecimento": "Tecnologia de Computação",
+    "area": "Redes de Computadores",
+    "subarea": "Interconexão de Redes",
+    "gabarito": "C",
+    "atributo_rag": "tecnologia de computacao - redes de computadores - interconexao de redes"
+  },
+  {
+    "id": "2006-34",
+    "edicao": 2006,
+    "numero": 34,
+    "enunciado": "Sejam [6, 4, 2, 1, 3, 5, 8, 7, 9] e [7, 4, 3, 2, 1, 6, 5, 10, 9, 8, 11] as sequências produzidas pelo percurso em pré-ordem das árvores binárias de busca T1 e T2, respectivamente. Assina-le a afirmação incorreta:",
+    "alternativas": [
+      "a) T1 possui altura mínima dentre todas as árvores binárias com 9 nós.",
+      "b) T1 é uma árvore AVL.",
+      "c) T1 é uma árvore rubro-negra.",
+      "d) T2 possui altura mínima dentre todas as árvores binárias com 11 nós.",
+      "e) T2 é uma árvore rubro-negra."
+    ],
+    "area_conhecimento": "Fundamentos da Computação",
+    "area": "Algoritmos e Estrutura de Dados",
+    "subarea": "Árvores e suas Generalizações: Árvores Binárias, Árvores de Busca e Árvores Balanceadas",
+    "gabarito": "D",
+    "atributo_rag": "fundamentos da computacao - algoritmos e estrutura de dados - arvores e suas generalizacoes: arvores binarias, arvores de busca e arvores balanceadas"
+  },
+  {
+    "id": "2003-16",
+    "edicao": 2003,
+    "numero": 16,
+    "enunciado": "Assinale a forma correta da negação da seguinte frase: \\\n\"Algumas pessoas gostam de matemática.\"",
+    "alternativas": [
+      "a) Algumas pessoas não gostam de matemática.",
+      "b) Todas as pessoas não gostam de matemática.",
+      "c) Existe uma pessoa que gosta de matemática.",
+      "d) Existe uma pessoa que não gosta de matemática.",
+      "e) Todas as pessoas gostam de matemática."
+    ],
+    "area_conhecimento": "Matemática",
+    "area": "Lógica Matemática",
+    "subarea": "Lógica Proposicional e de Predicados",
+    "gabarito": "B",
+    "atributo_rag": "matematica - logica matematica - logica proposicional e de predicados"
+  },
+  {
+    "id": "2012-34",
+    "edicao": 2012,
+    "numero": 34,
+    "enunciado": "Arquivos são organizados em sequência de dados ou registros, que são mapeados para blocos de armazenamento secundário. Existem três tipos de arquivos: sequencial, direto e indexado.\n\nSobre arquivos indexados, considere as afirmativas a seguir.\n\nI. Em um índice denso, existe um registro para cada valor de chave no arquivo principal. \\\nII. Em um índice esparso, existe um registro para cada conjunto de valores de chave no arquivo principal. \\\nIII. Com o índice denso, o tempo para localizar dados no arquivo principal é menor do que com o índice esparso. \\\nIV. Com o índice esparso, o espaço utilizado com o arquivo de índice é maior do que com índice denso. \n\nAssinale a alternativa correta.",
+    "alternativas": [
+      "a) Somente as afirmativas I e II são corretas.",
+      "b) Somente as afirmativas I e IV são corretas.",
+      "c) Somente as afirmativas III e IV são corretas.",
+      "d) Somente as afirmativas I, II e III são corretas.",
+      "e) Somente as afirmativas II, III e IV são corretas."
+    ],
+    "area_conhecimento": "Fundamentos da Computação",
+    "area": "Organização de Arquivos e Dados",
+    "subarea": "Organização, Estrutura e Operação de Arquivos",
+    "gabarito": "D",
+    "atributo_rag": "fundamentos da computacao - organizacao de arquivos e dados - organizacao, estrutura e operacao de arquivos"
+  },
+  {
+    "id": "2013-28",
+    "edicao": 2013,
+    "numero": 28,
+    "enunciado": "Com base nos conhecimentos sobre programação, relacione as linguagens ou pseudolinguagens de programação, na coluna da esquerda, com seus principais tipos de dados básicos, na coluna da direita.\\\n**(I) C**\\\n**(II) C#**\\\n**(III) Java**\\\n**(IV) Pascal**\\\n**(V) VisuAlg**\\\n---------------------------------------------------\\\n**(A) caracter, logico, inteiro, real.**\\\n**(B) char, boolean, integer, real.**\\\n**(C) char, int, boolean, float, double.**\\\n**(D) char, int, bool, float, double.**\\\n**(E) char, int, float, double.**\n\nAssinale a alternativa que contém a associação correta.",
+    "alternativas": [
+      "a) I-A, II-B, III-C, IV-D, V-E.",
+      "b) I-A, II-C, III-E, IV-D, V-B.",
+      "c) I-B, II-C, III-D, IV-E, V-A.",
+      "d) I-B, II-D, III-A, IV-C, V-E.",
+      "e) I-E, II-D, III-C, IV-B, V-A."
+    ],
+    "area_conhecimento": "Fundamentos da Computação",
+    "area": "Linguagens de Programação",
+    "subarea": "Paradigmas de Linguagens de Programação",
+    "gabarito": "E",
+    "atributo_rag": "fundamentos da computacao - linguagens de programacao - paradigmas de linguagens de programacao"
+  },
+  {
+    "id": "2015-24",
+    "edicao": 2015,
+    "numero": 24,
+    "enunciado": "Considere T uma árvore binária cheia, em que $n, n_e , n_i$ e $h$ representam o número de nós, o número de nós externos, o número de nós internos e a altura de T, respectivamente. Portanto, a essa árvore T aplica-se a seguinte propriedade:",
+    "alternativas": [
+      "a) $n_i = n_e + 1$",
+      "b) $h - 1 \\leq n_e \\leq 2^h$",
+      "c) $h + 1 \\leq n_i \\leq 2^h$",
+      "d) $\\log(n+1) \\leq h \\leq n - 1$",
+      "e) $2h + 1 \\leq n \\leq 2^{h+1} - 1$"
+    ],
+    "area_conhecimento": "Fundamentos da Computação",
+    "area": "Algoritmos e Estrutura de Dados",
+    "subarea": "Árvores e suas Generalizações: Árvores Binárias, Árvores de Busca e Árvores Balanceadas",
+    "gabarito": "E",
+    "atributo_rag": "fundamentos da computacao - algoritmos e estrutura de dados - arvores e suas generalizacoes: arvores binarias, arvores de busca e arvores balanceadas"
+  },
+  {
+    "id": "2010-45",
+    "edicao": 2010,
+    "numero": 45,
+    "enunciado": "Dado um inteiro fixo $k > 0$ e a linguagem $L = \\{a^{2n}c^nb^n; n \\leq k\\}$, podemos afirmar que",
+    "alternativas": [
+      "a) $L$ é uma linguagem livre de contexto, mas não regular.",
+      "b) $L$ é uma linguagem sensível ao contexto, mas não livre dele.",
+      "c) $L$ é uma linguagem regular apenas.",
+      "d) $L$ é uma linguagem recursiva, mas não sensível ao contexto.",
+      "e) $L$ é uma linguagem recursiva, mas não regular."
+    ],
+    "area_conhecimento": "Fundamentos da Computação",
+    "area": "Linguagens Formais, Autômatos e Computabilidade",
+    "subarea": "Linguagens Regulares, Livres-de-Contexto e Sensíveis-ao-Contexto",
+    "gabarito": "ANULADA",
+    "atributo_rag": "fundamentos da computacao - linguagens formais, automatos e computabilidade - linguagens regulares, livres-de-contexto e sensiveis-ao-contexto"
+  },
+  {
+    "id": "2014-32",
+    "edicao": 2014,
+    "numero": 32,
+    "enunciado": "Sobre grafos, considere as afirmativas a seguir.\n\nI. A busca em profundidade em um grafo não dirigido irá produzir arestas de árvore e de cruzamento.\\\nII. A busca em profundidade decompõe um grafo dirigido em suas componentes fortemente conexas.\\\nIII. Um grafo dirigido é acíclico quando uma busca em profundidade não produzir arestas de retorno.\\\nIV. Uma ordenação topológica de um grafo é uma ordenação linear de seus vértices. \n\nAssinale a alternativa correta.",
+    "alternativas": [
+      "a) Somente as afirmativas I e II são corretas.",
+      "b) Somente as afirmativas I e IV são corretas.",
+      "c) Somente as afirmativas III e IV são corretas.",
+      "d) Somente as afirmativas I, II e III são corretas.",
+      "e) Somente as afirmativas II, III e IV são corretas."
+    ],
+    "area_conhecimento": "Fundamentos da Computação",
+    "area": "Teoria dos Grafos",
+    "subarea": "Busca em Largura e Profundidade",
+    "gabarito": "ANULADA",
+    "atributo_rag": "fundamentos da computacao - teoria dos grafos - busca em largura e profundidade"
+  },
+  {
+    "id": "2019-22",
+    "edicao": 2019,
+    "numero": 22,
+    "enunciado": "Considere as seguintes funções:\n$$\nf(n) = 2^n\n\ng(n) = n!\n\nh(n) = n^{\\log n}\n$$\n\nAssinale a alternativa correta a respeito do comportamento assintótico de $f(n)$, $g(n)$ e $h(n)$.",
+    "alternativas": [
+      "a) $f(n) = O(g(n)); g(n) = O(h(n)).$",
+      "b) $f(n) = 𝛺(g(n)); g(n) = O(h(n)).$",
+      "c) $g(n) = O(f(n)); h(n) = O(f(n)).$",
+      "d) $h(n) = O(f(n)); g(n) = 𝛺(f(n)).$",
+      "e) Nenhuma das anteriores."
+    ],
+    "area_conhecimento": "Fundamentos da Computação",
+    "area": "Análise de Algoritmos",
+    "subarea": "Notação “Big O”, “Little o”, “Omega” e “Theta”",
+    "gabarito": "D",
+    "atributo_rag": "fundamentos da computacao - analise de algoritmos - notacao “big o”, “little o”, “omega” e “theta”"
+  },
+  {
+    "id": "2015-46",
+    "edicao": 2015,
+    "numero": 46,
+    "enunciado": "Considere um cenário de um sistema operacional que implementa um sistema de arquivos com método de alocação de espaço em disco baseado na alocação encadeada, a exemplo do popular sistema de arquivos FAT ( file allocation table). Em um disco rígido com tamanho de setor igual a 512 bytes, criou-se uma partição e a formatou com esse sistema de arquivos usando 2048 bytes para o tamanho de blocos (clusters). Durante a escrita de dados em diferentes arquivos nessa partição, foi criado o arquivo ARQ.DAT que, após ter todos os seus dados armazenados, totalizou 1024 bytes de tamanho. Nesse cenário, o arquivo ARQ.DAT",
+    "alternativas": [
+      "a) pode ter seu conteúdo fragmentado no disco, pois já existiam outros arquivos no disco durante a sua criação e gravação, e o sistema de arquivos em uso permite a fragmentação.",
+      "b) pode ter seu conteúdo fragmentado no disco, pois seus dados foram armazenados concomitantemente com o armazenamento de dados de outros arquivos, e o sistema de arquivos em uso permite a fragmentação.",
+      "c) pode ter seu conteúdo fragmentado no disco, pois seus dados ocupam, no mínimo, dois setores e o sistema de arquivos em uso permite a fragmentação.",
+      "d) possui tamanho que não permite que seu conteúdo esteja fragmentado no disco.",
+      "e) não possui seu conteúdo fragmentado no disco, pois o sistema de arquivos em uso não permite a fragmentação."
+    ],
+    "area_conhecimento": "Fundamentos da Computação",
+    "area": "Sistemas Operacionais",
+    "subarea": "Gerenciamento de Arquivos",
+    "gabarito": "D",
+    "atributo_rag": "fundamentos da computacao - sistemas operacionais - gerenciamento de arquivos"
+  },
+  {
+    "id": "2018-39",
+    "edicao": 2018,
+    "numero": 39,
+    "enunciado": "Considere os seguintes formalismos:\\\\\nI. Autômatos finitos.\\\\\nII. Autômatos finitos com uma pilha.\\\\\nIII. Autômatos finitos com duas pilhas.\n\nQuais contêm SOMENTE os formalismos nos quais a variante não determinística reconhece o mesmo conjunto de linguagens que a respectiva versão determinística?",
+    "alternativas": [
+      "a) Apenas I.",
+      "b) Apenas II.",
+      "c) Apenas I e III.",
+      "d) Apenas II e III.",
+      "e) I, II e III."
+    ],
+    "area_conhecimento": "Fundamentos da Computação",
+    "area": "Linguagens Formais, Autômatos e Computabilidade",
+    "subarea": "Autômatos de Estados Finitos Determinístico e não Determinístico",
+    "gabarito": "C",
+    "atributo_rag": "fundamentos da computacao - linguagens formais, automatos e computabilidade - automatos de estados finitos deterministico e nao deterministico"
+  },
+  {
+    "id": "2019-59",
+    "edicao": 2019,
+    "numero": 59,
+    "enunciado": "A realização da equalização do histograma de uma imagem resulta em obter:",
+    "alternativas": [
+      "a) O realce mínimo de detalhes.",
+      "b) Uma transformação de domínio de cores.",
+      "c) A maior compressibilidade da informação.",
+      "d) A menor discriminabilidade dos objetos.",
+      "e) A máxima variância do histograma."
+    ],
+    "area_conhecimento": "Tecnologia de Computação",
+    "area": "Processamento de Imagens",
+    "subarea": "Realce",
+    "gabarito": "E",
+    "atributo_rag": "tecnologia de computacao - processamento de imagens - realce"
+  },
+  {
+    "id": "2006-25",
+    "edicao": 2006,
+    "numero": 25,
+    "enunciado": "Dada uma lista linear de $n + 1$ elementos ordenados e alocados sequencialmente, qual é o número médio (número esperado) de elementos que devem ser movidos para que se faça uma inserção na lista, considerando-se igualmente prováveis as $n+1$ posições de inserção?",
+    "alternativas": [
+      "a) $n/2$",
+      "b) $(n + 2)/2$",
+      "c) $(n - 1)/2$",
+      "d) $n(n + 3 + 2/n)/2$",
+      "e) $(n + 1)/2$"
+    ],
+    "area_conhecimento": "Fundamentos da Computação",
+    "area": "Análise de Algoritmos",
+    "subarea": "Análise de Algoritmos Iterativos e Recursivos",
+    "gabarito": "B",
+    "atributo_rag": "fundamentos da computacao - analise de algoritmos - analise de algoritmos iterativos e recursivos"
+  },
+  {
+    "id": "2006-02",
+    "edicao": 2006,
+    "numero": 2,
+    "enunciado": "Seja o sistema de equações lineares nas variáveis $x$, $y$ e $z$:\n$$\n\\begin{align*}\n& x + y - z = 1 \\\\\n& 2x + 3y + az = 3 \\\\\n& x + ay + 3z = 2\n\\end{align*}\n$$\nAssinale a alternativa com os valores de $a$ para os quais o sistema possui respectivamente:\n\n(i) nenhuma solução, (ii) mais de uma solução, (iii) uma única solução.",
+    "alternativas": [
+      "a) (i) $a = -3$; (ii) $a = 2$; (iii) $a \\neq 2$ e $a \\neq -3$",
+      "b) (i) $a \\neq 2$ e $a \\neq -3$; (ii) $a = 2$; (iii) $a = -3$",
+      "c) (i) $a = 2$; (ii) $a \\neq 2$ e $a \\neq 3$; (iii) $a = -3$",
+      "d) (i) $a = -3$; (ii) $a \\neq 2$ e $a \\neq -3$; (iii) $a = 2$",
+      "e) (i) $a = -3$; (ii) $a = 2$; (iii) $a = 2$ ou $a = -3$"
+    ],
+    "area_conhecimento": "Matemática",
+    "area": "Álgebra Linear",
+    "subarea": "Sistemas de Equações Lineares: método de eliminação de Gauss para sistemas lineares",
+    "gabarito": "A",
+    "atributo_rag": "matematica - algebra linear - sistemas de equacoes lineares: metodo de eliminacao de gauss para sistemas lineares"
+  },
+  {
+    "id": "2023-04",
+    "edicao": 2023,
+    "numero": 4,
+    "enunciado": "Nos jogos da Mega-Sena, são sorteados a cada concurso 6 números no intervalo de\n1 a 60. Leva o prêmio quem acertar os 6 números sorteados. O apostador, ao fazer um jogo, pode optar por preencher um bilhete com 6, 7, 8 ou 9 números escolhidos. Se o apostador registra um bilhete com 8 números escolhidos, quantos bilhetes de 6 números ele faria com os mesmos 8 números escolhidos?",
+    "alternativas": [
+      "a) 56",
+      "b) 8!",
+      "c) 6!",
+      "d) 28",
+      "e) 72"
+    ],
+    "area_conhecimento": "Matemática",
+    "area": "Análise Combinatória",
+    "subarea": "Combinações",
+    "gabarito": "D",
+    "atributo_rag": "matematica - analise combinatoria - combinacoes"
+  },
+  {
+    "id": "2008-29",
+    "edicao": 2008,
+    "numero": 29,
+    "enunciado": "Assinale a afirmativa INCORRETA.",
+    "alternativas": [
+      "a) Existe uma máquina de Turing U que simula qualquer outra máquina de Turing M sobre qualquer entrada para M.",
+      "b) A Tese de *Church* afirma que o conceito informal de procedimento efetivo é capturado pelo conceito formal de Máquina de *Turing*.",
+      "c) Uma linguagem é recursivamente enumerável se, e somente se, for aceita por alguma Máquina de *Turing*.",
+      "d) Existe uma máquina de *Turing* T que, dada qualquer máquina de Turing M e qualquer entrada w para M, T determina, em um número finito de passos, se M pára para a entrada w ou não.",
+      "e) Toda linguagem recursiva é recursivamente enumerável, mas o inverso nem sempre é verdadeiro."
+    ],
+    "area_conhecimento": "Fundamentos da Computação",
+    "area": "Linguagens Formais, Autômatos e Computabilidade",
+    "subarea": "Máquina de Turing",
+    "gabarito": "D",
+    "atributo_rag": "fundamentos da computacao - linguagens formais, automatos e computabilidade - maquina de turing"
+  },
+  {
+    "id": "2008-28",
+    "edicao": 2008,
+    "numero": 28,
+    "enunciado": "Seja $G(V,E)$ um grafo tal que $|V| = n$ e $|E| = m$.\n\nAnalise as seguintes sentenças:\n\nI. Se $G$ é acíclico com no máximo $n - 1$ arestas, então $G$ é uma árvore. \\\nII. Se $G$ é um ciclo, então $G$ tem $n$ árvores geradoras distintas. \\\nIII. Se $G$ é conexo com no máximo $n - 1$ arestas, então $G$ é uma árvore. \\\nIV. Se $G$ é conexo e tem um ciclo, então para toda árvore geradora $T$ de $G$, $E(G) - E(T) = \\emptyset $.\n\nA análise permite concluir que",
+    "alternativas": [
+      "a) apenas os itens I e III são verdadeiros.",
+      "b) apenas os itens II e III são verdadeiros.",
+      "c) apenas o item I é falso.",
+      "d) todos os itens são verdadeiros.",
+      "e) apenas os itens II e IV são verdadeiros."
+    ],
+    "area_conhecimento": "Fundamentos da Computação",
+    "area": "Teoria dos Grafos",
+    "subarea": "Árvore Geradora",
+    "gabarito": "C",
+    "atributo_rag": "fundamentos da computacao - teoria dos grafos - arvore geradora"
+  },
+  {
+    "id": "2010-44",
+    "edicao": 2010,
+    "numero": 44,
+    "enunciado": "Em relação a autômatos e linguagens, podemos afirmar:",
+    "alternativas": [
+      "a) Existem linguagens reconhecidas por autômatos finitos não determinísticos que não podem ser reconhecidas por autômatos finitos determinísticos.",
+      "b) Existem linguagens reconhecidas por autômatos de pilha não determinísticos que não podem ser reconhecidas por autômatos de pilha determinísticos.",
+      "c) Linguagens infinitas somente são reconhecidas por autômatos de pilha.",
+      "d) Linguagens regulares não podem ser reconhecidas por autômatos de pilha.",
+      "e) Linguagens livres de contexto podem ser reconhecidas por autômatos finitos."
+    ],
+    "area_conhecimento": "Fundamentos da Computação",
+    "area": "Linguagens Formais, Autômatos e Computabilidade",
+    "subarea": "Autômatos de Estados Finitos Determinístico e não Determinístico",
+    "gabarito": "ANULADA",
+    "atributo_rag": "fundamentos da computacao - linguagens formais, automatos e computabilidade - automatos de estados finitos deterministico e nao deterministico"
+  },
+  {
+    "id": "2005-60",
+    "edicao": 2005,
+    "numero": 60,
+    "enunciado": "O termo imagem se refere a uma função bidimensional de intensidade de luz, denotada por $f(x, y)$, onde o valor ou amplitude de f nas coordenadas espaciais $(x, y)$ representa a intensidade (brilho) da imagem neste ponto. Para que uma imagem possa ser processada num computador, a função $f(x, y)$ deve ser discretizada tanto espacialmente quanto em amplitude. Estes dois processos recebem as seguintes denominações, respectivamente:",
+    "alternativas": [
+      "a) translação e escala.",
+      "b) resolução e escala.",
+      "c) resolução e ampliação.",
+      "d) amostragem e quantização.",
+      "e) resolução e quantização."
+    ],
+    "area_conhecimento": "Tecnologia de Computação",
+    "area": "Processamento de Imagens",
+    "subarea": "Amostragem e Quantização de Imagens",
+    "gabarito": "D",
+    "atributo_rag": "tecnologia de computacao - processamento de imagens - amostragem e quantizacao de imagens"
+  },
+  {
+    "id": "2006-09",
+    "edicao": 2006,
+    "numero": 9,
+    "enunciado": "Assinale a proposição logicamente equivalente a $\\neg (p \\lor q) \\lor (\\neg p \\land q)$",
+    "alternativas": [
+      "a) $\\neg p \\land (q \\lor \\neg q)$",
+      "b) $\\neg p$",
+      "c) $(p \\lor q) \\land (p \\lor \\neg q)$",
+      "d) $(p \\lor q) \\lor (p \\land \\neg q)$",
+      "e) $p$"
+    ],
+    "area_conhecimento": "Matemática",
+    "area": "Lógica Matemática",
+    "subarea": "Lógica Proposicional e de Predicados",
+    "gabarito": "B",
+    "atributo_rag": "matematica - logica matematica - logica proposicional e de predicados"
+  },
+  {
+    "id": "2002-36",
+    "edicao": 2002,
+    "numero": 36,
+    "enunciado": "Uma árvore binária é declarada em C como\n```\ntypedef struct no *apontador;\nstruct no {\n         int valor;\n         apontador esq, dir;\n          };\n```\nonde `esq` e `dir` representam ligações para os filhos esquerdo e direito de um nó da árvore, respectivamente. Qual das seguintes alternativas é uma implementação correta da operação que inverte as posições dos filhos esquerdo e direito de um nó `p` da árvore, onde `t` é um apontador auxiliar.",
+    "alternativas": [
+      "a)\n```\nt = p;\np->esq = p->dir;\np->dir = p->esq\n```",
+      "b) \n```\np->dir = t;\np->esq = p->dir;\np->dir = t\n```",
+      "c) \n```\np->esq = p->dir;\nt = p->esq;\np->dir = t\n```",
+      "d)\n```\nt = p->dir;\np->esq = p->dir;\np->dir = t\n```",
+      "e) \n```\nt = p->dir;\np->dir = p->esq;\np->esq = t\n```"
+    ],
+    "area_conhecimento": "Fundamentos da Computação",
+    "area": "Algoritmos e Estrutura de Dados",
+    "subarea": "Árvores e suas Generalizações: Árvores Binárias, Árvores de Busca e Árvores Balanceadas",
+    "gabarito": "E",
+    "atributo_rag": "fundamentos da computacao - algoritmos e estrutura de dados - arvores e suas generalizacoes: arvores binarias, arvores de busca e arvores balanceadas"
+  },
+  {
+    "id": "2011-55",
+    "edicao": 2011,
+    "numero": 55,
+    "enunciado": "Com relação ao processo tradicional de síntese de imagens em computação gráfica, relacione a \ncoluna da esquerda com a coluna da direita.\n\n|(I) Projeção Perspectiva|(A) Responsável pela remoção das linhas e superfícies ocultas.|\n|-|-|\n|(II) Volume de Visualização|(B) Define a porção visível da cena.|\n|(III) Modelo de Gouraud|(C) Mapeia coordenadas num espaço tridimensional para um espaço bidimensional.|\n|(IV) Algoritmo de Z-buffer|(D) Efetua interpolação linear das cores.|\n|(V) Rasterização|(E) Encontra as coordenadas de pixel na tela.|\n\nAssinale a alternativa que contém a associação correta.",
+    "alternativas": [
+      "a) I-B, II-C, III-E, IV-D, V-A.",
+      "b) I-B, II-E, III-D, IV-C, V-A.",
+      "c) I-C, II-B, III-D, IV-A, V-E.",
+      "d) I-C, II-D, III-B, IV-A, V-E.",
+      "e) I-E, II-B, III-A, IV-D, V-C."
+    ],
+    "area_conhecimento": "Tecnologia de Computação",
+    "area": "Computação Gráfica",
+    "subarea": "O Processo de “Rendering”: Fontes de Luz, Remoção de Linhas e Superfícies Ocultas, Modelos de Tonalização (“Shading”)",
+    "gabarito": "C",
+    "atributo_rag": "tecnologia de computacao - computacao grafica - o processo de “rendering”: fontes de luz, remocao de linhas e superficies ocultas, modelos de tonalizacao (“shading”)"
+  },
+  {
+    "id": "2024-45",
+    "edicao": 2024,
+    "numero": 45,
+    "enunciado": "Sobre os tipos de dados básicos, assinale a alternativa correta.",
+    "alternativas": [
+      "a) As variáveis do tipo inteiro são utilizadas para armazenar valores que pertencem ao conjunto de números naturais (sem parte fracionária) positivos e negativos.",
+      "b) O tipo caractere permite armazenar strings ou conjuntos de caracteres em uma variável do tipo caracter.",
+      "c) Por padrão, uma variável do tipo inteiro admite somente valores positivos. Caso se deseje que a variável contenha valores negativos, é necessário utilizar o comando da linguagem de programação para incluir sinal.",
+      "d) As variáveis do tipo vetor são utilizadas para armazenar valores numéricos com parte fracionária.",
+      "e) O conjunto de operações disponível para o tipo caractere inclui soma, subtração, multiplicação, divisão inteira e resto da divisão."
+    ],
+    "area_conhecimento": "Fundamentos da Computação",
+    "area": "Linguagens de Programação",
+    "subarea": "Teoria dos Tipos: Sistemas de Tipos, Polimorfismo",
+    "gabarito": "A",
+    "atributo_rag": "fundamentos da computacao - linguagens de programacao - teoria dos tipos: sistemas de tipos, polimorfismo"
+  },
+  {
+    "id": "2018-44",
+    "edicao": 2018,
+    "numero": 44,
+    "enunciado": "Considere um computador no qual o interpretador do nível 0 (hardware interpretando o microcódigo) gasta 20 nanosegundos ($20$x$10^{-9}$ segundos) por microinstrução, e o interpretador do nível 1 (microcódigo interpretando a linguagem de máquina convencional) necessita de 25 microinstruções para interpretar uma instrução de máquina convencional. Um programa teste, já em linguagem de máquina convencional, leva 50 segundos para executar.\\\na) Quanto tempo levará o programa teste para executar se o tempo para executar uma microinstrução for aumentado para 30 nanosegundos?\\\nb) Quanto tempo levará o programa teste para executar se uma instrução de máquina convencional necessitar de somente 15 microinstruções para ser interpretada?",
+    "alternativas": [
+      "a) a) T = 60 segundos e b) 15 segundos.",
+      "b) a) T = 65 segundos e b) 20 segundos.",
+      "c) a) T = 70 segundos e b) 25 segundos.",
+      "d) a) T = 75 segundos e b) 30 segundos.",
+      "e) a) T = 80 segundos e b) 35 segundos."
+    ],
+    "area_conhecimento": "Fundamentos da Computação",
+    "area": "Arquitetura e Organização de Computadores",
+    "subarea": "Organização de Computadores: Memórias, Unidades Centrais de Processamento, Entrada e Saída",
+    "gabarito": "D",
+    "atributo_rag": "fundamentos da computacao - arquitetura e organizacao de computadores - organizacao de computadores: memorias, unidades centrais de processamento, entrada e saida"
+  },
+  {
+    "id": "2003-20",
+    "edicao": 2003,
+    "numero": 20,
+    "enunciado": "A área do triângulo $ABC$ de vértices $A = (2, 2, 0)$, $B = (-1, 0, 2)$ e $C = (0, 4, 3)$ é igual a",
+    "alternativas": [
+      "a) $15$",
+      "b) $\\frac{2}{15}$",
+      "c) $\\frac{1}{15}$",
+      "d) $30$",
+      "e) $\\frac{15}{2}$"
+    ],
+    "area_conhecimento": "Matemática",
+    "area": "Geometria Analítica",
+    "subarea": "Álgebra Vetorial",
+    "gabarito": "E",
+    "atributo_rag": "matematica - geometria analitica - algebra vetorial"
+  },
+  {
+    "id": "2023-23",
+    "edicao": 2023,
+    "numero": 23,
+    "enunciado": "Considere o seguinte trecho de código:\n```\n\nfor (i = 1; i <= n; i++) {\n   for (j = 1; j <= m; j++) {\n      // instruções O(1)\n   }\n}\n\n```\nQual das seguintes afirmações é verdadeira sobre a complexidade assintótica desse trecho de código?",
+    "alternativas": [
+      "a) A complexidade é O(n) se m for uma constante, e O(m) se n for uma constante.",
+      "b) A complexidade é O(n log m) se m for uma constante, e O(m log n) se n for uma constante.",
+      "c) A complexidade é O(n + m) se n e m forem do mesmo tamanho.",
+      "d) A complexidade é O(1) em todos os casos.",
+      "e) A complexidade é O(nm) em todos os casos."
+    ],
+    "area_conhecimento": "Fundamentos da Computação",
+    "area": "Análise de Algoritmos",
+    "subarea": "Análise de Algoritmos Iterativos e Recursivos",
+    "gabarito": "E",
+    "atributo_rag": "fundamentos da computacao - analise de algoritmos - analise de algoritmos iterativos e recursivos"
+  },
+  {
+    "id": "2005-64",
+    "edicao": 2005,
+    "numero": 64,
+    "enunciado": "O DNS (*Domain Name System*) é um serviço de diretórios na Internet que:",
+    "alternativas": [
+      "a) Traduz o nome de um hospedeiro (*host*) para seu endereço IP.",
+      "b) Localiza a instituição à qual um dado *host* pertence.",
+      "c) Retorna a porta da conexão TCP do *host*.",
+      "d) Retorna a porta da conexão UDP do *host*.",
+      "e) Traduz o endereço IP de um hospedeiro para um nome de domínio na Internet."
+    ],
+    "area_conhecimento": "Tecnologia de Computação",
+    "area": "Redes de Computadores",
+    "subarea": "Protocolos e Serviços de Comunicação",
+    "gabarito": "A",
+    "atributo_rag": "tecnologia de computacao - redes de computadores - protocolos e servicos de comunicacao"
+  },
+  {
+    "id": "2016-61",
+    "edicao": 2016,
+    "numero": 61,
+    "enunciado": "No contexto de processamento de imagens, um filtro do tipo passa-baixa produz o seguinte resultado:",
+    "alternativas": [
+      "a) Realça os detalhes da imagem, produzindo um efeito de sharpering (aumento da nitidez).",
+      "b) Realça as propriedades geométricas da imagem a partir de máscaras pré-definidas.",
+      "c) Suaviza as frequências dentro de um intervalo pré-determinado de valores.",
+      "d) Suaviza a imagem atenuando as altas frequências, que correspondem às transições abruptas.",
+      "e) Realça e suaviza de forma simultânea os componentes da imagem."
+    ],
+    "area_conhecimento": "Tecnologia de Computação",
+    "area": "Processamento de Imagens",
+    "subarea": "Filtragem e Restauração",
+    "gabarito": "D",
+    "atributo_rag": "tecnologia de computacao - processamento de imagens - filtragem e restauracao"
+  },
+  {
+    "id": "2007-28",
+    "edicao": 2007,
+    "numero": 28,
+    "enunciado": "Considere o seguinte enunciado e as possibilidades de sua complementação.\n\nA regra de inferência utilizada pela linguagem Prolog, denominada “regra de resolução”,\n\nI. opera com fórmulas contendo apenas quantificadores existenciais. \\\nII. é capaz de reduzir fórmulas quantificadas à suas correspondentes formas clausais. \\\nIII. opera sobre fórmulas em forma clausal pelo corte de literais de sinais opostos. \\\nIV. opera sobre fórmulas em forma clausal pelo corte de literais de mesmo sinal. \\\nV. produz deduções que evitam a construção de árvores de dedução lineares.\n\nCompleta(m) CORRETAMENTE o enunciado acima",
+    "alternativas": [
+      "a) apenas o item II.",
+      "b) apenas o item III.",
+      "c) apenas o item IV.",
+      "d) apenas os itens I e II.",
+      "e) apenas os itens III e V."
+    ],
+    "area_conhecimento": "Fundamentos da Computação",
+    "area": "Linguagens Formais, Autômatos e Computabilidade",
+    "subarea": "Funções Recursivas",
+    "gabarito": "B",
+    "atributo_rag": "fundamentos da computacao - linguagens formais, automatos e computabilidade - funcoes recursivas"
+  },
+  {
+    "id": "2015-35",
+    "edicao": 2015,
+    "numero": 35,
+    "enunciado": "Em organização de arquivos e dados, um diretório é um arquivo mantido pelo sistema de arquivos, que contém uma lista de outros arquivos e, possivelmente, de outros diretórios. Em sistemas de diretório que suportam",
+    "alternativas": [
+      "(A) diretório único (ou de nível simples), além da raiz do diretório só é possível existir um nível de subdiretórios.",
+      "(B) diretório de dois níveis, além da raiz do diretório o sistema prevê um nível onde cada usuário possui o seu diretório e, neste diretório, não existe limite para o número de níveis de subdiretórios.",
+      "(C) diretório de dois níveis, além da raiz do diretório o sistema prevê um nível onde cada usuário possui o seu diretório e, neste diretório, o limite para o número de níveis de subdiretórios é dois.",
+      "(D) diretórios hierárquicos, não existe limite para o número de níveis de subdiretórios e um arquivo pode ser referenciado por um caminho absoluto ou por um caminho relativo ao diretório corrente (ou diretório do processo).",
+      "(E) diretórios hierárquicos, como Windows e UNIX, há três entradas especiais em cada diretório: ‘.’ (ponto), ‘..’ (ponto-ponto) e ‘~’ (til): a primeira volta um nível na hierarquia; a segunda avança um nível; a terceira referencia o diretório reservado ao administrador, quando utilizada em caminhos relativos."
+    ],
+    "area_conhecimento": "Fundamentos da Computação",
+    "area": "Organização de Arquivos e Dados",
+    "subarea": "Organização, Estrutura e Operação de Arquivos",
+    "gabarito": "D",
+    "atributo_rag": "fundamentos da computacao - organizacao de arquivos e dados - organizacao, estrutura e operacao de arquivos"
+  },
+  {
+    "id": "2010-21",
+    "edicao": 2010,
+    "numero": 21,
+    "enunciado": "Um estudante de computação precisa resolver um problema bastante importante, que é executar as operações que estão descritas abaixo, cuja estrutura é uma pilha. Tão logo ele retire algum elemento desta pilha, estes deverão ser inseridos em uma fila, cuja entrada é pela esquerda e a saída, pela direita. \n\nAssinale a alternativa que contém a sequência correta de entrada dos elementos na fila.\n```\nPUSH P\nPUSH E\nPUSH R\nPUSH T\nPUSH O\nPOP\nPOP\nPUSH S\nPUSH O\nPUSH L\nPOP\nPOP\nPOP\n```",
+    "alternativas": [
+      "a) `S - O - L - T - O`",
+      "b) `O - T - R - E - P`",
+      "c) `P - E - R - T - O`",
+      "d) `O - T - L - O - S`",
+      "e) `P - O - R - L - S`"
+    ],
+    "area_conhecimento": "Fundamentos da Computação",
+    "area": "Algoritmos e Estrutura de Dados",
+    "subarea": "Estruturas de Dados Lineares e suas Generalizações: Listas Ordenadas, Listas Encadeadas, Pilhas e Filas",
+    "gabarito": "D",
+    "atributo_rag": "fundamentos da computacao - algoritmos e estrutura de dados - estruturas de dados lineares e suas generalizacoes: listas ordenadas, listas encadeadas, pilhas e filas"
+  },
+  {
+    "id": "2018-41",
+    "edicao": 2018,
+    "numero": 41,
+    "enunciado": "Abaixo são apresentadas duas linguagens formais sobre o alfabeto {a,b,c}:\\\nL1 = { $a^nb^n | n>1$ }\\\nL2 = { $b^na^pc^q | n \\geq 0, p \\geq 0, q \\geq 0 $}\\\nConsidere as seguintes afirmações:\\\nI. L1 é uma linguagem regular.\\\nII. L2 é uma linguagem regular.\\\nIII. L2 é uma linguagem livre de contexto.\n\nQuais estão corretas?",
+    "alternativas": [
+      "a) Apenas I.",
+      "b) Apenas II.",
+      "c) Apenas I e III.",
+      "d) Apenas II e III.",
+      "e) I, II e III."
+    ],
+    "area_conhecimento": "Fundamentos da Computação",
+    "area": "Linguagens Formais, Autômatos e Computabilidade",
+    "subarea": "Linguagens Regulares, Livres-de-Contexto e Sensíveis-ao-Contexto",
+    "gabarito": "D",
+    "atributo_rag": "fundamentos da computacao - linguagens formais, automatos e computabilidade - linguagens regulares, livres-de-contexto e sensiveis-ao-contexto"
+  },
+  {
+    "id": "2018-06",
+    "edicao": 2018,
+    "numero": 6,
+    "enunciado": "Determine os valores de a e b para que a função abaixo seja contínua em todo o seu domínio:\n$$\nf(x) = \n\\begin{cases}\n-3.sen(x) & \\text{se } x <-\\dfrac{\\pi}{2} \\\\\na.sen(x) + b, & \\text{se } -\\dfrac{\\pi}{2} \\leq x \\leq \\dfrac{\\pi}{2} \\\\\ncos(x), & \\text{se } x > \\dfrac{\\pi}{2}\n\\end{cases}\n$$",
+    "alternativas": [
+      "a) $a = \\dfrac{3}{2}; b =\\dfrac{3}{2}$",
+      "b) $a = -\\dfrac{3}{2}; b =\\dfrac{3}{2}$",
+      "c) $a = \\dfrac{3}{2}; b =-\\dfrac{3}{2}$",
+      "d) $a = -\\dfrac{3}{2}; b =-\\dfrac{3}{2}$",
+      "e) $a = \\dfrac{2}{3}; b =\\dfrac{3}{2}$"
+    ],
+    "area_conhecimento": "Matemática",
+    "area": "Cálculo Diferencial e Integral",
+    "subarea": "Funções Reais de uma Variável: Continuidade e Diferenciabilidade",
+    "gabarito": "B",
+    "atributo_rag": "matematica - calculo diferencial e integral - funcoes reais de uma variavel: continuidade e diferenciabilidade"
+  },
+  {
+    "id": "2023-11",
+    "edicao": 2023,
+    "numero": 11,
+    "enunciado": "Calcule o vetor diretor da interseção dos seguintes planos:\n$$\nx + 2y + z = 3\n\n2x - y +3z = 4$$",
+    "alternativas": [
+      "a) $(1, 5, 7)$",
+      "b) $(1, 1, 0)$",
+      "c) $(1, 1, 1)$",
+      "d) $(7, -1, -5)$",
+      "e) $(5, 1, 5)$"
+    ],
+    "area_conhecimento": "Matemática",
+    "area": "Geometria Analítica",
+    "subarea": "Posições Relativas, Interseções, Distâncias e Ângulos",
+    "gabarito": "D",
+    "atributo_rag": "matematica - geometria analitica - posicoes relativas, intersecoes, distancias e angulos"
+  },
+  {
+    "id": "2006-30",
+    "edicao": 2006,
+    "numero": 30,
+    "enunciado": "Seja $P$ o problema de ordenar, usando comparação, $n \\geq 1$ elementos e $\\mathcal{C}$ a classe dos algoritmos que resolvem $P$. O limitante inferior de $\\mathcal{C}$ é:",
+    "alternativas": [
+      "a) $\\Omega(1)$",
+      "b) $\\Omega(\\log n)$",
+      "c) $\\Omega(n)$",
+      "d) $\\Omega(n \\log n)$",
+      "e) $\\Omega(n^2)$"
+    ],
+    "area_conhecimento": "Fundamentos da Computação",
+    "area": "Análise de Algoritmos",
+    "subarea": "Medidas de Complexidade, Análise Assintótica de Limites de Complexidade, Técnicas de Prova de Cotas Inferiores",
+    "gabarito": "D",
+    "atributo_rag": "fundamentos da computacao - analise de algoritmos - medidas de complexidade, analise assintotica de limites de complexidade, tecnicas de prova de cotas inferiores"
+  },
+  {
+    "id": "2015-11",
+    "edicao": 2015,
+    "numero": 11,
+    "enunciado": "Uma expressão booleana equivalente à expressão $( x \\lor y )\\to z$ é dada por:",
+    "alternativas": [
+      "a) $( x \\to y ) \\lor ( y \\to z )$",
+      "b) $( x \\to z ) \\lor ( y \\to z )$",
+      "c) $( x \\land z )\\to y$",
+      "d) $( x \\to y ) \\land ( y \\to z )$",
+      "e) $( x \\to z ) \\land ( y \\to z )$"
+    ],
+    "area_conhecimento": "Matemática",
+    "area": "Lógica Matemática",
+    "subarea": "Lógica Proposicional e de Predicados",
+    "gabarito": "E",
+    "atributo_rag": "matematica - logica matematica - logica proposicional e de predicados"
+  },
+  {
+    "id": "2015-64",
+    "edicao": 2015,
+    "numero": 64,
+    "enunciado": "Um dos objetivos do projeto de um Sistema Distribuído é fornecer transparência, ocultando aspectos distribuídos dos usuários do sistema. Um sistema transparente proporciona um ambiente em que os seus componentes apresentam-se logicamente centralizados, mesmo fisicamente separados. Entre os vários tipos de transparência que os sistemas distribuídos podem fornecer, o ocultamento do fato de que há várias cópias de um recurso disponíveis no sistema é conhecido como",
+    "alternativas": [
+      "a) transparência de acesso.",
+      "b) transparência de transação.",
+      "c) transparência de replicação.",
+      "d) transparência de concorrência",
+      "e) transparência de migração."
+    ],
+    "area_conhecimento": "Tecnologia de Computação",
+    "area": "Sistemas Distribuídos",
+    "subarea": "Sistemas Operacionais Distribuídos: Sistemas de Arquivos, Servidores de Nomes, Memória Compartilhada, Segurança",
+    "gabarito": "C",
+    "atributo_rag": "tecnologia de computacao - sistemas distribuidos - sistemas operacionais distribuidos: sistemas de arquivos, servidores de nomes, memoria compartilhada, seguranca"
+  },
+  {
+    "id": "2022-33",
+    "edicao": 2022,
+    "numero": 33,
+    "enunciado": "Sobre os testes de condições em linguagem de programação, é correto afirmar que:",
+    "alternativas": [
+      "a) Um teste de condição pode ser realizado através da instrução *while*.",
+      "b) A componente else do *if* é obrigatório.",
+      "c) *if-else* a condição é avaliada e, caso seja verdadeira, é executada a instrução associada ao else.",
+      "d) *if-else* permite a existência de instruções que não são executadas em um programa.",
+      "e) *if-else* não pode ser executado de forma encadeada."
+    ],
+    "area_conhecimento": "Fundamentos da Computação",
+    "area": "Técnicas de Programação",
+    "subarea": "Desenvolvimento de algoritmos",
+    "gabarito": "D",
+    "atributo_rag": "fundamentos da computacao - tecnicas de programacao - desenvolvimento de algoritmos"
+  },
+  {
+    "id": "2014-67",
+    "edicao": 2014,
+    "numero": 67,
+    "enunciado": "A comunicação entre processos de sistemas distribuídos não pode ser por memória compartilhada, somente por trocas de mensagens de baixo nível. Por esse motivo, foram desenvolvidas várias técnicas que permitem expressar a comunicação de formas intermediárias, entre elas a chamada de procedimento remoto (RPC).\n\nEm relação à RPC, atribua V (verdadeiro) ou F (falso) às afirmativas a seguir.\n\n( ) A *Interface Definition Language* (IDL) é utilizada para declarar e definir os algoritmos e suas variáveis, que estão disponíveis em um servidor para os clientes poderem utilizar.\\\n( ) Máquinas baseadas em processadores *little endian* não podem realizar RPC com máquinas baseadas em processadores big endian.\\\n( ) O procedimento mínimo de execução de uma RPC envolve o envio dos parâmetros de chamada e das instruções de máquina a serem executadas.\\\n( ) É uma técnica para permitir a comunicação entre dois processos localizados em máquinas distintas, ao mesmo tempo que esconde do programador a troca de mensagens.\\\n( ) Parâmetros passados como valor devem ser copiados e, quando muito, codificados. Já a passagem de parâmetros por referência não tem uma solução geral, precisam ser tratados caso a caso.\n\nAssinale a alternativa que contém, de cima para baixo, a sequência correta.",
+    "alternativas": [
+      "a) V, V, V, F, F.",
+      "b) V, V, F, V, F.",
+      "c) V, F, F, F, V.",
+      "d) F, V, V, V, F.",
+      "e) F, F, F, V, V."
+    ],
+    "area_conhecimento": "Tecnologia de Computação",
+    "area": "Sistemas Distribuídos",
+    "subarea": "Comunicação entre Processos",
+    "gabarito": "E",
+    "atributo_rag": "tecnologia de computacao - sistemas distribuidos - comunicacao entre processos"
+  },
+  {
+    "id": "2019-09",
+    "edicao": 2019,
+    "numero": 9,
+    "enunciado": "Simplifique, com a ajuda dos Mapas de Karnaugh, a função cuja expressão em termos canônicos é: $f(x, y, z) = \\Sigma m(2,3,4,5,6,7)$",
+    "alternativas": [
+      "a) $f(𝑋, 𝑌, 𝑍) = 𝑋 + 𝑌$",
+      "b) $f(𝑋, 𝑌, 𝑍) = 𝑋 + 𝑌 + 𝑍$",
+      "c) $f(𝑋, 𝑌, 𝑍) = \\bar{𝑋} + 𝑌$",
+      "d) $f(𝑋, 𝑌, 𝑍) = 𝑋𝑌 + 𝑌$",
+      "e) $f(𝑋, 𝑌, 𝑍) = 𝑋 + 𝑌 + \\bar{Z}$"
+    ],
+    "area_conhecimento": "Matemática",
+    "area": "Matemática Discreta",
+    "subarea": "Funções e Formas Booleanas, Álgebra Booleana, Minimização de Funções Booleanas",
+    "gabarito": "A",
+    "atributo_rag": "matematica - matematica discreta - funcoes e formas booleanas, algebra booleana, minimizacao de funcoes booleanas"
+  },
+  {
+    "id": "2009-07",
+    "edicao": 2009,
+    "numero": 7,
+    "enunciado": "Em um cabo de fibra ótica a quantidade de informação $I$ que passa por ele durante a hora $h$, é aproximada pela função\n$$\nI(h) = 50 - 10 sin{\\frac{h\\pi}{12}}\n$$\nCalcule o horário de pico de tráfego de informação no período de 9h às 21h.",
+    "alternativas": [
+      "a) 18 horas.",
+      "b) 6 horas.",
+      "c) 9 horas.",
+      "d) 6 horas e 18 horas.",
+      "e) Nenhuma das respostas anteriores."
+    ],
+    "area_conhecimento": "Matemática",
+    "area": "Cálculo Diferencial e Integral",
+    "subarea": "Máximos e Mínimos",
+    "gabarito": "A",
+    "atributo_rag": "matematica - calculo diferencial e integral - maximos e minimos"
+  },
+  {
+    "id": "2022-67",
+    "edicao": 2022,
+    "numero": 67,
+    "enunciado": "Uma transação entra em um estado de falha quando o sistema determina que ela já\nnão pode prosseguir a sua execução normal. A transação deve ser desfeita e, entra, então, em estado abortado. Nesse momento, o sistema tem duas opções:",
+    "alternativas": [
+      "a) Reiniciar ou matar a transação.",
+      "b) Bloquear ou desfazer a transação.",
+      "c) Isolar ou cancelar a transação.",
+      "d) Prosseguir ou bloquear a transação.",
+      "e) Desfazer ou prosseguir a transação."
+    ],
+    "area_conhecimento": "Tecnologia de Computação",
+    "area": "Sistemas Distribuídos",
+    "subarea": "Compartilhamento de Informação: Controle de Concorrência, Transações Distribuídas",
+    "gabarito": "A",
+    "atributo_rag": "tecnologia de computacao - sistemas distribuidos - compartilhamento de informacao: controle de concorrencia, transacoes distribuidas"
+  },
+  {
+    "id": "2024-29",
+    "edicao": 2024,
+    "numero": 29,
+    "enunciado": "Qual dos seguintes métodos permite a transferência de dados entre um dispositivo de entrada e saída e a memória principal sem o intermédio da CPU?",
+    "alternativas": [
+      "a) Polling.",
+      "b) Interrupções.",
+      "c) E/S mapeada em memória.",
+      "d) Direct Memory Access (DMA).",
+      "e) E/S programada."
+    ],
+    "area_conhecimento": "Fundamentos da Computação",
+    "area": "Arquitetura e Organização de Computadores",
+    "subarea": "Organização de Computadores: Memórias, Unidades Centrais de Processamento, Entrada e Saída",
+    "gabarito": "D",
+    "atributo_rag": "fundamentos da computacao - arquitetura e organizacao de computadores - organizacao de computadores: memorias, unidades centrais de processamento, entrada e saida"
+  },
+  {
+    "id": "2012-02",
+    "edicao": 2012,
+    "numero": 2,
+    "enunciado": "Seja o espaço vetorial $V = \\mathbb{R}^2$. \\\nCom relação a esse espaço, assinale a alternativa correta.",
+    "alternativas": [
+      "a) $S = {(x, y) \\in \\mathbb{R}^2|y = 2x - 1}$ é um subespaço vetorial de $V$ .",
+      "b) O conjunto $\\{(1, 2), (2, 4)\\}$ é base de $V$.",
+      "c) Existem vetores $u, v$ em $V$ tais que $u + v \\neq v + u$.",
+      "d) Se $S_1$ e $S_2$ são dois subespaços quaisquer de $V$, então vale a relação: (dimensão de $S_1$ $+$ dimensão de $S_2$ $-$ dimensão de $(S_1 \\cap S_2) > 2$.",
+      "e) $V$ é soma direta de $S_1 = {(x, y) \\in \\mathbb{R}^2|(x, y) = (x, 0)}$ e $S_2 = {(x, y) \\in \\mathbb{R}^2|(x, y) = (0, y)}$, ou seja, $V = S_1  \\oplus  S_2$."
+    ],
+    "area_conhecimento": "Matemática",
+    "area": "Álgebra Linear",
+    "subarea": "Subespaços",
+    "gabarito": "E",
+    "atributo_rag": "matematica - algebra linear - subespacos"
+  },
+  {
+    "id": "2007-59",
+    "edicao": 2007,
+    "numero": 59,
+    "enunciado": "Analise o seguinte conjunto de afirmativas caracterizando agentes computacionais e os ambientes em que operam.\n\nI. Um agente reflexivo que não dispõe de modelo de seu ambiente seleciona a próxima ação que vai executar tendo por base apenas as suas percepções atuais. \\\nII. Um agente capaz de planejar sequências futuras de ações não pode e não deve ter representações explícitas de seus objetivos. \\\nIII. Um ambiente determinístico é aquele que permite a um agente, que se encontra sozinho no ambiente, saber o resultado de uma ação realizada a partir do conhecimento do estado do ambiente no momento em que a ação foi realizada e das características da ação que o agente realizou. \\\nIV. Um ambiente parcialmente observável é aquele que só permite a um agente conhecer completamente o estado atual do ambiente se o agente estiver sozinho no ambiente. \\\nV. Uma função de utilidade é uma função que ajuda um agente a distinguir quais percepções atuais são mais importantes para a realização dos objetivos do agente.\n\nA esse respeito, pode-se concluir que estão CORRETAS",
+    "alternativas": [
+      "a) somente as afirmativas I e II.",
+      "b) somente as afirmativas I e III.",
+      "c) somente as afirmativas III e IV.",
+      "d) somente as afirmativas III e V.",
+      "e) somente as afirmativas IV e V."
+    ],
+    "area_conhecimento": "Tecnologia de Computação",
+    "area": "Inteligência Artificial",
+    "subarea": "Agentes Inteligentes",
+    "gabarito": "B",
+    "atributo_rag": "tecnologia de computacao - inteligencia artificial - agentes inteligentes"
+  },
+  {
+    "id": "2024-23",
+    "edicao": 2024,
+    "numero": 23,
+    "enunciado": "Assinale a alternativa que apresenta a complexidade de tempo da busca em uma tabela hash, considerando a complexidade média e do pior caso, respectivamente.",
+    "alternativas": [
+      "a) $O(1)$ e $O(1)$.",
+      "b) $O(1)$ e $O(n)$.",
+      "c) $O(log n)$ e $O(log n)$.",
+      "d) $O(log n)$ e $O(n)$.",
+      "e) $O(n)$ e $O(2^n)$."
+    ],
+    "area_conhecimento": "Fundamentos da Computação",
+    "area": "Análise de Algoritmos",
+    "subarea": "Medidas de Complexidade, Análise Assintótica de Limites de Complexidade, Técnicas de Prova de Cotas Inferiores",
+    "gabarito": "B",
+    "atributo_rag": "fundamentos da computacao - analise de algoritmos - medidas de complexidade, analise assintotica de limites de complexidade, tecnicas de prova de cotas inferiores"
+  },
+  {
+    "id": "2009-23",
+    "edicao": 2009,
+    "numero": 23,
+    "enunciado": "Considere o seguinte programa escrito em C:\n```\n#include<stdio.h>\n#include<string.h>\nint main (void)\n{\n   char texto[]= \"foi muito facil\";\n   int i;\n\n   for (i = 0; i < strlen(texto); i++)\n   {\n        if (texto[i] == ' ') break;\n   }\n   i++;\n\n   for ( ; i < strlen(texto); i++)\n   {\n        printf(\"%c\", texto[i]);\n   }\n    return 0;\n}\n```\nO que será impresso quando o programa for executado?",
+    "alternativas": [
+      "a) `foi muito facil`",
+      "b) `facil`",
+      "c) `muito facil`",
+      "d) `uito facil`",
+      "e) `acil`"
+    ],
+    "area_conhecimento": "Fundamentos da Computação",
+    "area": "Técnicas de Programação",
+    "subarea": "Comandos de uma Linguagem de programação",
+    "gabarito": "C",
+    "atributo_rag": "fundamentos da computacao - tecnicas de programacao - comandos de uma linguagem de programacao"
+  },
+  {
+    "id": "2011-01",
+    "edicao": 2011,
+    "numero": 1,
+    "enunciado": "Considere a matriz a seguir.\n$$\n A = \\begin{bmatrix}\n2 & 4 & 2 \\\\\n1 & 5 & 2 \\\\\n4 & -1 & 9\n\\end{bmatrix} \n$$\nNo método da eliminação de Gauss, foram efetuados os seguintes passos para se obter uma matriz na forma degrau:\n\nI. Subtraiu-se a metade da primeira linha da segunda.\\\nII. Subtraiu-se o dobro da primeira linha da terceira.\\\nIII. Adicionou-se o triplo da segunda linha à terceira.\n\nEm termos matriciais, o processo descrito corresponde a:",
+    "alternativas": [
+      "a) Adicionar à $ A $ a matriz\n$$\n \\begin{bmatrix}\n    0 & 0 & 0 \\\\\n    -1 & -2 & 0 \\\\\n    -4 & 1 & 1\n    \\end{bmatrix} \n$$",
+      "b) Multiplicar $ A $, à esquerda, por\n$$\n \\begin{bmatrix}\n    0 & 0 & 0 \\\\\n    2 & 0 & 0 \\\\\n    1/2 & -1/3 & 0\n    \\end{bmatrix} \n$$",
+      "c) Multiplicar $ A $, à direita, por\n$$\n \\begin{bmatrix}\n    1 & -1/2 & -2 \\\\\n    0 & 1 & -3 \\\\\n    0 & 0 & 1\n    \\end{bmatrix} \n$$",
+      "d) Multiplicar $ A $, à esquerda, por\n$$\n \\begin{bmatrix}\n    1 & 0 & 0 \\\\\n    -1/2 & 1 & 0 \\\\\n    -7/2 & 3 & 1\n    \\end{bmatrix} \n$$",
+      "e) Subtrair de $ A $ a matriz\n$$\n \\begin{bmatrix}\n    2 & 4 & 2 \\\\\n    0 & 5 & 2 \\\\\n    0 & 0 & 9\n    \\end{bmatrix} \n$$"
+    ],
+    "area_conhecimento": "Matemática",
+    "area": "Álgebra Linear",
+    "subarea": "Sistemas de Equações Lineares: método de eliminação de Gauss para sistemas lineares",
+    "gabarito": "D",
+    "atributo_rag": "matematica - algebra linear - sistemas de equacoes lineares: metodo de eliminacao de gauss para sistemas lineares"
+  },
+  {
+    "id": "2010-12",
+    "edicao": 2010,
+    "numero": 12,
+    "enunciado": "A definição do Teorema Binomial de Newton é\n$$\n(x + y)^n = \\sum_{i=0}^n \\binom{n}{i}x^{n-i}y^i.\n$$\nAssim, dado o seguinte somatório\n$$\nS_n = \\sum_{i=1}^n \\binom{n}{i},\n$$\nAssim, dado o seguinte somatório qual o valor de $S_n$ ?",
+    "alternativas": [
+      "a) $n + 1$",
+      "b) $2^n - 1$",
+      "c) $(n - i)!$",
+      "d) $(n - 1)!$",
+      "e) $2(n^n - 1)$"
+    ],
+    "area_conhecimento": "Matemática",
+    "area": "Análise Combinatória",
+    "subarea": "Funções Geradoras Ordinárias e Exponenciais",
+    "gabarito": "B",
+    "atributo_rag": "matematica - analise combinatoria - funcoes geradoras ordinarias e exponenciais"
+  },
+  {
+    "id": "2016-38",
+    "edicao": 2016,
+    "numero": 38,
+    "enunciado": "Assinale a alternativa correta a respeito do algoritmo em Java a seguir.\n\n```\n\nSet<Integer> numeros = new TreeSet<Integer>();\nRandom rand = new Random();\nwhile (numeros.size() < 20){\n    numeros.add(rand.nextInt(101));\n}\nSystem.out.println(\"Números: \" + numeros);\n\n```",
+    "alternativas": [
+      "a) Os números impressos no console variam de 0 até 100 sem repetição.",
+      "b) Os números impressos no console variam de 0 até 101 com repetição.",
+      "c) A classe TreeSet garante que os números não se repitam.",
+      "d) A classe Set gera números aleatórios.",
+      "e) Vinte e um números serão sorteados."
+    ],
+    "area_conhecimento": "Fundamentos da Computação",
+    "area": "Linguagens de Programação",
+    "subarea": "Paradigmas de Linguagens de Programação",
+    "gabarito": "ANULADA",
+    "atributo_rag": "fundamentos da computacao - linguagens de programacao - paradigmas de linguagens de programacao"
+  },
+  {
+    "id": "2005-61",
+    "edicao": 2005,
+    "numero": 61,
+    "enunciado": "Qual a capacidade máxima segundo o Teorema de Nyquist de um canal de 2 MHz sem ruído, se sinais de 8 (oito) níveis são transmitidos?",
+    "alternativas": [
+      "a) 4 Mbps",
+      "b) 6 Mbps",
+      "c) 8 Mbps",
+      "d) 12 Mbps",
+      "e) 16 Mbps"
+    ],
+    "area_conhecimento": "Tecnologia de Computação",
+    "area": "Redes de Computadores",
+    "subarea": "Tipos de Enlace, Códigos, Modos e Meios de Transmissão",
+    "gabarito": "D",
+    "atributo_rag": "tecnologia de computacao - redes de computadores - tipos de enlace, codigos, modos e meios de transmissao"
+  },
+  {
+    "id": "2002-65",
+    "edicao": 2002,
+    "numero": 65,
+    "enunciado": "Na criptografia com chave pública:",
+    "alternativas": [
+      "a) O sigilo é obtido através da codificação com a chave privada do remetente e decifragem com a chave pública do destinatário.",
+      "b) O sigilo é obtido através da codificação com a chave pública do destinatário e decifragem com a chave privada do destinatário.",
+      "c) O sigilo é obtido através da codificação com a chave privada do destinatário e decifragem com a chave pública do destinatário.",
+      "d) Para assinar digitalmente uma mensagem codifica-se a mesma com a chave pública do remetente e esta é decifrada com a chave privada do destinatário.",
+      "e) Para assinar digitalmente uma mensagem codifica-se a mesma com a chave pública do destinatário e esta é decifrada com a chave privada do destinatário."
+    ],
+    "area_conhecimento": "Tecnologia de Computação",
+    "area": "Redes de Computadores",
+    "subarea": "Segurança e Autenticação",
+    "gabarito": "B",
+    "atributo_rag": "tecnologia de computacao - redes de computadores - seguranca e autenticacao"
+  },
+  {
+    "id": "2010-54",
+    "edicao": 2010,
+    "numero": 54,
+    "enunciado": "Assinale a alternativa que indica a função de transformação $T(r)$ utilizada para se obter a imagem negativa de uma imagem monocromática, em que os *pixels* podem assumir valores no intervalo entre $0$ e $L-1$ e em que $r$ representa o valor do pixel na imagem original.",
+    "alternativas": [
+      "a) $T (r) = (L - 1) - r$",
+      "b) $T (r) = -r$",
+      "c) $T (r) = c \\log(1 + |r|)$, onde $c$ é uma constante de escala",
+      "d) $T (r) = 1 - r$",
+      "e) $T (r) = (L - 1)/r$"
+    ],
+    "area_conhecimento": "Tecnologia de Computação",
+    "area": "Processamento de Imagens",
+    "subarea": "Transformadas de Imagens",
+    "gabarito": "A",
+    "atributo_rag": "tecnologia de computacao - processamento de imagens - transformadas de imagens"
+  },
+  {
+    "id": "2018-64",
+    "edicao": 2018,
+    "numero": 64,
+    "enunciado": "Quando um processo na máquina A chama um procedimento na máquina B, o processo chamador em A é suspenso, e a execução do procedimento chamado ocorre em B.\nInformações podem ser transportadas do chamador para quem foi chamado nos parâmetros e podem voltar no resultado do procedimento. Absolutamente nada da troca de mensagens é visível para o programador. Esse método é conhecido como:",
+    "alternativas": [
+      "a) Chamada de Procedimento Remoto (RPC).",
+      "b) Protocolo Universal de Datagramas (UDP).",
+      "c) Protocolo de Transporte em Tempo Real (RTP).",
+      "d) Middleware Orientado a Mensagem (MOM).",
+      "e) Linguagem de Programação de Interface (IDL)."
+    ],
+    "area_conhecimento": "Tecnologia de Computação",
+    "area": "Sistemas Distribuídos",
+    "subarea": "Comunicação entre Processos",
+    "gabarito": "A",
+    "atributo_rag": "tecnologia de computacao - sistemas distribuidos - comunicacao entre processos"
+  },
+  {
+    "id": "2010-04",
+    "edicao": 2010,
+    "numero": 4,
+    "enunciado": "Entre os cinco pontos dados a seguir, três estão alinhados. Quais são eles? \n\nDados: $A = (1, 6)$, $B = (3, 4)$, $C = (2, 4)$, $D = (3, 2)$ e $E = (0, \\frac{15}{2})$",
+    "alternativas": [
+      "a) $A$, $B$ e $E$",
+      "b) $A$, $C$ e $D$",
+      "c) $A$, $C$ e $E$",
+      "d) $B$, $C$ e $D$",
+      "e) $C$, $D$ e $E$"
+    ],
+    "area_conhecimento": "Matemática",
+    "area": "Geometria Analítica",
+    "subarea": "Reta no plano e no espaço",
+    "gabarito": "B",
+    "atributo_rag": "matematica - geometria analitica - reta no plano e no espaco"
+  },
+  {
+    "id": "2011-50",
+    "edicao": 2011,
+    "numero": 50,
+    "enunciado": "Seja $G$ um grafo conexo com $n$ vértices. Considere duas rotulações dos vértices de $G$ obtidas por duas buscas em $G$, uma em largura, $l()$, e outra em profundidade, $p()$, ambas iniciadas no vértice $v$. Em cada rotulação, os vértices receberam um número de 1 a $n$, o qual representa a ordem em que foram alcançados na busca em questão. Assim, $l(v) = p(v) = 1$; enquanto $l(x) > 1$ e $p(x) > 1$ para todo vértice $x$ diferente de $v$. Considere dois vértices $u$ e $w$ de $G$ e denote por $d(u, w)$ a distância em $G$ de $u$ até $w$. \n\nCom base nesses dados, assinale a alternativa correta.",
+    "alternativas": [
+      "a) Se $l(u) < l(w)$ e $p(u) < p(w)$, então $d(v, u) < d(v, w)$.",
+      "b) Se $l(u) < l(w)$ e $p(u) > p(w)$, então $d(v, u) = d(v, w)$.",
+      "c) Se $l(u) > l(w)$ e $p(u) < p(w)$, então $d(v, u) \\leq d(v, w).$",
+      "d) Se $l(u) > l(w)$ e $p(u) > p(w)$, então $d(v, u) < d(v, w)$.",
+      "e) Se $l(u) < l(w)$ e $p(u) > p(w)$, então $d(v, u) \\leq d(v, w)$."
+    ],
+    "area_conhecimento": "Fundamentos da Computação",
+    "area": "Teoria dos Grafos",
+    "subarea": "Busca em Largura e Profundidade",
+    "gabarito": "E",
+    "atributo_rag": "fundamentos da computacao - teoria dos grafos - busca em largura e profundidade"
+  },
+  {
+    "id": "2010-53",
+    "edicao": 2010,
+    "numero": 53,
+    "enunciado": "Considere um objeto em 3D ancorado no seu centro de massa $p = (x_c , y_c , z_c )$. Qual a transformação necessária para rotacioná-lo em $\\Theta$ graus, contra relógio, ao redor do eixo $x$, sem alterar a sua posição no espaço? Assuma que a matriz $T$ realiza translações, a matriz $R_x$ realiza rotações de $\\Theta$ graus ao redor do eixo $x$, contra relógio.",
+    "alternativas": [
+      "a) $T (-p).R_x(\\Theta).T (p)x$",
+      "b) $T (-p).R_x(\\Theta)x$",
+      "c) $T (p).R_x(\\Theta).T (-p)$",
+      "d) $R_x (\\Theta).T (-p)$",
+      "e) $T (p).R_x (\\Theta).T (p)$"
+    ],
+    "area_conhecimento": "Tecnologia de Computação",
+    "area": "Computação Gráfica",
+    "subarea": "Transformações Geométricas em Duas e Três Dimensões: Coordenadas Homogêneas e Matrizes de Transformação",
+    "gabarito": "C",
+    "atributo_rag": "tecnologia de computacao - computacao grafica - transformacoes geometricas em duas e tres dimensoes: coordenadas homogeneas e matrizes de transformacao"
+  },
+  {
+    "id": "2011-66",
+    "edicao": 2011,
+    "numero": 66,
+    "enunciado": "A conversão de imagens de RGB para tons de cinza pode ser realizada através da média dos componentes de cores. No entanto, esta conversão produz uma escala de brilho na qual a percepção não é equivalente ao brilho na imagem colorida. \n\nA forma adequada de calcular a luminância $Y$ é dada pela equação:",
+    "alternativas": [
+      "a) $Y = 0.299 * R + 0.587 * G + 0.114 * B$",
+      "b) $Y = 0.587 * R + 0.114 * G + 0.299 * B$",
+      "c) $Y = R + G + B$",
+      "d) $Y = \\sqrt{R^2 + G^2 + B^2}$",
+      "e) $Y = \\frac{R + G + B}{3}$"
+    ],
+    "area_conhecimento": "Tecnologia de Computação",
+    "area": "Processamento de Imagens",
+    "subarea": "Noções de Percepção Visual Humana",
+    "gabarito": "A",
+    "atributo_rag": "tecnologia de computacao - processamento de imagens - nocoes de percepcao visual humana"
+  },
+  {
+    "id": "2007-62",
+    "edicao": 2007,
+    "numero": 62,
+    "enunciado": "Um sistema de codificação e compressão de imagens consiste de dois blocos, que são: o _codificador_ e o _decodificador_. Entre as diversas técnicas de codificação, a mais popular é o _código de Huffman_. Considere a tabela abaixo, em que é apresentado o código resultante num processo de codificação.\n| Probabilidade | Código   |\n|--------------|----------|\n| 0,35         | 1        |\n| 0,25         | 01       |\n| 0,2          | 010      |\n| 0,1          | 0101     |\n| 0,05         | 01011    |\n| 0,03         | 010110   |\n| 0,01         | 0101100  |\n\nNesse caso, o comprimento médio do código obtido foi de:",
+    "alternativas": [
+      "a) 3,15 bits/símbolo",
+      "b) 1,14 bits/símbolo",
+      "c) 2,42 bits/símbolo",
+      "d) 4,38 bits/símbolo",
+      "e) 3,00 bits/símbolo"
+    ],
+    "area_conhecimento": "Tecnologia de Computação",
+    "area": "Processamento de Imagens",
+    "subarea": "Codificação",
+    "gabarito": "C",
+    "atributo_rag": "tecnologia de computacao - processamento de imagens - codificacao"
+  },
+  {
+    "id": "2022-50",
+    "edicao": 2022,
+    "numero": 50,
+    "enunciado": "Ao processar um arquivo mapeado em memória, a leitura de dados do arquivo em disco para a memória principal ocorre como resultado de uma:",
+    "alternativas": [
+      "a) Chamada de função (library call).",
+      "b) Chamada de sistema (system call).",
+      "c) Falta de página (page fault).",
+      "d) Interrupção do disco (IRQ).",
+      "e) Ligação simbólica (symbolic liking)."
+    ],
+    "area_conhecimento": "Fundamentos da Computação",
+    "area": "Sistemas Operacionais",
+    "subarea": "Gerenciamento de Memória: Memória Virtual, Paginação, Segmentação e “Swap”",
+    "gabarito": "C",
+    "atributo_rag": "fundamentos da computacao - sistemas operacionais - gerenciamento de memoria: memoria virtual, paginacao, segmentacao e “swap”"
+  },
+  {
+    "id": "2007-47",
+    "edicao": 2007,
+    "numero": 47,
+    "enunciado": "Considere a gramática *G* abaixo, em que $\\epsilon$ representa o *string* nulo.\n$$\n\\begin{array}{l}\nS \\rightarrow B \\mid C \\mid D \\\\\nA \\rightarrow \\epsilon \\\\\nB \\rightarrow d \\\\\nC \\rightarrow Aac \\mid bAc \\\\\nD \\rightarrow Bcd \\mid bBa\n\\end{array}\n$$\nA esse respeito, analise as seguintes afirmativas.\n\nI. *G* é SLR(1)\\\nII. *G* é LALR(1)\\\nIII. *G* é LR(1)\n\nA análise permite concluir que",
+    "alternativas": [
+      "a) somente as afirmativas I e II são verdadeiras.",
+      "b) somente as afirmativas II e III são verdadeiras.",
+      "c) somente a afirmativa III é verdadeira.",
+      "d) todas as afirmativas são verdadeiras.",
+      "e) nenhuma afirmativa é verdadeira."
+    ],
+    "area_conhecimento": "Tecnologia de Computação",
+    "area": "Compiladores",
+    "subarea": "Compiladores e Interpretadores",
+    "gabarito": "D",
+    "atributo_rag": "tecnologia de computacao - compiladores - compiladores e interpretadores"
+  },
+  {
+    "id": "2015-63",
+    "edicao": 2015,
+    "numero": 63,
+    "enunciado": "Em um texto fonte de linguagem de programação, o compilador realiza a identificação da função gramatical das palavras, a verificação da estrutura gramatical dos comandos e dos seus significados. Os componentes arquiteturais de um compilador que realizam essas atividades são, respectivamente,",
+    "alternativas": [
+      "a) analisador léxico, analisador semântico, otimizador de código intermediário.",
+      "b) analisador léxico, analisador sintático, analisador semântico.",
+      "c) analisador sintático, gerador de código, analisador semântico.",
+      "d) analisador semântico, gerador de código intermediário, otimizador de código intermediário.",
+      "e) analisador sintático, analisador semântico, gerador de código."
+    ],
+    "area_conhecimento": "Tecnologia de Computação",
+    "area": "Compiladores",
+    "subarea": "Compiladores e Interpretadores",
+    "gabarito": "B",
+    "atributo_rag": "tecnologia de computacao - compiladores - compiladores e interpretadores"
+  },
+  {
+    "id": "2003-27",
+    "edicao": 2003,
+    "numero": 27,
+    "enunciado": "Uma gramática G é definida por:\n$$\nG = (\\{x, y, z\\}, \\{S, W, X, Y, Z\\}, P, S)\n$$\nna qual os membros de $P$ são:\n$$\n\\begin{align*}\n& S \\rightarrow WZ \\\\\n& W \\rightarrow X \\mid Y \\\\\n& X \\rightarrow x \\mid xX \\\\\n& Y \\rightarrow y \\mid yY \\\\\n& Z \\rightarrow z \\mid zZ \\\\\n\\end{align*}\n$$\nQual das expressões regulares abaixo corresponde a esta gramática?",
+    "alternativas": [
+      "a) $(xx^* \\mid yy^*)zz^*$",
+      "b) $xx^* \\mid yy^* \\mid zz^*$",
+      "c) $xx^*(yy^* \\mid zz^*)$",
+      "d) $(xx \\mid yy)^*zz^*$",
+      "e) $xx^*yy^*zz^*$"
+    ],
+    "area_conhecimento": "Fundamentos da Computação",
+    "area": "Linguagens Formais, Autômatos e Computabilidade",
+    "subarea": "Linguagens Regulares, Livres-de-Contexto e Sensíveis-ao-Contexto",
+    "gabarito": "A",
+    "atributo_rag": "fundamentos da computacao - linguagens formais, automatos e computabilidade - linguagens regulares, livres-de-contexto e sensiveis-ao-contexto"
+  }
+]

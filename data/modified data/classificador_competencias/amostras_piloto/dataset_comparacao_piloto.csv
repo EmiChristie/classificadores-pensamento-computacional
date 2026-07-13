@@ -1,0 +1,615 @@
+id,enunciado,prompt,it1_comp_decomposicao,it1_comp_reconhecimento_padroes,it1_comp_abstracao,it1_comp_algoritmos,it1_comp_generalizacao,av1_comp_decomposicao,av1_comp_reconhecimento_padroes,av1_comp_abstracao,av1_comp_algoritmos,av1_comp_generalizacao,av2_comp_decomposicao,av2_comp_reconhecimento_padroes,av2_comp_abstracao,av2_comp_algoritmos,av2_comp_generalizacao,av3_comp_decomposicao,av3_comp_reconhecimento_padroes,av3_comp_abstracao,av3_comp_algoritmos,av3_comp_generalizacao,avs_comp_decomposicao,avs_comp_reconhecimento_padroes,avs_comp_abstracao,avs_comp_algoritmos,avs_comp_generalizacao
+2002-33,"Professor Mac Sperto propôs o seguinte algoritmo de ordenação, chamado de Super Merge, similar ao merge sort: divida o vetor em 4 partes do mesmo tamanho (ao invés de 2, como é feito no merge sort). Ordene recursivamente cada uma das partes e depois intercale-as por um procedimento semelhante ao procedimento de intercalação do merge sort. Qual das alternativas abaixo é verdadeira?","
+QUESTÃO:
+Professor Mac Sperto propôs o seguinte algoritmo de ordenação, chamado de Super Merge, similar ao merge sort: divida o vetor em 4 partes do mesmo tamanho (ao invés de 2, como é feito no merge sort). Ordene recursivamente cada uma das partes e depois intercale-as por um procedimento semelhante ao procedimento de intercalação do merge sort. Qual das alternativas abaixo é verdadeira?
+",True,True,False,True,True,True,False,False,True,False,True,True,False,True,True,True,True,False,True,True,True,True,False,True,True
+2006-18,"Um algoritmo probabilístico $A$ resolve problemas de dois tipos:
+- Problemas do tipo 1: os quais são resolvidos corretamente com probabilidade 3/4, e correspondem a 1/3 do total de problemas.
+- Problemas do tipo 2: os quais são resolvidos corretamente com probabilidade 1/2, e correspondem a 2/3 do total de problemas.
+
+Verifica-se, utilizando algum método determinístico, que a resposta encontrada pelo algoritmo está realmente correta. Qual a probabilidade de que o problema resolvido seja do tipo 1?","
+QUESTÃO:
+Um algoritmo probabilístico $A$ resolve problemas de dois tipos:
+- Problemas do tipo 1: os quais são resolvidos corretamente com probabilidade 3/4, e correspondem a 1/3 do total de problemas.
+- Problemas do tipo 2: os quais são resolvidos corretamente com probabilidade 1/2, e correspondem a 2/3 do total de problemas.
+
+Verifica-se, utilizando algum método determinístico, que a resposta encontrada pelo algoritmo está realmente correta. Qual a probabilidade de que o problema resolvido seja do tipo 1?
+",False,False,True,False,False,False,False,True,False,False,True,True,True,False,True,True,False,False,False,False,True,False,True,False,False
+2010-21,"Um estudante de computação precisa resolver um problema bastante importante, que é executar as operações que estão descritas abaixo, cuja estrutura é uma pilha. Tão logo ele retire algum elemento desta pilha, estes deverão ser inseridos em uma fila, cuja entrada é pela esquerda e a saída, pela direita. 
+
+Assinale a alternativa que contém a sequência correta de entrada dos elementos na fila.
+```
+PUSH P
+PUSH E
+PUSH R
+PUSH T
+PUSH O
+POP
+POP
+PUSH S
+PUSH O
+PUSH L
+POP
+POP
+POP
+```","
+QUESTÃO:
+Um estudante de computação precisa resolver um problema bastante importante, que é executar as operações que estão descritas abaixo, cuja estrutura é uma pilha. Tão logo ele retire algum elemento desta pilha, estes deverão ser inseridos em uma fila, cuja entrada é pela esquerda e a saída, pela direita. 
+
+Assinale a alternativa que contém a sequência correta de entrada dos elementos na fila.
+```
+PUSH P
+PUSH E
+PUSH R
+PUSH T
+PUSH O
+POP
+POP
+PUSH S
+PUSH O
+PUSH L
+POP
+POP
+POP
+```
+",False,False,False,True,False,False,False,False,True,False,False,False,False,True,False,False,False,False,True,False,False,False,False,True,False
+2011-59,"Considere o algoritmo A* (A Estrela / A Star ) usado para a busca de uma trajetória (*pathfinding*), sendo aplicado sobre um mapa do tipo grade de ocupação, com custos de passagem associados a cada uma das células da grade e com a seguinte configuração de nodos listados no conjunto em aberto (*open-set*):
+```
+Nodo 1: g(1)=19; h(1)=6; L=6;  C=8
+Nodo 2: g(2)=18; h(2)=4; L=7;  C=9
+Nodo 3: g(3)=13; h(3)=5; L=5;  C=10
+Nodo 4: g(4)=16; h(4)=3; L=9;  C=8
+Nodo 5: g(5)=16; h(5)=3; L=10; C=7
+```
+
+onde “L” e “C” são a linha e coluna do respectivo nodo dentro da grade de ocupação.
+A posição alvo a ser alcançada dentro da trajetória deste exemplo é definida pela linha e coluna L_Alvo=10 e C_Alvo=10, ou seja, a coordenada (10,10). “g(n)” representa o custo (gasto) do caminho percorrido e “h(n)” representa a estimativa heurística de custo até o alvo da célula em questão, sendo que “n” representa o número do nodo que identifica as células, e esta célula ocupa uma determinada posição (L,C) dentro da grade. 
+
+Qual dos seguintes nodos será selecionado do conjunto em aberto como sendo o próximo nodo a ser avaliado, depois removido do conjunto de nodos em aberto (*open-set*) e colocado na lista de nodos já visitados (*closed-set*)?","
+QUESTÃO:
+Considere o algoritmo A* (A Estrela / A Star ) usado para a busca de uma trajetória (*pathfinding*), sendo aplicado sobre um mapa do tipo grade de ocupação, com custos de passagem associados a cada uma das células da grade e com a seguinte configuração de nodos listados no conjunto em aberto (*open-set*):
+```
+Nodo 1: g(1)=19; h(1)=6; L=6;  C=8
+Nodo 2: g(2)=18; h(2)=4; L=7;  C=9
+Nodo 3: g(3)=13; h(3)=5; L=5;  C=10
+Nodo 4: g(4)=16; h(4)=3; L=9;  C=8
+Nodo 5: g(5)=16; h(5)=3; L=10; C=7
+```
+
+onde “L” e “C” são a linha e coluna do respectivo nodo dentro da grade de ocupação.
+A posição alvo a ser alcançada dentro da trajetória deste exemplo é definida pela linha e coluna L_Alvo=10 e C_Alvo=10, ou seja, a coordenada (10,10). “g(n)” representa o custo (gasto) do caminho percorrido e “h(n)” representa a estimativa heurística de custo até o alvo da célula em questão, sendo que “n” representa o número do nodo que identifica as células, e esta célula ocupa uma determinada posição (L,C) dentro da grade. 
+
+Qual dos seguintes nodos será selecionado do conjunto em aberto como sendo o próximo nodo a ser avaliado, depois removido do conjunto de nodos em aberto (*open-set*) e colocado na lista de nodos já visitados (*closed-set*)?
+",False,False,False,True,False,False,True,True,True,False,True,False,True,True,True,False,False,False,True,False,False,False,True,True,False
+2009-32,"O que imprime o programa escrito em “C” abaixo?
+```
+int f (int a [], int n) {
+   if (n <= 0) return 1;
+   return a[n-1] * f (a, n-2) + 1;
+}
+
+int a [6] = { 0, 1, 2, 3, 4, 5};
+
+#include <stdio.h>
+int main() {
+   printf (""%d\n"", f(a,6));
+}
+```","
+QUESTÃO:
+O que imprime o programa escrito em “C” abaixo?
+```
+int f (int a [], int n) {
+   if (n <= 0) return 1;
+   return a[n-1] * f (a, n-2) + 1;
+}
+
+int a [6] = { 0, 1, 2, 3, 4, 5};
+
+#include <stdio.h>
+int main() {
+   printf (""%d\n"", f(a,6));
+}
+```
+",True,False,False,True,False,False,False,False,True,False,True,False,False,True,True,True,False,False,True,False,True,False,False,True,False
+2019-25,"Considere a seguinte função em C:
+```
+
+void funcao(int n){
+   int i,j;
+   for (i=1; i<=n; i++)
+      for(j=1; j<log(i); j++)
+         printf(“%d”,i+j)
+}
+
+```
+A complexidade dessa função é:","
+QUESTÃO:
+Considere a seguinte função em C:
+```
+
+void funcao(int n){
+   int i,j;
+   for (i=1; i<=n; i++)
+      for(j=1; j<log(i); j++)
+         printf(“%d”,i+j)
+}
+
+```
+A complexidade dessa função é:
+",True,True,False,True,True,False,True,False,True,True,True,True,False,True,True,True,False,True,True,False,True,True,False,True,True
+2015-51,"Considere o esquema de banco de dados relacional para uma clínica médica, em que as chaves primárias estão sublinhadas: PACIENTE (CPF, Nome, Sexo, DataDeNascimento); MEDICO (CRM, Nome, Sexo); CONSULTA (CPF, DataHora, CRM, Sala); MEDICAMENTO (Codigo, Nome, PrincipioAtivo); e PRESCRICAO (CPF, DataHora, Codigo, Posologia). Os atributos CPF em CONSULTA, CRM em CONSULTA, (CPF, DataHora) em PRESCRICAO e Codigo em PRESCRICAO são chaves estrangeiras que referenciam, respectivamente, PACIENTE, MEDICO, CONSULTA e MEDICAMENTO. A expressão SQL pertinente à consulta “qual o nome dos medicamentos prescritos mais de uma vez, por um particular médico para um mesmo paciente, restrito às consultas em que médico e paciente possuem o mesmo nome?” é:","
+QUESTÃO:
+Considere o esquema de banco de dados relacional para uma clínica médica, em que as chaves primárias estão sublinhadas: PACIENTE (CPF, Nome, Sexo, DataDeNascimento); MEDICO (CRM, Nome, Sexo); CONSULTA (CPF, DataHora, CRM, Sala); MEDICAMENTO (Codigo, Nome, PrincipioAtivo); e PRESCRICAO (CPF, DataHora, Codigo, Posologia). Os atributos CPF em CONSULTA, CRM em CONSULTA, (CPF, DataHora) em PRESCRICAO e Codigo em PRESCRICAO são chaves estrangeiras que referenciam, respectivamente, PACIENTE, MEDICO, CONSULTA e MEDICAMENTO. A expressão SQL pertinente à consulta “qual o nome dos medicamentos prescritos mais de uma vez, por um particular médico para um mesmo paciente, restrito às consultas em que médico e paciente possuem o mesmo nome?” é:
+",True,False,True,False,False,True,False,True,True,False,True,False,True,True,True,True,False,True,False,False,True,False,True,True,False
+2011-34,"Em linguagens orientadas a objetos, o polimorfismo refere-se à ligação tardia de uma chamada a uma ou várias implementações diferentes de um método em uma hierarquia de herança. \
+Neste contexto, considere as seguintes classes descritas na Linguagem C++.
+```
+#include <iostream>
+using namespace std;
+class PosComp1 {
+public:
+  int Calcula()
+  { return 1; };
+};
+class PosComp2 : public PosComp1 {
+public:
+  virtual int Calcula()
+  { return 2; }
+};
+class PosComp3 : public PosComp2 {
+public:
+  int Calcula()
+  { return 3; }
+};
+```
+Se estas classes forem utilizadas a partir do programa a seguir 
+```
+int main() {
+  int Result=0;
+  PosComp1 *Objs[3];
+  Objs[0] = new PosComp1();
+  Objs[1] = new PosComp2();
+  Objs[2] = new PosComp3();
+  for (int i=0; i<3; i++)
+    Result += Objs[i]->Calcula();
+  cout << Result << endl;
+  return 0;
+}
+```
+a saída desse programa será:","
+QUESTÃO:
+Em linguagens orientadas a objetos, o polimorfismo refere-se à ligação tardia de uma chamada a uma ou várias implementações diferentes de um método em uma hierarquia de herança. \
+Neste contexto, considere as seguintes classes descritas na Linguagem C++.
+```
+#include <iostream>
+using namespace std;
+class PosComp1 {
+public:
+  int Calcula()
+  { return 1; };
+};
+class PosComp2 : public PosComp1 {
+public:
+  virtual int Calcula()
+  { return 2; }
+};
+class PosComp3 : public PosComp2 {
+public:
+  int Calcula()
+  { return 3; }
+};
+```
+Se estas classes forem utilizadas a partir do programa a seguir 
+```
+int main() {
+  int Result=0;
+  PosComp1 *Objs[3];
+  Objs[0] = new PosComp1();
+  Objs[1] = new PosComp2();
+  Objs[2] = new PosComp3();
+  for (int i=0; i<3; i++)
+    Result += Objs[i]->Calcula();
+  cout << Result << endl;
+  return 0;
+}
+```
+a saída desse programa será:
+",False,True,True,True,False,False,True,True,True,False,True,True,False,True,True,True,False,False,True,False,True,True,False,True,False
+2012-27,"Devido ao volume de informações produzido atualmente e, principalmente, à necessidade de proteger várias dessas informações, técnicas de criptografia têm sido desenvolvidas ou aprimoradas. Uma abordagem criptográfica bastante simples é aquela que consiste na substituição de determinados símbolos por outros. O programa, a seguir, desenvolvido na linguagem C, possui uma função que realiza a criptografia de uma determinada cadeia de caracteres (string), referenciada através de um ponteiro de `char`.
+
+```
+#include <stdio.h>
+void Cripto (char *inout, int i) {
+  char *sibl, c;
+  while (*inout) {
+    sibl = inout+1;
+    if (!sibl)
+      break;
+    if (*inout >= ’A’ && *inout <= ’Z’)
+      *inout += i;
+    c = *sibl;
+    *sibl = *inout;
+    *inout = c;
+    inout = sibl+1;
+  }
+}
+```
+
+```
+int main() {
+  char str[30];
+  int i;
+  scanf(""%s %d"", str, &i);
+  Cripto(str, i);
+  printf(""%s\n"", str);
+  return 0;
+}
+```
+Assinale a alternativa que apresenta, corretamente, o resultado desse programa quando ele for executado com a entrada a seguir.
+```
+PosCOMP2012x 3
+```","
+QUESTÃO:
+Devido ao volume de informações produzido atualmente e, principalmente, à necessidade de proteger várias dessas informações, técnicas de criptografia têm sido desenvolvidas ou aprimoradas. Uma abordagem criptográfica bastante simples é aquela que consiste na substituição de determinados símbolos por outros. O programa, a seguir, desenvolvido na linguagem C, possui uma função que realiza a criptografia de uma determinada cadeia de caracteres (string), referenciada através de um ponteiro de `char`.
+
+```
+#include <stdio.h>
+void Cripto (char *inout, int i) {
+  char *sibl, c;
+  while (*inout) {
+    sibl = inout+1;
+    if (!sibl)
+      break;
+    if (*inout >= ’A’ && *inout <= ’Z’)
+      *inout += i;
+    c = *sibl;
+    *sibl = *inout;
+    *inout = c;
+    inout = sibl+1;
+  }
+}
+```
+
+```
+int main() {
+  char str[30];
+  int i;
+  scanf(""%s %d"", str, &i);
+  Cripto(str, i);
+  printf(""%s\n"", str);
+  return 0;
+}
+```
+Assinale a alternativa que apresenta, corretamente, o resultado desse programa quando ele for executado com a entrada a seguir.
+```
+PosCOMP2012x 3
+```
+",False,False,False,True,False,False,False,False,True,False,True,True,True,True,True,True,True,False,True,False,True,True,False,True,False
+2003-43,"Considere a seguinte tabela em uma base de dados relacional (chave primária sublinhada):
+
+<code>Tabela1(<u>CodAluno,CodDisciplina,AnoSemestre,</u> NomeAluno, NomeDisciplina,
+CodNota, DescricaoNota)</code>
+
+Considere as seguintes dependências funcionais:
+- `CodAluno` → `NomeAluno`
+- `CodDisciplina` → `NomeDisciplina`
+- (`CodAluno`,`CodDisciplina`,`AnoSemestre`) → `CodNota`
+- (`CodAluno`,`CodDisciplina`,`AnoSemestre`) → `DescricaoNota`
+- `CodNota` → `DescricaoNota`
+
+Considerando as formas normais, qual das afirmativas abaixo se aplica:","
+QUESTÃO:
+Considere a seguinte tabela em uma base de dados relacional (chave primária sublinhada):
+
+<code>Tabela1(<u>CodAluno,CodDisciplina,AnoSemestre,</u> NomeAluno, NomeDisciplina,
+CodNota, DescricaoNota)</code>
+
+Considere as seguintes dependências funcionais:
+- `CodAluno` → `NomeAluno`
+- `CodDisciplina` → `NomeDisciplina`
+- (`CodAluno`,`CodDisciplina`,`AnoSemestre`) → `CodNota`
+- (`CodAluno`,`CodDisciplina`,`AnoSemestre`) → `DescricaoNota`
+- `CodNota` → `DescricaoNota`
+
+Considerando as formas normais, qual das afirmativas abaixo se aplica:
+",True,False,True,False,False,False,True,False,False,False,True,True,True,False,True,True,False,True,False,False,True,True,True,False,False
+2006-38,"Considere o programa:
+```
+program p;
+   var n: integer;
+   function f(n: integer; var k: integer): integer;
+      var p,q:integer;
+   begin (* f *)
+      if n < 2
+         then begin
+               f :=n;
+               k := 0
+            end
+         else begin
+               f := f(n-1, p) + f(n-2, q);
+               k := p + q + 1 
+            end;
+      write(n,' ',k,'; ')
+   end (* f *); 
+   begin
+   n := 4; 
+   write (f (3,n) ,n)
+   end.
+```
+A complexidade desse Algoritmo é:","
+QUESTÃO:
+Considere o programa:
+```
+program p;
+   var n: integer;
+   function f(n: integer; var k: integer): integer;
+      var p,q:integer;
+   begin (* f *)
+      if n < 2
+         then begin
+               f :=n;
+               k := 0
+            end
+         else begin
+               f := f(n-1, p) + f(n-2, q);
+               k := p + q + 1 
+            end;
+      write(n,' ',k,'; ')
+   end (* f *); 
+   begin
+   n := 4; 
+   write (f (3,n) ,n)
+   end.
+```
+A complexidade desse Algoritmo é:
+",True,True,False,True,True,True,False,True,True,True,True,True,True,True,True,True,False,False,True,True,True,False,True,True,True
+2006-63,"Considere o programa Prolog:
+```  
+blabla([ ],L,L).
+blabla([X|L1],L2,[X|L3]):- blabla(L1,L2,L3).
+```
+Quantas possíveis respostas a interrogação abaixo fornece (considerando o *backtracking*)?
+```
+?- blabla(L1,L2,[a,b]).
+```","
+QUESTÃO:
+Considere o programa Prolog:
+```  
+blabla([ ],L,L).
+blabla([X|L1],L2,[X|L3]):- blabla(L1,L2,L3).
+```
+Quantas possíveis respostas a interrogação abaixo fornece (considerando o *backtracking*)?
+```
+?- blabla(L1,L2,[a,b]).
+```
+",True,False,False,True,False,True,False,False,True,False,True,True,False,True,True,True,False,False,True,False,True,False,False,True,False
+2022-49,"O paralelismo em nível de instruções existe quando as instruções de uma sequência são independentes e, assim, podem ser executadas em paralelo por sobreposição. Como um exemplo do conceito de paralelismo, considere dois pedaços de código (A e B) a seguir (JOUPPI, 1989):
+
+|Código A|Código B|
+|-|-|
+|`Load R1 ← R2`|`Add R3 ← R3, “1”`|
+|`Add R3 ← R3, “1”`|`Add R4 ← R3, R2`|
+|`Add R4 ← R4, R2`|`Store [R4] ← R0`|
+
+Assinale a alternativa INCORRETA a respeito do paralelismo.","
+QUESTÃO:
+O paralelismo em nível de instruções existe quando as instruções de uma sequência são independentes e, assim, podem ser executadas em paralelo por sobreposição. Como um exemplo do conceito de paralelismo, considere dois pedaços de código (A e B) a seguir (JOUPPI, 1989):
+
+|Código A|Código B|
+|-|-|
+|`Load R1 ← R2`|`Add R3 ← R3, “1”`|
+|`Add R3 ← R3, “1”`|`Add R4 ← R3, R2`|
+|`Add R4 ← R4, R2`|`Store [R4] ← R0`|
+
+Assinale a alternativa INCORRETA a respeito do paralelismo.
+",True,True,True,False,False,False,True,True,False,False,True,True,True,True,True,True,False,True,True,False,True,True,True,True,False
+2013-32,"Analise os trechos de código em linguagem de programação C a seguir.
+
+**Trecho 1**
+```
+main()
+{
+  int mat[2][2] = {{1,2},{3,4}};
+  int i,j;
+  for (i=0;i<2;i++)
+    for (j=0;j<2;j++)
+    printf(""%d\n"",mat[i][j]);
+  system(""pause"");
+}
+```
+
+**Trecho 2**
+```
+main()
+{
+  int mat[2][2] = {{1,2},{3,4}};
+  int *p = &mat[0][0];
+  int i;
+  for (i=0;i<4;i++)
+    printf(""%d\n"",*(p+i));
+  system(""pause"");
+}
+```
+Com base nesses trechos, assinale a alternativa correta.","
+QUESTÃO:
+Analise os trechos de código em linguagem de programação C a seguir.
+
+**Trecho 1**
+```
+main()
+{
+  int mat[2][2] = {{1,2},{3,4}};
+  int i,j;
+  for (i=0;i<2;i++)
+    for (j=0;j<2;j++)
+    printf(""%d\n"",mat[i][j]);
+  system(""pause"");
+}
+```
+
+**Trecho 2**
+```
+main()
+{
+  int mat[2][2] = {{1,2},{3,4}};
+  int *p = &mat[0][0];
+  int i;
+  for (i=0;i<4;i++)
+    printf(""%d\n"",*(p+i));
+  system(""pause"");
+}
+```
+Com base nesses trechos, assinale a alternativa correta.
+",True,True,False,True,False,False,True,False,True,False,True,True,True,True,True,True,False,True,True,False,True,True,True,True,False
+2018-68,"A fase de análise sintática de um compilador pode ser implementada através de reconhecedores (*parsers*) de gramáticas livres de contexto, com estratégias ascendentes (*bottom-
+up*) ou descendentes (*top-down*). Considere a gramática com cinco produções abaixo, sendo que são não terminais os símbolos S e A, sendo o primeiro o símbolo não terminal inicial da gramática, e, os demais, símbolos terminais:
+$$
+\begin{align*}
+&\text{S → Aa} \\
+&\text{S → bAc} \\
+&\text{S → bc} \\
+&\text{S → bda} \\
+&\text{A → d}
+\end{align*}
+$$
+Analise as seguintes assertivas:
+
+I. A gramática é reconhecida por um analisador preditivo LL(1), pois as características da gramática não inibem a construção da tabela de reconhecimento.\
+II. Esta gramática não é reconhecida por um analisador LR(0), pois existe um conflito do tipo empilha-reduz no estado que contém os seguintes itens LR(0) “S -> bd . a”, e “A → d”.\
+III. A gramática é reconhecida por uma analisador SLR(1), pois ele resolve o conflito do tipo empilha-reduz LR(0).\
+IV. A gramática é LR(1).
+
+Quais estão corretas?","
+QUESTÃO:
+A fase de análise sintática de um compilador pode ser implementada através de reconhecedores (*parsers*) de gramáticas livres de contexto, com estratégias ascendentes (*bottom-
+up*) ou descendentes (*top-down*). Considere a gramática com cinco produções abaixo, sendo que são não terminais os símbolos S e A, sendo o primeiro o símbolo não terminal inicial da gramática, e, os demais, símbolos terminais:
+$$
+\begin{align*}
+&\text{S → Aa} \\
+&\text{S → bAc} \\
+&\text{S → bc} \\
+&\text{S → bda} \\
+&\text{A → d}
+\end{align*}
+$$
+Analise as seguintes assertivas:
+
+I. A gramática é reconhecida por um analisador preditivo LL(1), pois as características da gramática não inibem a construção da tabela de reconhecimento.\
+II. Esta gramática não é reconhecida por um analisador LR(0), pois existe um conflito do tipo empilha-reduz no estado que contém os seguintes itens LR(0) “S -> bd . a”, e “A → d”.\
+III. A gramática é reconhecida por uma analisador SLR(1), pois ele resolve o conflito do tipo empilha-reduz LR(0).\
+IV. A gramática é LR(1).
+
+Quais estão corretas?
+",True,True,False,True,False,True,True,False,False,False,True,True,True,True,True,True,False,False,True,False,True,True,False,True,False
+2015-28,"Considere o seguinte código desenvolvido em Java.
+```
+public class Animal {
+    int numeroPatas;
+    public void fale (){};
+}
+public class Cao extends Animal {
+    public void fale() {
+       System.out.println (""au au"");
+    }
+}
+
+public class Gato extends Animal {
+    public void fale() {
+        System.out.println (""miau"");
+    }
+}
+
+public class GatoPersa extends Gato {
+    public void fale() {
+        System.out.println (""miauuuu"");
+    }
+}
+
+public class Tigre extends Gato {
+    public void fale() {
+        super.fale();
+        System.out.println (""rrrrrr"");
+    }
+}
+
+public class Principal {
+    public static void main(String[] args) {
+        Gato gato = new GatoPersa();
+        gato.fale();
+        Cao cao = new Cao();
+        cao.fale();
+        Tigre tigre = new Tigre();
+        tigre.fale();
+    }
+}
+```
+Ao executar o código, a saída impressa no console é:","
+QUESTÃO:
+Considere o seguinte código desenvolvido em Java.
+```
+public class Animal {
+    int numeroPatas;
+    public void fale (){};
+}
+public class Cao extends Animal {
+    public void fale() {
+       System.out.println (""au au"");
+    }
+}
+
+public class Gato extends Animal {
+    public void fale() {
+        System.out.println (""miau"");
+    }
+}
+
+public class GatoPersa extends Gato {
+    public void fale() {
+        System.out.println (""miauuuu"");
+    }
+}
+
+public class Tigre extends Gato {
+    public void fale() {
+        super.fale();
+        System.out.println (""rrrrrr"");
+    }
+}
+
+public class Principal {
+    public static void main(String[] args) {
+        Gato gato = new GatoPersa();
+        gato.fale();
+        Cao cao = new Cao();
+        cao.fale();
+        Tigre tigre = new Tigre();
+        tigre.fale();
+    }
+}
+```
+Ao executar o código, a saída impressa no console é:
+",False,False,False,True,False,False,True,True,True,False,True,True,True,True,True,True,False,False,True,False,True,True,True,True,False
+2022-44,"Considere uma memória cache com um tamanho de linha de 16 bytes e uma memória principal que requer 20 ns para transferir uma palavra de 8 bytes, para qualquer linha que seja escrita pelo menos uma vez, antes de ser retirada da cache. Qual é o número médio de vezes que a linha precisa ser escrita antes de ser retirada para que uma cache write-back seja mais eficiente do que uma cache write-through?","
+QUESTÃO:
+Considere uma memória cache com um tamanho de linha de 16 bytes e uma memória principal que requer 20 ns para transferir uma palavra de 8 bytes, para qualquer linha que seja escrita pelo menos uma vez, antes de ser retirada da cache. Qual é o número médio de vezes que a linha precisa ser escrita antes de ser retirada para que uma cache write-back seja mais eficiente do que uma cache write-through?
+",False,True,True,False,False,False,False,True,False,False,True,False,True,False,True,False,False,True,False,False,False,False,True,False,False
+2024-65,"Um roteador recebe um pacote com IP de origem $13.1.2.3$ e IP de destino $11.1.2.5$.
+Em qual rota ele encaminhará o pacote?","
+QUESTÃO:
+Um roteador recebe um pacote com IP de origem $13.1.2.3$ e IP de destino $11.1.2.5$.
+Em qual rota ele encaminhará o pacote?
+",False,False,True,False,False,False,False,False,False,False,False,True,False,True,False,False,False,True,False,False,False,False,False,False,False
+2007-43,"Considere que um Banco de Dados Distribuído siga o protocolo TWO-PHASED COM-MIT e que o nodo **X** tenha retornado uma resposta negativa na primeira fase, indicando que não pode realizar a operação que lhe cabe.\
+Nesse caso, durante a segunda fase, o coordenador da transação deverá","
+QUESTÃO:
+Considere que um Banco de Dados Distribuído siga o protocolo TWO-PHASED COM-MIT e que o nodo **X** tenha retornado uma resposta negativa na primeira fase, indicando que não pode realizar a operação que lhe cabe.\
+Nesse caso, durante a segunda fase, o coordenador da transação deverá
+",False,False,False,True,False,False,False,True,False,False,False,False,True,True,False,False,False,False,True,False,False,False,True,True,False
+2012-50,"O projetista de um sistema operacional percebeu, após medições de desempenho, que o sistema apresentava problemas no acesso ao disco, com um tempo de espera médio bastante elevado.
+
+Assinale a alternativa que apresenta, correta e respectivamente, uma causa plausível e sua solução.","
+QUESTÃO:
+O projetista de um sistema operacional percebeu, após medições de desempenho, que o sistema apresentava problemas no acesso ao disco, com um tempo de espera médio bastante elevado.
+
+Assinale a alternativa que apresenta, correta e respectivamente, uma causa plausível e sua solução.
+",False,False,True,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False,True

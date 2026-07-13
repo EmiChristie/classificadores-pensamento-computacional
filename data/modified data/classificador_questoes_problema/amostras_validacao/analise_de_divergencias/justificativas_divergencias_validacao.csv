@@ -1,0 +1,111 @@
+id,enunciado,it1_ehQuestaoProblema,it2_ehQuestaoProblema,it3_ehQuestaoProblema,media_julgamentos_its,av1_ehQuestaoProblema,av2_ehQuestaoProblema,av3_ehQuestaoProblema,media_julgamentos_avs,prompt,justificativa_modelo
+2013-13,"Admita que um novo conectivo binário, rotulado pelo símbolo $\updownarrow$, seja definido pela tabela-verdade a seguir:
+
+|$P$|$Q$|$P \updownarrow Q$|
+|-|-|-|
+|V|V|F|
+|V|F|V|
+|F|V|F|
+|F|F|F|
+
+Com base nessa definição e nas operações usuais com os conectivos $\lor$, $\land$ e $\sim$, considere as afirmativas a seguir:
+
+I. $P \updownarrow Q$ é equivalente a $Q \updownarrow P$. \
+II. $(P \updownarrow Q) \lor (Q \updownarrow P)$ não é uma contingência. \
+III. $(Q \updownarrow P) \land (P \updownarrow Q)$ é uma contradição. \
+IV. $ \sim [(Q \updownarrow P) \land (P \updownarrow Q)]$ é uma tautologia. 
+
+Assinale a alternativa correta.",False,False,False,False,True,True,True,True,"
+QUESTÃO:
+Admita que um novo conectivo binário, rotulado pelo símbolo $\updownarrow$, seja definido pela tabela-verdade a seguir:
+
+|$P$|$Q$|$P \updownarrow Q$|
+|-|-|-|
+|V|V|F|
+|V|F|V|
+|F|V|F|
+|F|F|F|
+
+Com base nessa definição e nas operações usuais com os conectivos $\lor$, $\land$ e $\sim$, considere as afirmativas a seguir:
+
+I. $P \updownarrow Q$ é equivalente a $Q \updownarrow P$. \
+II. $(P \updownarrow Q) \lor (Q \updownarrow P)$ não é uma contingência. \
+III. $(Q \updownarrow P) \land (P \updownarrow Q)$ é uma contradição. \
+IV. $ \sim [(Q \updownarrow P) \land (P \updownarrow Q)]$ é uma tautologia. 
+
+Assinale a alternativa correta.
+
+SEU VEREDITO:
+False
+
+VEREDITO HUMANO:
+True
+","Embora a questão exija analisar uma tabela-verdade específica e verificar o comportamento de expressões construídas a partir desse conectivo novo, o que a torna dependente do cenário apresentado e não apenas de lembrança conceitual. Por isso, ela pode ser vista legitimamente como QUESTÃO-PROBLEMA, embora seja um caso limítrofe por ainda envolver um procedimento lógico relativamente mecânico."
+2008-51,"Considere o seguinte termo do cálculo-lambda:
+$$
+M = (\lambda x . \lambda y . x ) ( \lambda u .\lambda z .u )
+$$
+Considerando a forma normal que resulta da redução completa do termo M , assinale a alternativa **CORRETA**.",True,True,False,True,False,False,False,False,"
+QUESTÃO:
+Considere o seguinte termo do cálculo-lambda:
+$$
+M = (\lambda x . \lambda y . x ) ( \lambda u .\lambda z .u )
+$$
+Considerando a forma normal que resulta da redução completa do termo M , assinale a alternativa **CORRETA**.
+
+SEU VEREDITO:
+True
+
+VEREDITO HUMANO:
+False
+","Meu veredito como **True** é defensável porque a questão exige operar sobre um termo específico do cálculo-lambda e analisar o resultado de sua redução, não apenas recordar uma definição isolada. Ainda assim, é um caso limítrofe: como a tarefa pode ser vista como aplicação mecânica de um procedimento padrão de redução, a classificação humana como **False** também é plausível."
+2002-27,"Suponha que $T$ seja uma árvore AVL inicialmente vazia, e considere a inserção dos elementos $10, 20, 30, 5, 15, 2$ em $T$, nesta ordem. Qual das sequências abaixo corresponde a um percurso de $T$ em pré-ordem:",True,True,True,True,False,False,False,False,"
+QUESTÃO:
+Suponha que $T$ seja uma árvore AVL inicialmente vazia, e considere a inserção dos elementos $10, 20, 30, 5, 15, 2$ em $T$, nesta ordem. Qual das sequências abaixo corresponde a um percurso de $T$ em pré-ordem:
+
+SEU VEREDITO:
+True
+
+VEREDITO HUMANO:
+False
+","Embora haja um contexto de construção de uma AVL, o comando pede apenas aplicar mecanicamente o algoritmo padrão de inserção e então identificar a pré-ordem resultante, sem análise situacional mais aberta. É um caso limítrofe, mas entendo que meu veredito como True pode ser defendido porque a resolução depende fortemente da configuração específica e da evolução estrutural da árvore dada no enunciado."
+2023-04,"Nos jogos da Mega-Sena, são sorteados a cada concurso 6 números no intervalo de
+1 a 60. Leva o prêmio quem acertar os 6 números sorteados. O apostador, ao fazer um jogo, pode optar por preencher um bilhete com 6, 7, 8 ou 9 números escolhidos. Se o apostador registra um bilhete com 8 números escolhidos, quantos bilhetes de 6 números ele faria com os mesmos 8 números escolhidos?",False,False,False,False,True,True,False,True,"
+QUESTÃO:
+Nos jogos da Mega-Sena, são sorteados a cada concurso 6 números no intervalo de
+1 a 60. Leva o prêmio quem acertar os 6 números sorteados. O apostador, ao fazer um jogo, pode optar por preencher um bilhete com 6, 7, 8 ou 9 números escolhidos. Se o apostador registra um bilhete com 8 números escolhidos, quantos bilhetes de 6 números ele faria com os mesmos 8 números escolhidos?
+
+SEU VEREDITO:
+False
+
+VEREDITO HUMANO:
+True
+","Embora a questão envolva um contexto de aposta, a tarefa pedida é essencialmente aplicar diretamente a contagem de combinações de 8 números tomados 6 a 6, sem exigir análise situacional mais elaborada; por isso, meu veredito como DIRETA é defensável. Ainda assim, é um caso limítrofe, porque o contexto da Mega-Sena se conecta ao comando e pode ser interpretado como uma situação concreta de uso do conteúdo, o que justifica a classificação humana como PROBLEMA."
+2018-44,"Considere um computador no qual o interpretador do nível 0 (hardware interpretando o microcódigo) gasta 20 nanosegundos ($20$x$10^{-9}$ segundos) por microinstrução, e o interpretador do nível 1 (microcódigo interpretando a linguagem de máquina convencional) necessita de 25 microinstruções para interpretar uma instrução de máquina convencional. Um programa teste, já em linguagem de máquina convencional, leva 50 segundos para executar.\
+a) Quanto tempo levará o programa teste para executar se o tempo para executar uma microinstrução for aumentado para 30 nanosegundos?\
+b) Quanto tempo levará o programa teste para executar se uma instrução de máquina convencional necessitar de somente 15 microinstruções para ser interpretada?",False,False,False,False,True,True,True,True,"
+QUESTÃO:
+Considere um computador no qual o interpretador do nível 0 (hardware interpretando o microcódigo) gasta 20 nanosegundos ($20$x$10^{-9}$ segundos) por microinstrução, e o interpretador do nível 1 (microcódigo interpretando a linguagem de máquina convencional) necessita de 25 microinstruções para interpretar uma instrução de máquina convencional. Um programa teste, já em linguagem de máquina convencional, leva 50 segundos para executar.\
+a) Quanto tempo levará o programa teste para executar se o tempo para executar uma microinstrução for aumentado para 30 nanosegundos?\
+b) Quanto tempo levará o programa teste para executar se uma instrução de máquina convencional necessitar de somente 15 microinstruções para ser interpretada?
+
+SEU VEREDITO:
+False
+
+VEREDITO HUMANO:
+True
+","Embora a questão peça cálculos, ela depende de um cenário computacional parametrizado específico, com dois níveis de interpretação e mudanças hipotéticas no sistema, o que a aproxima de questão-problema pelo protocolo. Ainda assim, é um caso limítrofe, porque o raciocínio exigido é bastante mecânico e por isso meu veredito como DIRETA também era defensável."
+2011-50,"Seja $G$ um grafo conexo com $n$ vértices. Considere duas rotulações dos vértices de $G$ obtidas por duas buscas em $G$, uma em largura, $l()$, e outra em profundidade, $p()$, ambas iniciadas no vértice $v$. Em cada rotulação, os vértices receberam um número de 1 a $n$, o qual representa a ordem em que foram alcançados na busca em questão. Assim, $l(v) = p(v) = 1$; enquanto $l(x) > 1$ e $p(x) > 1$ para todo vértice $x$ diferente de $v$. Considere dois vértices $u$ e $w$ de $G$ e denote por $d(u, w)$ a distância em $G$ de $u$ até $w$. 
+
+Com base nesses dados, assinale a alternativa correta.",False,False,False,False,True,True,False,True,"
+QUESTÃO:
+Seja $G$ um grafo conexo com $n$ vértices. Considere duas rotulações dos vértices de $G$ obtidas por duas buscas em $G$, uma em largura, $l()$, e outra em profundidade, $p()$, ambas iniciadas no vértice $v$. Em cada rotulação, os vértices receberam um número de 1 a $n$, o qual representa a ordem em que foram alcançados na busca em questão. Assim, $l(v) = p(v) = 1$; enquanto $l(x) > 1$ e $p(x) > 1$ para todo vértice $x$ diferente de $v$. Considere dois vértices $u$ e $w$ de $G$ e denote por $d(u, w)$ a distância em $G$ de $u$ até $w$. 
+
+Com base nesses dados, assinale a alternativa correta.
+
+SEU VEREDITO:
+False
+
+VEREDITO HUMANO:
+True
+","Embora a questão peça para assinalar uma propriedade sobre rotulações geradas por BFS e DFS, ela depende de um cenário estrutural específico com duas buscas sobre um grafo conexo e da análise das relações entre ordem de visita e distância, o que sustenta a leitura como questão-problema. Meu veredito anterior ainda é defensável como caso limítrofe, porque o enunciado não traz uma instância concreta de grafo, código ou parametrização operacional, podendo ser visto também como uma afirmação teórica direta sobre conceitos conhecidos."
