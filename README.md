@@ -101,6 +101,15 @@ API_KEY="sua chave"
 
 5. Alternativamente aos passos 3 e 4, para não gerar custos de chamadas à API da OpenAI, **execute os notebooks da pasta [src/analysis]()** para reproduzir apenas a etapa de análises, usando os dados disponibilizados neste repositório.
 
+### Parâmetros congelados
+
+| Parâmetro     | Valor            |
+|---------------|------------------|
+| Modelo        |  GPT 5.4 |
+| temperature   | 0.7 (mantida do experimento original)      |
+| execuções     | 3 (etapa de validação)                |
+| voto          | maioria (≥ 2 de 3) |
+
 ---
 
 ## Dados utilizados
