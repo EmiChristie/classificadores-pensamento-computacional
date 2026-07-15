@@ -49,6 +49,8 @@ As quatro primeiras dizem respeito às competências previstas pela [BNCC-Comput
 │ ├── classificador_competencias/
 │ └── metrics/
 │ 
+├── prompts/
+│ 
 ├── README.md 
 └── LICENSE
 ```
@@ -138,3 +140,4 @@ Cada pasta contém seu próprio arquivo de documentação. Para entender melhor 
 - [RESULTS.md](https://github.com/EmiChristie/classificadores-pensamento-computacional/blob/main/results/RESULTS.md)
 - [SCRIPTS.md](https://github.com/EmiChristie/classificadores-pensamento-computacional/blob/main/scripts/SCRIPTS.md)
 - [SOURCE_CODE.md](https://github.com/EmiChristie/classificadores-pensamento-computacional/blob/main/src/SOURCE_CODE.md)
+- [PROMPTS.md](https://github.com/EmiChristie/classificadores-pensamento-computacional/blob/main/prompts/PROMPTS.md)
