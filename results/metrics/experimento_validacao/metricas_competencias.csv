@@ -1,0 +1,6 @@
+Competência,Kappa,Concordância Bruta (%),Ocorrências no Gabarito,Ocorrências no Modelo,Divergências
+DC,0.93,96.67,14,15,1
+RP,1.00,100.00,11,11,0
+AB,0.74,86.67,12,16,4
+AL,0.93,96.67,19,20,1
+GN,0.84,96.67,4,3,1
