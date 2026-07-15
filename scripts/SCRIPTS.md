@@ -1,6 +1,6 @@
 # Scripts
 
-Esta pasta contém os scripts utilizados para gerar as versões finais dos gráficos apresentados no artigo **"Identificando Automaticamente Competências do Pensamento Computacional em Questões-Problema do POSCOMP"**.
+Esta pasta contém os scripts utilizados para gerar as versões finais dos gráficos apresentados no artigo *"Identificando Automaticamente Competências do Pensamento Computacional em Questões-Problema do POSCOMP"*.
 
 Embora os notebooks da pasta `src` produzam automaticamente todas as visualizações necessárias para a análise dos resultados, algumas figuras passaram por ajustes visuais para serem inseridas no artigo de forma mais legível e esteticamente agradável.
 
