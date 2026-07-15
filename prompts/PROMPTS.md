@@ -1,4 +1,4 @@
-# PROMPTS
+# Prompts
 
 Esta pasta reúne os prompts utilizados pelos classificadores descritos no artigo *"Identificando Automaticamente Competências do Pensamento Computacional em Questões-Problema do POSCOMP"*.
 
