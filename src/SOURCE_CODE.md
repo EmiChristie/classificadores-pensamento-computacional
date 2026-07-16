@@ -71,6 +71,6 @@ Ao final da execução, os notebooks produzem:
 
 ## Executando apenas as análises
 
-Caso o objetivo seja apenas reproduzir as análises apresentadas no artigo, sem executar novamente o processo de classificação, basta utilizar os notebooks disponíveis na pasta src/analysis. Esses notebooks utilizam os datasets finais gerados durante o experimento original, eliminando a necessidade de novas chamadas à API da OpenAI.
+Caso o objetivo seja apenas reproduzir as análises apresentadas no artigo, sem executar novamente o processo de classificação, basta utilizar os notebooks disponíveis na pasta `src/analysis`. Esses notebooks utilizam os datasets finais gerados durante o experimento original, eliminando a necessidade de novas chamadas à API da OpenAI.
 
 Embora seja recomendável executá-los na mesma ordem da execução completa para acompanhar o fluxo da pesquisa, eles são independentes entre si e podem ser executados em qualquer ordem, pois utilizam apenas os resultados previamente gerados.
