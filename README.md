@@ -81,11 +81,7 @@ pip install -r requirements.txt
 
 3. **Configure sua chave da OpenAI**
 
-```
-export OPENAI_API_KEY="SUA_CHAVE"
-```
-
-ou crie um arquivo .env contendo:
+Crie um arquivo .env contendo:
 
 ```
 OPENAI_API_KEY=SUA_CHAVE
