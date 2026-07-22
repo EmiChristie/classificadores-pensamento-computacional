@@ -108,7 +108,7 @@ API_KEY="sua chave"
 
 ---
 
-## Dados utilizados
+## Dados utilizados e produzidos
 
 O experimento utiliza do [dataset do POSCOMP](https://doi.org/10.5281/zenodo.17570916), que, até o momento da pesquisa, contém as edições de 2002 a 2024 do exame, totalizando 1.340 questões. O dataset original abrange todas as questões históricas, à exceção daquelas com elementos gráficos.
 
@@ -136,6 +136,8 @@ Após a execução, você deve obter métricas próximas às reportadas no artig
 - O classificador de competências apresenta concordância substancial ou quase perfeita para todas as competências, sendo ```Abstração``` a competência com menor concordância;
 - As competências ```Algoritmos``` e ```Abstração``` figuram entre as mais frequentemente identificadas nas questões-problema do POSCOMP;
 - As análises estatísticas, tabelas e figuras geradas pelos notebooks devem apresentar padrões semelhantes aos discutidos no artigo, ainda que pequenas diferenças numéricas possam ocorrer.
+
+---
 
 ## Instruções adicionais
 
