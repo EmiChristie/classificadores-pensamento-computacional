@@ -27,20 +27,7 @@ O pipeline está dividido em duas etapas sequenciais:
     
 ## Dados necessários
 
-Antes de executar qualquer notebook, é necessário disponibilizar os arquivos de entrada correspondentes à etapa desejada.
-
-Além do dataset original do POSCOMP, cada etapa utiliza algum arquivo auxiliar que não é gerado automaticamente, como as anotações produzidas pelos avaliadores humanos. Todos os arquivos necessários para cada experimento estão documentados em `DATA.md`.
-
-Como forma de simplificar a preparação do ambiente, recomenda-se carregar **todos os arquivos** da pasta correspondente ao experimento que será executado. Durante a execução, os arquivos gerados automaticamente pelos notebooks substituirão aqueles inicialmente carregados, quando aplicável.
-
-Por exemplo, para reproduzir o experimento piloto do classificador de questões-problema, basta carregar todo o conteúdo da pasta:
-
-```text
-data/modified_data/classificador_questoes_problema/amostras_piloto/
-```
-
-O mesmo procedimento pode ser adotado para as demais etapas do pipeline, utilizando sempre a pasta correspondente à etapa executada.
-
+Ao executar os notebooks, os dados necessários são automaticamente carregados da pasta `data` deste repositório. Caso você deseje realizar novas classificações, lembre-se de comentar as linhas que carregam documentos gerados durante o notebook. Caso contrário, os documentos gerados serão substituídos pelos documentos carregados a cada nova etapa.
 
 ## Como executar
 
