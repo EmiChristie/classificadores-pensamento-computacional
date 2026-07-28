@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "Se você utilizar este software, por favor cite conforme o modelo abaixo."
+authors:
+- family-names: "Dantas Pereira"
+  given-names: "Emile Christie"
+  orcid: "https://orcid.org/0009-0005-1442-0019"
+title: "Identificando Automaticamente Competências do Pensamento Computacional em Questões-Problema do POSCOMP"
+version: 1.0.0
+doi: 10.5281/zenodo.21397183
+date-released: 2026-07-15
+url: "https://github.com/EmiChristie/classificadores-pensamento-computacional"
